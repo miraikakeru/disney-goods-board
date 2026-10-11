@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#141a46">
+<style>img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>ディズニーグッズ速報ボード</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@500&display=swap">
+<style>
+/* Layout: 夜空の帯（星）→ 区分タブ（すべて／パーク／公式ストア／コラボ）＋時期フィルタ → お気に入り → 「これから発売」「発売済み」の2段カードグリッド */
+:root{
+  --bg:#f3f2f8; --surface:#ffffff; --sunk:#e8e7f2; --ink:#1b1a33; --muted:#5d5b7a; --line:#d9d7e8;
+  --band:#141a46; --band-2:#232d74; --band-ink:#f7f4ff; --band-muted:#b7b9e6; --gold:#c99a2e; --gold-soft:#f0d98a;
+  --park:#2f5fd0; --store:#c0306a; --collab:#0f8676; --soon:#b7791f; --new:#d6455d;
+  --f-display:"Kaisei Decol","Hiragino Mincho ProN","Yu Mincho",serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+  --f-data:"DM Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0d0f22; --surface:#161935; --sunk:#1f2346; --ink:#ebeaff; --muted:#a3a5cc; --line:#2a2e57;
+  --band:#0a0d26; --band-2:#1a2160; --band-ink:#f7f4ff; --band-muted:#a9acdf; --gold:#e8c25e; --gold-soft:#f0d98a;
+  --park:#7fa3ff; --store:#ff7aa8; --collab:#4fd1bd; --soon:#f0b64a; --new:#ff7b8f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d0f22; --surface:#161935; --sunk:#1f2346; --ink:#ebeaff; --muted:#a3a5cc; --line:#2a2e57;
+  --band:#0a0d26; --band-2:#1a2160; --band-ink:#f7f4ff; --band-muted:#a9acdf; --gold:#e8c25e; --gold-soft:#f0d98a;
+  --park:#7fa3ff; --store:#ff7aa8; --collab:#4fd1bd; --soon:#f0b64a; --new:#ff7b8f; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.65;margin:0}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+.band{position:relative;overflow:hidden;color:var(--band-ink);padding-inline:16px;padding-block:26px 22px;
+  background:radial-gradient(120% 140% at 85% -20%,var(--band-2),var(--band) 60%)}
+.band canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.band-in{position:relative;max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:flex-end;justify-content:space-between}
+.eyebrow{font-family:var(--f-data);font-size:11px;letter-spacing:.2em;color:var(--gold-soft);text-transform:uppercase}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(26px,4vw,40px);line-height:1.2;margin:6px 0 8px;letter-spacing:.04em;text-wrap:balance}
+.lead{margin:0;color:var(--band-muted);font-size:13px;max-width:56ch}
+.stats{display:flex;flex-wrap:wrap;gap:8px}
+.stat{border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:7px 14px;min-width:104px;background:rgba(255,255,255,.05)}
+.stat .k{font-size:10px;letter-spacing:.12em;color:var(--band-muted)}
+.stat .v{font-family:var(--f-data);font-size:15px;color:var(--band-ink);font-variant-numeric:tabular-nums}
+.stat.hl .v{color:var(--gold-soft)}
+
+.wrap{max-width:1240px;margin:0 auto;padding-inline:16px;padding-block:18px 48px;display:flex;flex-direction:column;gap:18px}
+.controls{display:flex;flex-direction:column;gap:10px}
+.cats{display:flex;gap:6px;flex-wrap:wrap}
+.cat{--c:var(--ink);border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 16px;font-size:14px;font-weight:700;display:inline-flex;gap:8px;align-items:center}
+.cat .n{font-family:var(--f-data);font-size:12px;font-weight:500;color:var(--muted)}
+.cat[aria-pressed="true"]{background:var(--c);border-color:var(--c);color:var(--surface)}
+.cat[aria-pressed="true"] .n{color:var(--surface);opacity:.85}
+.cat[data-k="park"]{--c:var(--park)} .cat[data-k="store"]{--c:var(--store)} .cat[data-k="collab"]{--c:var(--collab)}
+.row2{display:flex;gap:8px 14px;flex-wrap:wrap;align-items:center}
+#q{flex:1 1 240px;min-width:0;max-width:420px;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 12px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{border:none;background:none;color:var(--muted);padding:7px 12px;font-size:13px}
+.seg button[aria-pressed="true"]{background:var(--sunk);color:var(--ink);font-weight:700}
+.note{font-size:12px;color:var(--muted);background:var(--sunk);border-radius:8px;padding:8px 12px}
+
+.fav{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:12px 16px}
+.fav summary{cursor:pointer;font-weight:700;display:flex;gap:8px;align-items:center;list-style:none}
+.fav summary::-webkit-details-marker{display:none}
+.fav summary::before{content:"▸";color:var(--muted);transition:transform .15s}
+.fav[open] summary::before{transform:rotate(90deg)}
+.cnt{font-family:var(--f-data);font-size:12px;background:var(--sunk);padding:1px 8px;border-radius:99px;color:var(--muted);font-weight:500}
+.fav-list{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.fav-item{display:flex;gap:10px;align-items:baseline;font-size:13px;min-width:0}
+.fav-item a{font-weight:700;text-decoration:none;min-width:0;overflow-wrap:anywhere}
+.fav-item a:hover{text-decoration:underline}
+.fav-item .d{font-family:var(--f-data);color:var(--muted);flex:none;font-size:12px}
+.x{border:none;background:none;color:var(--muted);font-size:12px;padding:0 4px;margin-left:auto;flex:none}
+.empty{color:var(--muted);font-size:13px;margin:6px 0 0}
+
+.sec h2{font-family:var(--f-display);font-weight:700;font-size:20px;margin:6px 0 10px;display:flex;align-items:center;gap:10px;letter-spacing:.04em}
+.sec h2 .cnt{font-family:var(--f-data)}
+.sec h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.card{--c:var(--muted);position:relative;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 14px 12px;display:grid;grid-template-columns:62px 1fr;gap:4px 12px;align-content:start;min-width:0}
+.card[data-cat="park"]{--c:var(--park)} .card[data-cat="store"]{--c:var(--store)} .card[data-cat="collab"]{--c:var(--collab)}
+.card:hover{border-color:var(--c)}
+.date{grid-row:span 4;text-align:center;border-radius:10px;background:color-mix(in srgb,var(--c) 12%,var(--surface));color:var(--c);padding:8px 2px 6px;align-self:start}
+.date .md{font-family:var(--f-data);font-size:17px;line-height:1.1;font-variant-numeric:tabular-nums}
+.date .y{font-family:var(--f-data);font-size:10px;opacity:.8}
+.date .w{font-size:11px;font-weight:700}
+.date.approx .md{font-size:12px;line-height:1.3;font-family:var(--f-body);font-weight:700}
+.top{display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding-right:34px}
+.badge{font-size:10px;font-weight:700;letter-spacing:.04em;padding:1px 7px;border-radius:4px;background:color-mix(in srgb,var(--c) 14%,var(--surface));color:var(--c)}
+.badge.st{--c:var(--muted)}
+.badge.soon{--c:var(--soon)} .badge.new{background:var(--new);color:var(--surface)}
+.grp{font-size:11px;color:var(--muted)}
+.card h3{margin:0;font-size:15px;line-height:1.45;min-width:0;overflow-wrap:anywhere}
+.card h3 a{text-decoration:none}
+.card h3 a:hover{text-decoration:underline;text-decoration-color:var(--c)}
+.desc{margin:0;font-size:12.5px;color:var(--muted);min-width:0}
+dl.meta{grid-column:1/-1;margin:8px 0 0;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:12px;border-top:1px dashed var(--line);padding-top:8px}
+dl.meta dt{color:var(--muted)} dl.meta dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.src{grid-column:1/-1;display:flex;justify-content:space-between;gap:8px;font-size:11px;color:var(--muted);margin-top:4px}
+.src a{color:var(--c);font-weight:700;text-decoration:none}
+.star{position:absolute;top:10px;right:10px;border:1px solid var(--line);background:var(--surface);border-radius:8px;width:30px;height:30px;font-size:15px;line-height:1;color:var(--muted)}
+.star[aria-pressed="true"]{color:var(--gold);border-color:var(--gold)}
+footer{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+footer a{color:var(--muted)}
+@media (max-width:480px){.grid{grid-template-columns:1fr}.card{grid-template-columns:54px 1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="band">
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="band-in">
+    <div>
+      <div class="eyebrow">Tokyo Disney Resort · Disney Store · Collaboration</div>
+      <h1>ディズニーグッズ速報ボード</h1>
+      <p class="lead">パーク、ディズニーストア、他ブランドとのコラボの新作グッズを発売日順にまとめています。毎朝5時に更新。</p>
+    </div>
+    <div class="stats">
+      <div class="stat hl"><div class="k">これから発売</div><div class="v" id="stSoon">—</div></div>
+      <div class="stat"><div class="k">掲載グッズ</div><div class="v" id="stAll">—</div></div>
+      <div class="stat"><div class="k">最終更新</div><div class="v" id="stUpd">—</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="controls">
+    <div class="cats" role="group" aria-label="区分">
+      <button class="cat" type="button" data-k="all" aria-pressed="true">すべて <span class="n" id="n-all"></span></button>
+      <button class="cat" type="button" data-k="park" aria-pressed="false">パーク <span class="n" id="n-park"></span></button>
+      <button class="cat" type="button" data-k="store" aria-pressed="false">公式ストア <span class="n" id="n-store"></span></button>
+      <button class="cat" type="button" data-k="collab" aria-pressed="false">コラボ <span class="n" id="n-collab"></span></button>
+    </div>
+    <div class="row2">
+      <input id="q" type="search" placeholder="キャラクター・商品・ブランドで絞り込み（例：プーさん）" aria-label="絞り込み">
+      <div class="seg" role="group" aria-label="時期">
+        <button type="button" data-w="all" aria-pressed="true">すべて</button>
+        <button type="button" data-w="soon" aria-pressed="false">これから発売</button>
+        <button type="button" data-w="out" aria-pressed="false">発売済み</button>
+      </div>
+    </div>
+    <div class="note" id="catNote" hidden></div>
+  </div>
+
+  <details class="fav" id="fav">
+    <summary>★ お気に入り <span class="cnt" id="favcnt">0</span></summary>
+    <div class="fav-list" id="favList"></div>
+  </details>
+
+  <section class="sec" id="secSoon"><h2>これから発売 <span class="cnt" id="cSoon">0</span></h2><div class="grid" id="gSoon"></div></section>
+  <section class="sec" id="secOut"><h2>発売済み <span class="cnt" id="cOut">0</span></h2><div class="grid" id="gOut"></div></section>
+  <p class="empty" id="none" hidden>条件に合うグッズはありません。</p>
+
+  <footer>
+    <div>情報は公式発表とニュース記事をもとに毎朝5時（日本時間）に更新しています。価格・販売状況は変わることがあるので、購入前にリンク先で確認してください。お気に入りはこのブラウザ内に保存されます。</div>
+    <div>公式：<a href="https://www.tokyodisneyresort.jp/" target="_blank" rel="noopener">東京ディズニーリゾート</a> ・ <a href="https://store.disney.co.jp/" target="_blank" rel="noopener">ディズニーストア.jp</a> ・ <a href="https://www.disney.co.jp/store/news" target="_blank" rel="noopener">ディズニーストア ニュース</a></div>
+  </footer>
+</div>
+
+<script>
+const DEFAULT_DATA = {"updatedAt": "2026-10-11T16:30:00+09:00", "notes": {"park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。", "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。", "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"}, "lastRun": {"date": "2026-10-11", "added": ["p-tds25-autumn", "p-tds25-swarovski", "p-duffy-regular", "p-duffy-autumn", "p-xmas-2026", "p-xmas-lillinglin", "p-halloween", "p-halloween-kowagari", "p-villains", "p-halloween-headband", "s-pooh100-collection", "s-pooh100-project", "s-pooh100-charm", "s-book-of-pooh", "s-fluffy-animal", "s-cheshire", "s-dumbo85", "s-monsters25", "s-palnui-alice", "s-halloween", "c-famima-101", "c-rodeo", "c-maryquant", "c-unlikely", "c-kodansha-pooh", "c-mrsgreenapple"], "changed": [], "summary": "初回作成"}, "items": [{"id": "p-tds25-autumn", "cat": "park", "grp": "東京ディズニーシー25周年", "title": "25周年 秋冬グッズ（ジュビリーブルー）", "release": "2026-10-01", "price": "カチューシャ2,600円／マフラー3,200円／ジャケット9,500円", "where": "シー：エンポーリオ、公式アプリ", "desc": "防寒素材のカチューシャ・ファンキャップ・手袋・マフラーなど身につけグッズ。ランドでは販売なし。", "url": "https://castel.jp/p/10309", "src": "キャステル", "addedAt": "2026-10-11-initial"}, {"id": "p-tds25-swarovski", "cat": "park", "grp": "東京ディズニーシー25周年", "title": "スワロフスキー25周年グッズ", "release": "2026-11-25", "price": "カチューシャ120,000円／ぬいぐるみセット60,000円／キーチェーン4,500円", "where": "シー：ファンタジースプリングス・ギフト", "desc": "スワロフスキー・クリスタルを使った高額シリーズ。ネックレス・ブレスレット・ぬいぐるみチャームなど。", "url": "https://castel.jp/p/10689", "src": "キャステル", "addedAt": "2026-10-11-initial"}, {"id": "p-duffy-regular", "cat": "park", "grp": "ダッフィー＆フレンズ", "title": "ダッフィー＆フレンズ 新作レギュラーグッズ", "release": "2026-10-06", "price": "くっつきぬいぐるみ各2,700円／ブランケット5,000円", "where": "シー：マクダックス・デパートメントストアほか、公式アプリ", "desc": "くっつきぬいぐるみ（ダッフィー、シェリーメイ）とシュシュが新登場。マグ・プレート・トートも。", "url": "https://castel.jp/p/10678", "src": "キャステル", "addedAt": "2026-10-11-initial"}, {"id": "p-duffy-autumn", "cat": "park", "grp": "ダッフィー＆フレンズ", "title": "オータム・サプライズ！", "release": "2026-08-25", "price": "—", "where": "東京ディズニーシー", "desc": "ハロウィーンを楽しむダッフィーたちがテーマの秋シリーズ。", "url": "https://castel.jp/p/10414", "src": "キャステル", "addedAt": "2026-10-11-initial"}, {"id": "p-xmas-2026", "cat": "park", "grp": "ディズニー・クリスマス2026", "title": "ディズニー・クリスマス 新作グッズ", "release": "2026-11-10", "price": "トレーナー5,500円／ぬいぐるみ5,500円／ジュビリーバッジセット2,500円", "where": "両パーク", "desc": "プレゼントを届けるミッキーたちのデザイン。25周年限定のジュビリーバッジセットも。イベントは11/11〜12/25。", "url": "https://travel.watch.impress.co.jp/docs/news/2146525.html", "src": "トラベル Watch", "addedAt": "2026-10-11-initial", "until": "2026-12-25"}, {"id": "p-xmas-lillinglin", "cat": "park", "grp": "ディズニー・クリスマス2026", "title": "リルリンリン グッズ", "release": "2026-11-10", "price": "ぬいぐるみ4,500円／ランタン3,000円／ブランケット6,000円／セーター7,000円", "where": "両パーク", "desc": "今年もリルリンリンのシリーズが登場。キッチンタイマーなどホームグッズも。", "url": "https://castel.jp/p/10686", "src": "キャステル", "addedAt": "2026-10-11-initial", "until": "2026-12-25"}, {"id": "p-halloween", "cat": "park", "grp": "ディズニー・ハロウィーン2026", "title": "ディズニー・ハロウィーングッズ（妖しげなパーク）", "release": "2026-09-15", "price": "ぬいぐるみ5,500円／カチューシャ（ハデス）2,800円／マグ2,400円", "where": "両パーク", "desc": "おばけ姿のミッキーたちのシリーズ。1人3点までの購入制限あり。", "url": "https://castel.jp/p/10362", "src": "キャステル", "addedAt": "2026-10-11-initial", "until": "2026-10-31"}, {"id": "p-halloween-kowagari", "cat": "park", "grp": "ディズニー・ハロウィーン2026", "title": "こわがりおばけちゃん＆かぼランタン", "release": "2026-09-15", "price": "キャップ（かぼランタン）3,600円／Tシャツ（蓄光）4,500円", "where": "両パーク", "desc": "新キャラクター「こわがりおばけちゃん」のグッズ。ぬいぐるみチャームやお菓子も。", "url": "https://travel.watch.impress.co.jp/docs/news/2141176.html", "src": "トラベル Watch", "addedAt": "2026-10-11-initial", "until": "2026-10-31"}, {"id": "p-villains", "cat": "park", "grp": "ディズニー・ハロウィーン2026", "title": "ヴィランズグッズ", "release": "2026-09-03", "price": "ヴィランズTシャツ各4,200円／肩のせぬいぐるみ4,200円", "where": "東京ディズニーシー", "desc": "フロットサム＆ジェットサムの肩のせぬいぐるみ、ナイトメアー・ビフォア・クリスマスのバッグなど。", "url": "https://castel.jp/item/168854/", "src": "キャステル", "addedAt": "2026-10-11-initial"}, {"id": "p-halloween-headband", "cat": "park", "grp": "ディズニー・ハロウィーン2026", "title": "レース付きカチューシャ・ヴィランズブローチ", "release": "2026-09-24", "price": "カチューシャ2,600円／ブローチ1,600円／ジャックのパーカー5,800円", "where": "東京ディズニーシー", "desc": "白・黒のレース付きカチューシャなど、ハロウィーン向けの身につけグッズ。", "url": "https://castel.jp/item/168855/", "src": "キャステル", "addedAt": "2026-10-11-initial"}, {"id": "s-pooh100-collection", "cat": "store", "grp": "くまのプーさん100周年", "title": "100 Years of Winnie the Pooh コレクション", "release": "2026-10-14", "price": "ぬいぐるみ3,800円／トート3,300円／カップ＆ソーサー3,500円", "where": "ディズニーストア", "desc": "原作100周年プロジェクト「HAPPIER WITH YOU.」の記念コレクション。", "url": "https://travel.watch.impress.co.jp/docs/news/2144427.html", "src": "トラベル Watch", "addedAt": "2026-10-11-initial"}, {"id": "s-pooh100-project", "cat": "store", "grp": "くまのプーさん100周年", "title": "「HAPPIER WITH YOU.」プロジェクト開始", "release": "2026-10-08", "price": "—", "where": "ディズニーストア、ディズニーフラッグシップ東京", "desc": "100周年プロジェクトのスタート。フラッグシップ東京の地下が10/9から「100エーカーの森」の装飾に。", "url": "https://travel.watch.impress.co.jp/docs/news/2144427.html", "src": "トラベル Watch", "addedAt": "2026-10-11-initial"}, {"id": "s-pooh100-charm", "cat": "store", "grp": "くまのプーさん100周年", "title": "プーさん ぬいぐるみバッグチャーム", "release": "2027-04-01", "price": "8,800円", "where": "ディズニーストア", "desc": "100周年記念のぬいぐるみバッグチャーム。2027年4月ごろ発売予定。", "url": "https://travel.watch.impress.co.jp/docs/news/2144427.html", "src": "トラベル Watch", "addedAt": "2026-10-11-initial", "releaseLabel": "2027年4月ごろ"}, {"id": "s-book-of-pooh", "cat": "store", "grp": "くまのプーさん100周年", "title": "BOOK OF POOH 100TH ANNIVERSARY", "release": "2026-10-01", "price": "—", "where": "ディズニーストア（オンライン限定品あり）", "desc": "クラシカルな色合いのぬいぐるみ・ポーチ・トート。オンライン限定で100体限定シリアル入りぬいぐるみも。", "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon", "src": "ディズニーストア公式", "addedAt": "2026-10-11-initial", "releaseLabel": "2026年10月予定"}, {"id": "s-fluffy-animal", "cat": "store", "grp": "10月の新作", "title": "DISNEY FLUFFY ANIMAL", "release": "2026-10-01", "price": "—", "where": "ディズニーストア", "desc": "ふわもこ素材のシリーズ。ナナとマリーのマグ＆ソーサー、ルシファーのルームウェアなど。", "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon", "src": "ディズニーストア公式", "addedAt": "2026-10-11-initial", "releaseLabel": "2026年10月予定"}, {"id": "s-cheshire", "cat": "store", "grp": "10月の新作", "title": "チェシャ猫 ファッションアイテム", "release": "2026-10-01", "price": "—", "where": "ディズニーストア", "desc": "紫のしま模様のカーディガンとスカート、尻尾が消えていくデザインのショルダーバッグなど。", "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon", "src": "ディズニーストア公式", "addedAt": "2026-10-11-initial", "releaseLabel": "2026年10月予定"}, {"id": "s-dumbo85", "cat": "store", "grp": "10月の新作", "title": "『ダンボ』公開85周年コレクション", "release": "2026-09-28", "price": "—", "where": "ディズニーストア", "desc": "ぬいぐるみ、ぬいぐるみキーホルダー、ステーショナリー、壁掛け時計。", "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon", "src": "ディズニーストア公式", "addedAt": "2026-10-11-initial", "releaseLabel": "9月末〜10月"}, {"id": "s-monsters25", "cat": "store", "grp": "10月の新作", "title": "『モンスターズ・インク』25周年グッズ", "release": "2026-09-28", "price": "—", "where": "ディズニーストア", "desc": "ぬいぐるみやビッグバッグ。サリー＆マイクの特大ぬいぐるみセットは受注生産。", "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon", "src": "ディズニーストア公式", "addedAt": "2026-10-11-initial", "releaseLabel": "9月末〜10月"}, {"id": "s-palnui-alice", "cat": "store", "grp": "10月の新作", "title": "PALNUI（ぱるぬい）『ふしぎの国のアリス』", "release": "2026-09-28", "price": "—", "where": "ディズニーストア", "desc": "アリス、白うさぎ、マッドハッター、ヤングオイスターのぬいぐるみ・キーホルダー。", "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon", "src": "ディズニーストア公式", "addedAt": "2026-10-11-initial", "releaseLabel": "9月末〜10月"}, {"id": "s-halloween", "cat": "store", "grp": "ハロウィーン", "title": "ディズニーストア ハロウィーン（DISNEY HALLOWEEN／CAT MINNIE AND FIGARO）", "release": "2026-09-01", "price": "ぬいぐるみ4,400円／ベレー帽4,500円／ニットカーディガン9,000円", "where": "ディズニーストア（9/1フラッグシップ東京・オンライン先行、9/4から順次）", "desc": "ハロウィーンのぬいぐるみやキーチェーン、猫のミニーとフィガロのシリーズ。", "url": "https://premium.gamepedia.jp/hobby/archives/238143", "src": "キャラホビ", "addedAt": "2026-10-11-initial"}, {"id": "c-famima-101", "cat": "collab", "grp": "コンビニ・くじ", "title": "Happyくじ『Disney 101匹わんちゃん』", "release": "2026-10-17", "price": "1回880円", "where": "ファミリーマート（10時から、店舗により異なる）", "desc": "A賞は全長約60cmのビッグぬいぐるみ。ブランケット、トート、きんちゃく、スカーフなど。", "url": "https://prtimes.jp/main/html/rd/p/000000082.000108253.html", "src": "PR TIMES", "addedAt": "2026-10-11-initial"}, {"id": "c-rodeo", "cat": "collab", "grp": "アパレル", "title": "RODEO CROWNS WIDE BOWL ミッキー＆フレンズ／ヴィランズ", "release": "2026-10-08", "price": "カーディガン7,480円／デニムジャケット14,850円／エコバッグ3,630円", "where": "全国のロデオクラウンズ ワイドボウル店舗、SHEL'TTER WEBSTORE", "desc": "秋冬向けのディズニースペシャルデザインアイテム。", "url": "https://www.cinemacafe.net/article/2026/10/08/113195.html", "src": "シネマカフェ", "addedAt": "2026-10-11-initial"}, {"id": "c-maryquant", "cat": "collab", "grp": "アパレル", "title": "MARY QUANT（マリークヮント）共同企画", "release": "2026-10-01", "price": "—", "where": "ディズニーストア", "desc": "ミニーマウスのブラック基調のバッグ、ポーチ、ファッションアイテム。", "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon", "src": "ディズニーストア公式", "addedAt": "2026-10-11-initial", "releaseLabel": "2026年10月予定"}, {"id": "c-unlikely", "cat": "collab", "grp": "アパレル", "title": "Unlikely Aged Sweat Crew / Mickey Mouse / For V.A.", "release": "2026-09-18", "price": "44,000円", "where": "V.A.（渋谷・神宮前）、vatokyo.com", "desc": "ひび割れ加工のミッキープリントを施したラグランスウェット。", "url": "https://prtimes.jp/main/html/rd/p/000001480.000006099.html", "src": "PR TIMES", "addedAt": "2026-10-11-initial"}, {"id": "c-kodansha-pooh", "cat": "collab", "grp": "本・雑誌", "title": "くまのプーさん原作100周年記念 GOODS COLLECTION（講談社）", "release": "2026-09-15", "price": "3,300円", "where": "全国の書店・ネット書店", "desc": "プーさんグッズ1,053点を収録したムック。ミニブック付き。", "url": "https://www.gamespark.jp/release/prtimes/20260910/312923.html", "src": "PR TIMES", "addedAt": "2026-10-11-initial"}, {"id": "c-mrsgreenapple", "cat": "collab", "grp": "アーティスト", "title": "ディズニー×Mrs. GREEN APPLE（ベイマックス）", "release": "2026-07-01", "price": "ベイマックス光るおもちゃ3,200円／Tシャツ3,900円", "where": "ランド：ディズニー＆カンパニー、公式アプリ", "desc": "ミセスとベイマックスのコラボグッズ。ぬいぐるみチャームやピンバッジも。", "url": "https://castel.jp/p/10575", "src": "キャステル", "addedAt": "2026-10-11-initial"}]};
+const CAT = {park:"パーク", store:"公式ストア", collab:"コラボ"};
+const WD = ["日","月","火","水","木","金","土"];
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl = u => /^https?:\/\//i.test(String(u||"")) ? String(u) : "#";
+const state = {cat:"all", when:"all", q:""};
+let DATA = DEFAULT_DATA || {items:[]};
+
+function todayJST(){ return new Date(Date.now()+9*3600e3).toISOString().slice(0,10); }
+function addDays(iso,n){ const d=new Date(iso+"T00:00:00Z"); d.setUTCDate(d.getUTCDate()+n); return d.toISOString().slice(0,10); }
+function status(it,today){
+  if(it.release > today) return "soon";
+  if(it.release >= addDays(today,-14)) return "new";
+  return "out";
+}
+function dateBox(it){
+  if(it.releaseLabel) return `<div class="date approx"><div class="md">${esc(it.releaseLabel)}</div></div>`;
+  const d = new Date(it.release+"T00:00:00Z");
+  if(isNaN(d)) return `<div class="date approx"><div class="md">未定</div></div>`;
+  return `<div class="date"><div class="y">${d.getUTCFullYear()}</div><div class="md">${d.getUTCMonth()+1}.${String(d.getUTCDate()).padStart(2,"0")}</div><div class="w">${WD[d.getUTCDay()]}</div></div>`;
+}
+function matches(it,q){ return !q || [it.title,it.grp,it.desc,it.where,it.price,it.src].join(" ").toLowerCase().includes(q.toLowerCase()); }
+function card(it,today){
+  const st = status(it,today), on = favs.has(it.id);
+  const recent = /^\d{4}-\d{2}-\d{2}$/.test(it.addedAt||"") && it.addedAt >= addDays(today,-2);
+  const stBadge = st==="soon" ? `<span class="badge soon">発売予定</span>` : st==="new" ? `<span class="badge st">発売中</span>` : "";
+  return `<article class="card" data-cat="${esc(it.cat)}">
+    ${dateBox(it)}
+    <div class="top"><span class="badge">${CAT[it.cat]||""}</span>${stBadge}${recent?'<span class="badge new">NEW</span>':""}<span class="grp">${esc(it.grp)}</span></div>
+    <h3><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">${esc(it.title)}</a></h3>
+    ${it.desc?`<p class="desc">${esc(it.desc)}</p>`:""}
+    <dl class="meta">
+      ${it.price&&it.price!=="—"?`<dt>価格</dt><dd>${esc(it.price)}</dd>`:""}
+      ${it.where?`<dt>販売</dt><dd>${esc(it.where)}</dd>`:""}
+      ${it.until?`<dt>期間</dt><dd>〜${esc(it.until.slice(5).replace("-","/"))}</dd>`:""}
+    </dl>
+    <div class="src"><span>出典：${esc(it.src)}</span><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">詳しく見る ↗</a></div>
+    <button class="star" type="button" data-id="${esc(it.id)}" aria-pressed="${on}" aria-label="${on?"お気に入りから外す":"お気に入りに保存"}">${on?"★":"☆"}</button>
+  </article>`;
+}
+function render(){
+  const today = todayJST(), items = DATA.items||[];
+  const counts = {all:items.length, park:0, store:0, collab:0};
+  items.forEach(i => { if(counts[i.cat]!=null) counts[i.cat]++; });
+  Object.keys(counts).forEach(k => { const el=$("#n-"+k); if(el) el.textContent = counts[k]; });
+  $("#stAll").textContent = items.length + "件";
+  $("#stSoon").textContent = items.filter(i=>i.release>today).length + "件";
+  let u="—"; try{ const d=new Date(DATA.updatedAt); if(!isNaN(d)) u=d.toLocaleString("ja-JP",{timeZone:"Asia/Tokyo",month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"}); }catch(e){}
+  $("#stUpd").textContent = u;
+  const note = state.cat!=="all" && (DATA.notes||{})[state.cat];
+  $("#catNote").hidden = !note; $("#catNote").textContent = note||"";
+
+  const list = items.filter(i => (state.cat==="all"||i.cat===state.cat) && matches(i,state.q));
+  const soon = list.filter(i=>i.release>today).sort((a,b)=>a.release.localeCompare(b.release));
+  const out = list.filter(i=>i.release<=today).sort((a,b)=>b.release.localeCompare(a.release));
+  const showSoon = state.when!=="out", showOut = state.when!=="soon";
+  $("#gSoon").innerHTML = soon.map(i=>card(i,today)).join("");
+  $("#gOut").innerHTML = out.map(i=>card(i,today)).join("");
+  $("#cSoon").textContent = soon.length; $("#cOut").textContent = out.length;
+  $("#secSoon").hidden = !showSoon || !soon.length;
+  $("#secOut").hidden = !showOut || !out.length;
+  $("#none").hidden = !($("#secSoon").hidden && $("#secOut").hidden);
+  renderFavs();
+}
+
+/* お気に入り（このブラウザ内） */
+const LS = "disney-goods-favs-v1";
+let favs = new Map();
+try{ favs = new Map(Object.entries(JSON.parse(localStorage.getItem(LS)||"{}"))); }catch(e){}
+function saveFavs(){ try{ localStorage.setItem(LS, JSON.stringify(Object.fromEntries(favs))); }catch(e){} }
+function renderFavs(){
+  const arr = [...favs.entries()].sort((a,b)=>(a[1].release||"").localeCompare(b[1].release||""));
+  $("#favcnt").textContent = arr.length;
+  $("#favList").innerHTML = arr.length ? arr.map(([id,f]) => `<div class="fav-item"><span class="d">${esc(f.releaseLabel||(f.release||"").slice(5).replace("-","/"))}</span><a href="${esc(safeUrl(f.url))}" target="_blank" rel="noopener">${esc(f.title)}</a><button class="x" type="button" data-del="${esc(id)}">削除</button></div>`).join("")
+    : `<p class="empty">カードの ☆ を押すと、ここに保存されます。</p>`;
+}
+
+document.addEventListener("click", e => {
+  const st = e.target.closest(".star");
+  if(st){ const it=(DATA.items||[]).find(x=>x.id===st.dataset.id); if(!it) return;
+    if(favs.has(it.id)) favs.delete(it.id); else favs.set(it.id,{title:it.title,url:it.url,release:it.release,releaseLabel:it.releaseLabel||""});
+    saveFavs(); render(); return; }
+  const del = e.target.closest("[data-del]"); if(del){ favs.delete(del.dataset.del); saveFavs(); render(); return; }
+  const c = e.target.closest(".cat");
+  if(c){ document.querySelectorAll(".cat").forEach(b=>b.setAttribute("aria-pressed", b===c?"true":"false")); state.cat=c.dataset.k; render(); try{localStorage.setItem(LS+"-cat",state.cat)}catch(e){} return; }
+  const w = e.target.closest(".seg button");
+  if(w){ w.parentElement.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed", b===w?"true":"false")); state.when=w.dataset.w; render(); }
+});
+let qt; $("#q").addEventListener("input", e => { clearTimeout(qt); qt=setTimeout(()=>{ state.q=e.target.value.trim(); render(); },120); });
+try{ const c=localStorage.getItem(LS+"-cat"); if(c&&c!=="all"){ const b=document.querySelector(`.cat[data-k="${c}"]`); if(b) b.click(); } }catch(e){}
+
+/* 夜空の星（帯の背景） */
+(function sky(){
+  const cv=$("#sky"), ctx=cv.getContext&&cv.getContext("2d"); if(!ctx) return;
+  const dpr=Math.min(2,window.devicePixelRatio||1); const W=cv.clientWidth, H=cv.clientHeight;
+  cv.width=W*dpr; cv.height=H*dpr; ctx.scale(dpr,dpr);
+  let s=7; const rnd=()=>{ s=(s*16807)%2147483647; return s/2147483647; };
+  for(let i=0;i<Math.round(W*H/2600);i++){ const x=rnd()*W,y=rnd()*H,r=rnd()*1.2+.2; ctx.globalAlpha=.25+rnd()*.6; ctx.fillStyle="#fff"; ctx.beginPath(); ctx.arc(x,y,r,0,7); ctx.fill(); }
+  ctx.globalAlpha=.9; ctx.fillStyle="#f0d98a";
+  [[.62,.28,5],[.78,.62,3.5],[.92,.2,4]].forEach(([fx,fy,R])=>{ const x=fx*W,y=fy*H; ctx.beginPath();
+    for(let k=0;k<8;k++){ const a=k*Math.PI/4, rr=k%2?R*.28:R; ctx.lineTo(x+Math.cos(a)*rr,y+Math.sin(a)*rr); } ctx.closePath(); ctx.fill(); });
+})();
+
+function adopt(d){ if(d && Array.isArray(d.items)){ DATA=d; render(); return true; } return false; }
+render();
+(async () => {
+  // claude.ai のArtifactではデータベース、GitHub Pages では data.json から最新データを読む
+  if(window.claude && window.claude.use){
+    try{ const db = await window.claude.use("db");
+      if(db){ db.doc("board/current").onSnapshot(s => { if(s.exists) adopt(s.data()); }, () => {}); return; } }catch(e){}
+  }
+  try{ const r = await fetch("data.json?t="+Date.now(), {cache:"no-store"}); if(r.ok) adopt(await r.json()); }catch(e){}
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<title>ディズニーグッズ速報ボード</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@500&display=swap">
+<style>
+/* Layout: 夜空の帯（星）→ 区分タブ（すべて／パーク／公式ストア／コラボ）＋時期フィルタ → お気に入り → 「これから発売」「発売済み」の2段カードグリッド */
+:root{
+  --bg:#f3f2f8; --surface:#ffffff; --sunk:#e8e7f2; --ink:#1b1a33; --muted:#5d5b7a; --line:#d9d7e8;
+  --band:#141a46; --band-2:#232d74; --band-ink:#f7f4ff; --band-muted:#b7b9e6; --gold:#c99a2e; --gold-soft:#f0d98a;
+  --park:#2f5fd0; --store:#c0306a; --collab:#0f8676; --soon:#b7791f; --new:#d6455d;
+  --f-display:"Kaisei Decol","Hiragino Mincho ProN","Yu Mincho",serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+  --f-data:"DM Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0d0f22; --surface:#161935; --sunk:#1f2346; --ink:#ebeaff; --muted:#a3a5cc; --line:#2a2e57;
+  --band:#0a0d26; --band-2:#1a2160; --band-ink:#f7f4ff; --band-muted:#a9acdf; --gold:#e8c25e; --gold-soft:#f0d98a;
+  --park:#7fa3ff; --store:#ff7aa8; --collab:#4fd1bd; --soon:#f0b64a; --new:#ff7b8f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d0f22; --surface:#161935; --sunk:#1f2346; --ink:#ebeaff; --muted:#a3a5cc; --line:#2a2e57;
+  --band:#0a0d26; --band-2:#1a2160; --band-ink:#f7f4ff; --band-muted:#a9acdf; --gold:#e8c25e; --gold-soft:#f0d98a;
+  --park:#7fa3ff; --store:#ff7aa8; --collab:#4fd1bd; --soon:#f0b64a; --new:#ff7b8f; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.65;margin:0}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+.band{position:relative;overflow:hidden;color:var(--band-ink);padding-inline:16px;padding-block:26px 22px;
+  background:radial-gradient(120% 140% at 85% -20%,var(--band-2),var(--band) 60%)}
+.band canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.band-in{position:relative;max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:flex-end;justify-content:space-between}
+.eyebrow{font-family:var(--f-data);font-size:11px;letter-spacing:.2em;color:var(--gold-soft);text-transform:uppercase}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(26px,4vw,40px);line-height:1.2;margin:6px 0 8px;letter-spacing:.04em;text-wrap:balance}
+.lead{margin:0;color:var(--band-muted);font-size:13px;max-width:56ch}
+.stats{display:flex;flex-wrap:wrap;gap:8px}
+.stat{border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:7px 14px;min-width:104px;background:rgba(255,255,255,.05)}
+.stat .k{font-size:10px;letter-spacing:.12em;color:var(--band-muted)}
+.stat .v{font-family:var(--f-data);font-size:15px;color:var(--band-ink);font-variant-numeric:tabular-nums}
+.stat.hl .v{color:var(--gold-soft)}
+
+.wrap{max-width:1240px;margin:0 auto;padding-inline:16px;padding-block:18px 48px;display:flex;flex-direction:column;gap:18px}
+.controls{display:flex;flex-direction:column;gap:10px}
+.cats{display:flex;gap:6px;flex-wrap:wrap}
+.cat{--c:var(--ink);border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 16px;font-size:14px;font-weight:700;display:inline-flex;gap:8px;align-items:center}
+.cat .n{font-family:var(--f-data);font-size:12px;font-weight:500;color:var(--muted)}
+.cat[aria-pressed="true"]{background:var(--c);border-color:var(--c);color:var(--surface)}
+.cat[aria-pressed="true"] .n{color:var(--surface);opacity:.85}
+.cat[data-k="park"]{--c:var(--park)} .cat[data-k="store"]{--c:var(--store)} .cat[data-k="collab"]{--c:var(--collab)}
+.row2{display:flex;gap:8px 14px;flex-wrap:wrap;align-items:center}
+#q{flex:1 1 240px;min-width:0;max-width:420px;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 12px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{border:none;background:none;color:var(--muted);padding:7px 12px;font-size:13px}
+.seg button[aria-pressed="true"]{background:var(--sunk);color:var(--ink);font-weight:700}
+.note{font-size:12px;color:var(--muted);background:var(--sunk);border-radius:8px;padding:8px 12px}
+
+.fav{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:12px 16px}
+.fav summary{cursor:pointer;font-weight:700;display:flex;gap:8px;align-items:center;list-style:none}
+.fav summary::-webkit-details-marker{display:none}
+.fav summary::before{content:"▸";color:var(--muted);transition:transform .15s}
+.fav[open] summary::before{transform:rotate(90deg)}
+.cnt{font-family:var(--f-data);font-size:12px;background:var(--sunk);padding:1px 8px;border-radius:99px;color:var(--muted);font-weight:500}
+.fav-list{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.fav-item{display:flex;gap:10px;align-items:baseline;font-size:13px;min-width:0}
+.fav-item a{font-weight:700;text-decoration:none;min-width:0;overflow-wrap:anywhere}
+.fav-item a:hover{text-decoration:underline}
+.fav-item .d{font-family:var(--f-data);color:var(--muted);flex:none;font-size:12px}
+.x{border:none;background:none;color:var(--muted);font-size:12px;padding:0 4px;margin-left:auto;flex:none}
+.empty{color:var(--muted);font-size:13px;margin:6px 0 0}
+
+.sec h2{font-family:var(--f-display);font-weight:700;font-size:20px;margin:6px 0 10px;display:flex;align-items:center;gap:10px;letter-spacing:.04em}
+.sec h2 .cnt{font-family:var(--f-data)}
+.sec h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.card{--c:var(--muted);position:relative;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 14px 12px;display:grid;grid-template-columns:62px 1fr;gap:4px 12px;align-content:start;min-width:0}
+.card[data-cat="park"]{--c:var(--park)} .card[data-cat="store"]{--c:var(--store)} .card[data-cat="collab"]{--c:var(--collab)}
+.card:hover{border-color:var(--c)}
+.date{grid-row:span 4;text-align:center;border-radius:10px;background:color-mix(in srgb,var(--c) 12%,var(--surface));color:var(--c);padding:8px 2px 6px;align-self:start}
+.date .md{font-family:var(--f-data);font-size:17px;line-height:1.1;font-variant-numeric:tabular-nums}
+.date .y{font-family:var(--f-data);font-size:10px;opacity:.8}
+.date .w{font-size:11px;font-weight:700}
+.date.approx .md{font-size:12px;line-height:1.3;font-family:var(--f-body);font-weight:700}
+.top{display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding-right:34px}
+.badge{font-size:10px;font-weight:700;letter-spacing:.04em;padding:1px 7px;border-radius:4px;background:color-mix(in srgb,var(--c) 14%,var(--surface));color:var(--c)}
+.badge.st{--c:var(--muted)}
+.badge.soon{--c:var(--soon)} .badge.new{background:var(--new);color:var(--surface)}
+.grp{font-size:11px;color:var(--muted)}
+.card h3{margin:0;font-size:15px;line-height:1.45;min-width:0;overflow-wrap:anywhere}
+.card h3 a{text-decoration:none}
+.card h3 a:hover{text-decoration:underline;text-decoration-color:var(--c)}
+.desc{margin:0;font-size:12.5px;color:var(--muted);min-width:0}
+dl.meta{grid-column:1/-1;margin:8px 0 0;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:12px;border-top:1px dashed var(--line);padding-top:8px}
+dl.meta dt{color:var(--muted)} dl.meta dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.src{grid-column:1/-1;display:flex;justify-content:space-between;gap:8px;font-size:11px;color:var(--muted);margin-top:4px}
+.src a{color:var(--c);font-weight:700;text-decoration:none}
+.star{position:absolute;top:10px;right:10px;border:1px solid var(--line);background:var(--surface);border-radius:8px;width:30px;height:30px;font-size:15px;line-height:1;color:var(--muted)}
+.star[aria-pressed="true"]{color:var(--gold);border-color:var(--gold)}
+footer{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+footer a{color:var(--muted)}
+@media (max-width:480px){.grid{grid-template-columns:1fr}.card{grid-template-columns:54px 1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="band">
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="band-in">
+    <div>
+      <div class="eyebrow">Tokyo Disney Resort · Disney Store · Collaboration</div>
+      <h1>ディズニーグッズ速報ボード</h1>
+      <p class="lead">パーク、ディズニーストア、他ブランドとのコラボの新作グッズを発売日順にまとめています。毎朝5時に更新。</p>
+    </div>
+    <div class="stats">
+      <div class="stat hl"><div class="k">これから発売</div><div class="v" id="stSoon">—</div></div>
+      <div class="stat"><div class="k">掲載グッズ</div><div class="v" id="stAll">—</div></div>
+      <div class="stat"><div class="k">最終更新</div><div class="v" id="stUpd">—</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="controls">
+    <div class="cats" role="group" aria-label="区分">
+      <button class="cat" type="button" data-k="all" aria-pressed="true">すべて <span class="n" id="n-all"></span></button>
+      <button class="cat" type="button" data-k="park" aria-pressed="false">パーク <span class="n" id="n-park"></span></button>
+      <button class="cat" type="button" data-k="store" aria-pressed="false">公式ストア <span class="n" id="n-store"></span></button>
+      <button class="cat" type="button" data-k="collab" aria-pressed="false">コラボ <span class="n" id="n-collab"></span></button>
+    </div>
+    <div class="row2">
+      <input id="q" type="search" placeholder="キャラクター・商品・ブランドで絞り込み（例：プーさん）" aria-label="絞り込み">
+      <div class="seg" role="group" aria-label="時期">
+        <button type="button" data-w="all" aria-pressed="true">すべて</button>
+        <button type="button" data-w="soon" aria-pressed="false">これから発売</button>
+        <button type="button" data-w="out" aria-pressed="false">発売済み</button>
+      </div>
+    </div>
+    <div class="note" id="catNote" hidden></div>
+  </div>
+
+  <details class="fav" id="fav">
+    <summary>★ お気に入り <span class="cnt" id="favcnt">0</span></summary>
+    <div class="fav-list" id="favList"></div>
+  </details>
+
+  <section class="sec" id="secSoon"><h2>これから発売 <span class="cnt" id="cSoon">0</span></h2><div class="grid" id="gSoon"></div></section>
+  <section class="sec" id="secOut"><h2>発売済み <span class="cnt" id="cOut">0</span></h2><div class="grid" id="gOut"></div></section>
+  <p class="empty" id="none" hidden>条件に合うグッズはありません。</p>
+
+  <footer>
+    <div>情報は公式発表とニュース記事をもとに毎朝5時（日本時間）に更新しています。価格・販売状況は変わることがあるので、購入前にリンク先で確認してください。お気に入りはこのブラウザ内に保存されます。</div>
+    <div>公式：<a href="https://www.tokyodisneyresort.jp/" target="_blank" rel="noopener">東京ディズニーリゾート</a> ・ <a href="https://store.disney.co.jp/" target="_blank" rel="noopener">ディズニーストア.jp</a> ・ <a href="https://www.disney.co.jp/store/news" target="_blank" rel="noopener">ディズニーストア ニュース</a></div>
+  </footer>
+</div>
+
+<script>
+const DEFAULT_DATA = /*__DATA__*/null;
+const CAT = {park:"パーク", store:"公式ストア", collab:"コラボ"};
+const WD = ["日","月","火","水","木","金","土"];
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl = u => /^https?:\/\//i.test(String(u||"")) ? String(u) : "#";
+const state = {cat:"all", when:"all", q:""};
+let DATA = DEFAULT_DATA || {items:[]};
+
+function todayJST(){ return new Date(Date.now()+9*3600e3).toISOString().slice(0,10); }
+function addDays(iso,n){ const d=new Date(iso+"T00:00:00Z"); d.setUTCDate(d.getUTCDate()+n); return d.toISOString().slice(0,10); }
+function status(it,today){
+  if(it.release > today) return "soon";
+  if(it.release >= addDays(today,-14)) return "new";
+  return "out";
+}
+function dateBox(it){
+  if(it.releaseLabel) return `<div class="date approx"><div class="md">${esc(it.releaseLabel)}</div></div>`;
+  const d = new Date(it.release+"T00:00:00Z");
+  if(isNaN(d)) return `<div class="date approx"><div class="md">未定</div></div>`;
+  return `<div class="date"><div class="y">${d.getUTCFullYear()}</div><div class="md">${d.getUTCMonth()+1}.${String(d.getUTCDate()).padStart(2,"0")}</div><div class="w">${WD[d.getUTCDay()]}</div></div>`;
+}
+function matches(it,q){ return !q || [it.title,it.grp,it.desc,it.where,it.price,it.src].join(" ").toLowerCase().includes(q.toLowerCase()); }
+function card(it,today){
+  const st = status(it,today), on = favs.has(it.id);
+  const recent = /^\d{4}-\d{2}-\d{2}$/.test(it.addedAt||"") && it.addedAt >= addDays(today,-2);
+  const stBadge = st==="soon" ? `<span class="badge soon">発売予定</span>` : st==="new" ? `<span class="badge st">発売中</span>` : "";
+  return `<article class="card" data-cat="${esc(it.cat)}">
+    ${dateBox(it)}
+    <div class="top"><span class="badge">${CAT[it.cat]||""}</span>${stBadge}${recent?'<span class="badge new">NEW</span>':""}<span class="grp">${esc(it.grp)}</span></div>
+    <h3><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">${esc(it.title)}</a></h3>
+    ${it.desc?`<p class="desc">${esc(it.desc)}</p>`:""}
+    <dl class="meta">
+      ${it.price&&it.price!=="—"?`<dt>価格</dt><dd>${esc(it.price)}</dd>`:""}
+      ${it.where?`<dt>販売</dt><dd>${esc(it.where)}</dd>`:""}
+      ${it.until?`<dt>期間</dt><dd>〜${esc(it.until.slice(5).replace("-","/"))}</dd>`:""}
+    </dl>
+    <div class="src"><span>出典：${esc(it.src)}</span><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">詳しく見る ↗</a></div>
+    <button class="star" type="button" data-id="${esc(it.id)}" aria-pressed="${on}" aria-label="${on?"お気に入りから外す":"お気に入りに保存"}">${on?"★":"☆"}</button>
+  </article>`;
+}
+function render(){
+  const today = todayJST(), items = DATA.items||[];
+  const counts = {all:items.length, park:0, store:0, collab:0};
+  items.forEach(i => { if(counts[i.cat]!=null) counts[i.cat]++; });
+  Object.keys(counts).forEach(k => { const el=$("#n-"+k); if(el) el.textContent = counts[k]; });
+  $("#stAll").textContent = items.length + "件";
+  $("#stSoon").textContent = items.filter(i=>i.release>today).length + "件";
+  let u="—"; try{ const d=new Date(DATA.updatedAt); if(!isNaN(d)) u=d.toLocaleString("ja-JP",{timeZone:"Asia/Tokyo",month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"}); }catch(e){}
+  $("#stUpd").textContent = u;
+  const note = state.cat!=="all" && (DATA.notes||{})[state.cat];
+  $("#catNote").hidden = !note; $("#catNote").textContent = note||"";
+
+  const list = items.filter(i => (state.cat==="all"||i.cat===state.cat) && matches(i,state.q));
+  const soon = list.filter(i=>i.release>today).sort((a,b)=>a.release.localeCompare(b.release));
+  const out = list.filter(i=>i.release<=today).sort((a,b)=>b.release.localeCompare(a.release));
+  const showSoon = state.when!=="out", showOut = state.when!=="soon";
+  $("#gSoon").innerHTML = soon.map(i=>card(i,today)).join("");
+  $("#gOut").innerHTML = out.map(i=>card(i,today)).join("");
+  $("#cSoon").textContent = soon.length; $("#cOut").textContent = out.length;
+  $("#secSoon").hidden = !showSoon || !soon.length;
+  $("#secOut").hidden = !showOut || !out.length;
+  $("#none").hidden = !($("#secSoon").hidden && $("#secOut").hidden);
+  renderFavs();
+}
+
+/* お気に入り（このブラウザ内） */
+const LS = "disney-goods-favs-v1";
+let favs = new Map();
+try{ favs = new Map(Object.entries(JSON.parse(localStorage.getItem(LS)||"{}"))); }catch(e){}
+function saveFavs(){ try{ localStorage.setItem(LS, JSON.stringify(Object.fromEntries(favs))); }catch(e){} }
+function renderFavs(){
+  const arr = [...favs.entries()].sort((a,b)=>(a[1].release||"").localeCompare(b[1].release||""));
+  $("#favcnt").textContent = arr.length;
+  $("#favList").innerHTML = arr.length ? arr.map(([id,f]) => `<div class="fav-item"><span class="d">${esc(f.releaseLabel||(f.release||"").slice(5).replace("-","/"))}</span><a href="${esc(safeUrl(f.url))}" target="_blank" rel="noopener">${esc(f.title)}</a><button class="x" type="button" data-del="${esc(id)}">削除</button></div>`).join("")
+    : `<p class="empty">カードの ☆ を押すと、ここに保存されます。</p>`;
+}
+
+document.addEventListener("click", e => {
+  const st = e.target.closest(".star");
+  if(st){ const it=(DATA.items||[]).find(x=>x.id===st.dataset.id); if(!it) return;
+    if(favs.has(it.id)) favs.delete(it.id); else favs.set(it.id,{title:it.title,url:it.url,release:it.release,releaseLabel:it.releaseLabel||""});
+    saveFavs(); render(); return; }
+  const del = e.target.closest("[data-del]"); if(del){ favs.delete(del.dataset.del); saveFavs(); render(); return; }
+  const c = e.target.closest(".cat");
+  if(c){ document.querySelectorAll(".cat").forEach(b=>b.setAttribute("aria-pressed", b===c?"true":"false")); state.cat=c.dataset.k; render(); try{localStorage.setItem(LS+"-cat",state.cat)}catch(e){} return; }
+  const w = e.target.closest(".seg button");
+  if(w){ w.parentElement.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed", b===w?"true":"false")); state.when=w.dataset.w; render(); }
+});
+let qt; $("#q").addEventListener("input", e => { clearTimeout(qt); qt=setTimeout(()=>{ state.q=e.target.value.trim(); render(); },120); });
+try{ const c=localStorage.getItem(LS+"-cat"); if(c&&c!=="all"){ const b=document.querySelector(`.cat[data-k="${c}"]`); if(b) b.click(); } }catch(e){}
+
+/* 夜空の星（帯の背景） */
+(function sky(){
+  const cv=$("#sky"), ctx=cv.getContext&&cv.getContext("2d"); if(!ctx) return;
+  const dpr=Math.min(2,window.devicePixelRatio||1); const W=cv.clientWidth, H=cv.clientHeight;
+  cv.width=W*dpr; cv.height=H*dpr; ctx.scale(dpr,dpr);
+  let s=7; const rnd=()=>{ s=(s*16807)%2147483647; return s/2147483647; };
+  for(let i=0;i<Math.round(W*H/2600);i++){ const x=rnd()*W,y=rnd()*H,r=rnd()*1.2+.2; ctx.globalAlpha=.25+rnd()*.6; ctx.fillStyle="#fff"; ctx.beginPath(); ctx.arc(x,y,r,0,7); ctx.fill(); }
+  ctx.globalAlpha=.9; ctx.fillStyle="#f0d98a";
+  [[.62,.28,5],[.78,.62,3.5],[.92,.2,4]].forEach(([fx,fy,R])=>{ const x=fx*W,y=fy*H; ctx.beginPath();
+    for(let k=0;k<8;k++){ const a=k*Math.PI/4, rr=k%2?R*.28:R; ctx.lineTo(x+Math.cos(a)*rr,y+Math.sin(a)*rr); } ctx.closePath(); ctx.fill(); });
+})();
+
+function adopt(d){ if(d && Array.isArray(d.items)){ DATA=d; render(); return true; } return false; }
+render();
+(async () => {
+  // claude.ai のArtifactではデータベース、GitHub Pages では data.json から最新データを読む
+  if(window.claude && window.claude.use){
+    try{ const db = await window.claude.use("db");
+      if(db){ db.doc("board/current").onSnapshot(s => { if(s.exists) adopt(s.data()); }, () => {}); return; } }catch(e){}
+  }
+  try{ const r = await fetch("data.json?t="+Date.now(), {cache:"no-store"}); if(r.ok) adopt(await r.json()); }catch(e){}
+})();
+</script>
