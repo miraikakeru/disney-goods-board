@@ -1,23 +1,20 @@
 {
- "updatedAt": "2026-10-12T04:55:00+09:00",
+ "updatedAt": "2026-10-13T04:54:37+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "added": [
-   "p-donald-home",
-   "p-tds25-imagining",
-   "p-duffy-winter",
-   "p-tds25-steiff-duffy",
-   "c-happykuji-halloween"
+   "c-gdc-holiday",
+   "c-alpen-2026aw",
+   "c-belluna-2026aw",
+   "c-happykuji-ornament2026"
   ],
-  "changed": [
-   "s-fluffy-animal"
-  ],
-  "summary": "パーク4件（ドナルドのおうちグッズ、25周年イマジニング・ザ・マジック、ダッフィー冬、シュタイフ・ダッフィー）とコラボ1件を追加、FLUFFY ANIMALの発売日を10/6に確定、7月発売の1件を削除"
+  "changed": [],
+  "summary": "コラボ4件（GDCミッキー、アルペン秋冬、ベルーナ秋冬、ファミマ クリスマスオーナメントくじ）を追加"
  },
  "items": [
   {
@@ -263,6 +260,34 @@
    "addedAt": "2026-10-11-initial"
   },
   {
+   "id": "c-alpen-2026aw",
+   "cat": "collab",
+   "grp": "アパレル",
+   "title": "アルペン限定 ディズニー2026秋冬コレクション",
+   "release": "2026-10-07",
+   "releaseLabel": "10月7日発表・順次発売",
+   "price": "グラフィックTシャツ2,499円／ロングTシャツ（クラシックPOOH）2,999円／フードスウェット5,999円",
+   "where": "スポーツデポ・アルペン全国店舗、アルペン公式オンラインストアほか",
+   "desc": "100周年のクラシック・プーやヴィンテージコミック柄のミッキーなどを使った、アルペン限定のウェア。",
+   "url": "https://prtimes.jp/main/html/rd/p/000000701.000042346.html",
+   "src": "PR TIMES",
+   "addedAt": "2026-10-13"
+  },
+  {
+   "id": "c-belluna-2026aw",
+   "cat": "collab",
+   "grp": "アパレル",
+   "title": "ベルーナ ディズニー＆『トイ・ストーリー5』2026秋冬ウェア",
+   "release": "2026-10-07",
+   "releaseLabel": "10月7日発表・発売中",
+   "price": "トラックジャケット3,980円／刺しゅうトレーナー2,980円／トイ・ストーリー5トレーナー2,480円",
+   "where": "ベルーナオンラインストア",
+   "desc": "ミッキー＆ミニーやプー、101匹わんちゃん、『トイ・ストーリー5』デザインの裏毛トレーナーやトラックジャケット全7種。",
+   "url": "https://prtimes.jp/main/html/rd/p/000000731.000016236.html",
+   "src": "PR TIMES",
+   "addedAt": "2026-10-13"
+  },
+  {
    "id": "s-pooh100-project",
    "cat": "store",
    "grp": "くまのプーさん100周年",
@@ -287,6 +312,19 @@
    "url": "https://www.cinemacafe.net/article/2026/10/08/113195.html",
    "src": "シネマカフェ",
    "addedAt": "2026-10-11-initial"
+  },
+  {
+   "id": "c-gdc-holiday",
+   "cat": "collab",
+   "grp": "アパレル",
+   "title": "Disney Mickey Mouse × GDC “Holiday Special”",
+   "release": "2026-10-12",
+   "price": "Crew Sweat 29,700円／Tee 13,200円",
+   "where": "GDC オフィシャルオンラインストア",
+   "desc": "GDCがミッキーマウスをあしらったホリデー向けのスウェットとTシャツの2型を発売。",
+   "url": "https://www.fullress.com/disney-mickey-mouse-gdc-holiday-special/",
+   "src": "fullress",
+   "addedAt": "2026-10-13"
   },
   {
    "id": "s-pooh100-collection",
@@ -366,6 +404,19 @@
    "url": "https://prtimes.jp/main/html/rd/p/000000177.000119340.html",
    "src": "PR TIMES（オリエンタルランド）",
    "addedAt": "2026-10-12"
+  },
+  {
+   "id": "c-happykuji-ornament2026",
+   "cat": "collab",
+   "grp": "コンビニ・くじ",
+   "title": "Happyくじ『DISNEY クリスマスオーナメントくじ2026』",
+   "release": "2026-11-07",
+   "price": "—",
+   "where": "ファミリーマート",
+   "desc": "赤い衣装のミッキーたちのフィギュアオーナメントやアクリルオーナメントが当たるくじ。Last賞は約65cmのミッキーぬいぐるみ。",
+   "url": "https://www.cinemacafe.net/article/2026/10/07/113156.html",
+   "src": "シネマカフェ",
+   "addedAt": "2026-10-13"
   },
   {
    "id": "p-xmas-2026",
