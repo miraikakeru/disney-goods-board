@@ -1,20 +1,21 @@
 {
- "updatedAt": "2026-10-13T04:54:37+09:00",
+ "updatedAt": "2026-10-14T04:54:19+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "added": [
-   "c-gdc-holiday",
-   "c-alpen-2026aw",
-   "c-belluna-2026aw",
-   "c-happykuji-ornament2026"
+   "c-goldengoose-mickey",
+   "c-gashapon-cat-swing",
+   "c-pooh100-kawaisouni"
   ],
-  "changed": [],
-  "summary": "コラボ4件（GDCミッキー、アルペン秋冬、ベルーナ秋冬、ファミマ クリスマスオーナメントくじ）を追加"
+  "changed": [
+   "c-rodeo"
+  ],
+  "summary": "コラボ3件（Golden Goose、ガシャポン猫スイングマスコット、プー100周年×可哀想に！）を追加、RODEO CROWNS の販売場所にZOZOTOWNを追記"
  },
  "items": [
   {
@@ -307,7 +308,7 @@
    "title": "RODEO CROWNS WIDE BOWL ミッキー＆フレンズ／ヴィランズ",
    "release": "2026-10-08",
    "price": "カーディガン7,480円／デニムジャケット14,850円／エコバッグ3,630円",
-   "where": "全国のロデオクラウンズ ワイドボウル店舗、SHEL'TTER WEBSTORE",
+   "where": "全国のロデオクラウンズ ワイドボウル店舗、SHEL'TTER WEBSTORE、ZOZOTOWN",
    "desc": "秋冬向けのディズニースペシャルデザインアイテム。",
    "url": "https://www.cinemacafe.net/article/2026/10/08/113195.html",
    "src": "シネマカフェ",
@@ -338,6 +339,20 @@
    "url": "https://travel.watch.impress.co.jp/docs/news/2144427.html",
    "src": "トラベル Watch",
    "addedAt": "2026-10-11-initial"
+  },
+  {
+   "id": "c-goldengoose-mickey",
+   "cat": "collab",
+   "grp": "アパレル",
+   "title": "Golden Goose × ディズニー「ミッキー＆フレンズ」カプセルコレクション",
+   "release": "2026-10-14",
+   "releaseLabel": "10月14日発表・販売中",
+   "price": "—",
+   "where": "Golden Goose 直営限定店舗（HAUS Tokyo 銀座、心斎橋など）、公式オンラインストア",
+   "desc": "宇宙モチーフのミッキー＆フレンズを、スニーカー「Super-Star」やボンバージャケット、キャップなどに展開。10/23に銀座でその場でデザインを加えるCo-Creationイベントも開催。",
+   "url": "https://prtimes.jp/main/html/rd/p/000000034.000122351.html",
+   "src": "PR TIMES",
+   "addedAt": "2026-10-14"
   },
   {
    "id": "p-donald-home",
@@ -377,6 +392,20 @@
    "url": "https://prtimes.jp/main/html/rd/p/000000082.000108253.html",
    "src": "PR TIMES",
    "addedAt": "2026-10-11-initial"
+  },
+  {
+   "id": "c-gashapon-cat-swing",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "ガシャポン「ディズニーキャラクター」CAT スイングマスコット",
+   "release": "2026-10-19",
+   "releaseLabel": "10月第4週",
+   "price": "1回400円",
+   "where": "ガシャポン（カプセルトイ売り場）",
+   "desc": "マリー、フィガロ、ルシファー、モチの猫キャラ全4種のスイングマスコット。ボールチェーンと猫型プレート付き。",
+   "url": "https://www.inside-games.jp/article/2026/10/13/189177.html",
+   "src": "インサイド",
+   "addedAt": "2026-10-14"
   },
   {
    "id": "p-duffy-winter",
@@ -458,6 +487,20 @@
    "url": "https://castel.jp/p/10689",
    "src": "キャステル",
    "addedAt": "2026-10-11-initial"
+  },
+  {
+   "id": "c-pooh100-kawaisouni",
+   "cat": "collab",
+   "grp": "くまのプーさん100周年",
+   "title": "100 Years of Winnie the Pooh Exclusive Collection（可哀想に！さんコラボ）",
+   "release": "2027-03-12",
+   "releaseLabel": "2027年3月12日予定",
+   "price": "—",
+   "where": "ディズニーストア、ディズニー公式オンラインストア",
+   "desc": "「おぱんちゅうさぎ」作者の可哀想に！さんが、プーがイーヨーにはちみつをふるまう場面を描いた100周年プロジェクトのコラボアイテム。",
+   "url": "https://nlab.itmedia.co.jp/cont/articles/3987071/",
+   "src": "ねとらぼ",
+   "addedAt": "2026-10-14"
   },
   {
    "id": "s-pooh100-charm",
