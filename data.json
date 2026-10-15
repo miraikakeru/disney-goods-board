@@ -1,21 +1,19 @@
 {
- "updatedAt": "2026-10-14T04:54:19+09:00",
+ "updatedAt": "2026-10-15T04:54:10+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "added": [
-   "c-goldengoose-mickey",
-   "c-gashapon-cat-swing",
-   "c-pooh100-kawaisouni"
+   "s-japantour-kanagawa",
+   "s-kagoshima-open",
+   "c-lawson-zootopia"
   ],
-  "changed": [
-   "c-rodeo"
-  ],
-  "summary": "コラボ3件（Golden Goose、ガシャポン猫スイングマスコット、プー100周年×可哀想に！）を追加、RODEO CROWNS の販売場所にZOZOTOWNを追記"
+  "changed": [],
+  "summary": "公式ストア2件（Japan Tour神奈川会場、アミュプラザ鹿児島店の店舗限定品）とコラボ1件（ローソン『ズートピア』グッズ）を追加"
  },
  "items": [
   {
@@ -328,6 +326,19 @@
    "addedAt": "2026-10-13"
   },
   {
+   "id": "c-lawson-zootopia",
+   "cat": "collab",
+   "grp": "コンビニ",
+   "title": "ローソン×ディズニー「Disney shopping collection」第5弾『ズートピア』",
+   "release": "2026-10-13",
+   "price": "—",
+   "where": "ローソン",
+   "desc": "ローソン限定のディズニーグッズシリーズ第5弾として、『ズートピア』のめじるしアクリルチャームやステッカー類が店頭に登場。",
+   "url": "https://convenicheck.com/newitem/newit_lawson/137843/",
+   "src": "コンビニチェック",
+   "addedAt": "2026-10-15"
+  },
+  {
    "id": "s-pooh100-collection",
    "cat": "store",
    "grp": "くまのプーさん100周年",
@@ -379,6 +390,20 @@
    "url": "https://ure.pia.co.jp/articles/-/3447712",
    "src": "ウレぴあ総研",
    "addedAt": "2026-10-12"
+  },
+  {
+   "id": "s-japantour-kanagawa",
+   "cat": "store",
+   "grp": "ポップアップ",
+   "title": "Disney store.jp Japan Tour 神奈川会場",
+   "release": "2026-10-16",
+   "until": "2026-11-15",
+   "price": "—",
+   "where": "テラスモール湘南 1F 北アトリウム",
+   "desc": "公式オンラインストアのグッズを全国9都市で販売する巡回イベントの第1会場。ぬいぐるみや雑貨のほか会場限定アイテムもあり、以降は沖縄・愛知・山口などを巡る予定。",
+   "url": "https://www.disney.co.jp/store/news/information/if20261009_101",
+   "src": "ディズニーストア公式",
+   "addedAt": "2026-10-15"
   },
   {
    "id": "c-famima-101",
@@ -474,6 +499,19 @@
    "src": "キャステル",
    "addedAt": "2026-10-11-initial",
    "until": "2026-12-25"
+  },
+  {
+   "id": "s-kagoshima-open",
+   "cat": "store",
+   "grp": "新店舗オープン",
+   "title": "ディズニーストア アミュプラザ鹿児島店 店舗限定アイテム",
+   "release": "2026-11-19",
+   "price": "ぬいぐるみキーチェーン各3,300円／うるぽちゃちゃん ぬいぐるみ各1,800円",
+   "where": "ディズニーストア アミュプラザ鹿児島店",
+   "desc": "新店舗のオープンに合わせ、薩摩犬を抱えたミッキーと黒豚を抱えたミニーのぬいぐるみキーチェーンなど店舗限定品を数量限定で販売。オープン当日はアプリでの来店予約制。",
+   "url": "https://www.disney.co.jp/store/news/information/if20260814_101",
+   "src": "ディズニーストア公式／トラベル Watch",
+   "addedAt": "2026-10-15"
   },
   {
    "id": "p-tds25-swarovski",
