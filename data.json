@@ -1,19 +1,21 @@
 {
- "updatedAt": "2026-10-15T04:54:10+09:00",
+ "updatedAt": "2026-10-17T04:58:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-10-15",
+  "date": "2026-10-17",
   "added": [
-   "s-japantour-kanagawa",
-   "s-kagoshima-open",
-   "c-lawson-zootopia"
+   "c-ichibankuji-monsters",
+   "c-axesfemme-twst",
+   "c-hottoys-stitch-party",
+   "c-sagara-pouch",
+   "c-yolu-peterpan"
   ],
   "changed": [],
-  "summary": "公式ストア2件（Japan Tour神奈川会場、アミュプラザ鹿児島店の店舗限定品）とコラボ1件（ローソン『ズートピア』グッズ）を追加"
+  "summary": "コラボ5件（一番くじ『モンスターズ・インク』、axes femme×ツイステ、ホットトイズ スティッチ・パーティー、さがら刺繍ポーチ、YOLU×ピーター・パン）を追加"
  },
  "items": [
   {
@@ -406,6 +408,19 @@
    "addedAt": "2026-10-15"
   },
   {
+   "id": "c-axesfemme-twst",
+   "cat": "collab",
+   "grp": "アパレル",
+   "title": "axes femme『ディズニー ツイステッドワンダーランド』スペシャルコレクション",
+   "release": "2026-10-16",
+   "price": "タイ付シャツ11,000円／ローブデザインジャケット14,300円",
+   "where": "axes femmeオンライン・ZOZOTOWN（10/16 12時〜）、一部店舗・アニメイト池袋本店（10/17〜）",
+   "desc": "ナイトレイブンカレッジの制服や式典服をイメージしたシャツやジャケット。シャツは7寮のカラー展開。",
+   "url": "https://premium.gamepedia.jp/hobby/archives/276519",
+   "src": "キャラホビ",
+   "addedAt": "2026-10-17"
+  },
+  {
    "id": "c-famima-101",
    "cat": "collab",
    "grp": "コンビニ・くじ",
@@ -417,6 +432,19 @@
    "url": "https://prtimes.jp/main/html/rd/p/000000082.000108253.html",
    "src": "PR TIMES",
    "addedAt": "2026-10-11-initial"
+  },
+  {
+   "id": "c-ichibankuji-monsters",
+   "cat": "collab",
+   "grp": "くじ・コンビニ",
+   "title": "一番くじ『モンスターズ・インク』",
+   "release": "2026-10-17",
+   "price": "—",
+   "where": "ファミリーマート、一番くじ公式ショップほか（オンラインは11月9日17時〜）",
+   "desc": "サリー・マイク・ブーがドア倉庫に隠れる場面を立体化したA賞フィギュアを中心に、エネルギータンク型コインバンクやモニター掛けぬいぐるみなどがそろう一番くじ。",
+   "url": "https://www.cinemacafe.net/article/2026/10/16/113361.html",
+   "src": "シネマカフェ",
+   "addedAt": "2026-10-17"
   },
   {
    "id": "c-gashapon-cat-swing",
@@ -431,6 +459,34 @@
    "url": "https://www.inside-games.jp/article/2026/10/13/189177.html",
    "src": "インサイド",
    "addedAt": "2026-10-14"
+  },
+  {
+   "id": "c-hottoys-stitch-party",
+   "cat": "collab",
+   "grp": "ポップアップ",
+   "title": "スティッチ・パーティー！ by ホットトイズ at SHIBUYA TSUTAYA",
+   "release": "2026-10-20",
+   "until": "2026-11-16",
+   "price": "コスビ各2,200円／ぬいぐるみキーチェーン各3,200円",
+   "where": "SHIBUYA TSUTAYA 1F",
+   "desc": "ホットトイズのスティッチ展示イベントで、『トイ・ストーリー』の仮装をしたスティッチのコスビやぬいぐるみキーチェーンなどを先行販売。入場無料。",
+   "url": "https://premium.gamepedia.jp/hobby/archives/275334",
+   "src": "キャラホビ",
+   "addedAt": "2026-10-17"
+  },
+  {
+   "id": "c-sagara-pouch",
+   "cat": "collab",
+   "grp": "雑貨",
+   "title": "ディズニー さがら刺繍マルチポーチ",
+   "release": "2026-10-21",
+   "releaseLabel": "10月下旬より順次",
+   "price": "2,530円",
+   "where": "全国の小売店",
+   "desc": "アリエル、スティッチ、ベイマックス、トイ・ストーリー、ズートピアのキャラクターをもこもこのさがら刺繍で表現したカラビナ付きポーチ。",
+   "url": "https://premium.gamepedia.jp/hobby/archives/270520",
+   "src": "キャラホビ",
+   "addedAt": "2026-10-17"
   },
   {
    "id": "p-duffy-winter",
@@ -458,6 +514,19 @@
    "url": "https://prtimes.jp/main/html/rd/p/000000177.000119340.html",
    "src": "PR TIMES（オリエンタルランド）",
    "addedAt": "2026-10-12"
+  },
+  {
+   "id": "c-yolu-peterpan",
+   "cat": "collab",
+   "grp": "コスメ・ヘアケア",
+   "title": "YOLU『ピーター・パン』限定デザイン ヘアケアセット",
+   "release": "2026-11-02",
+   "price": "各3,080円",
+   "where": "スギ薬局（数量限定）",
+   "desc": "夜間美容ヘアケアのYOLUから、ピーター・パンのデザインをまとったシャンプー＆トリートメントのセットが2種登場。",
+   "url": "https://premium.gamepedia.jp/hobby/archives/276131",
+   "src": "キャラホビ",
+   "addedAt": "2026-10-17"
   },
   {
    "id": "c-happykuji-ornament2026",
