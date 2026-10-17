@@ -1,21 +1,20 @@
 {
- "updatedAt": "2026-10-17T04:58:00+09:00",
+ "updatedAt": "2026-10-18T04:55:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "added": [
-   "c-ichibankuji-monsters",
-   "c-axesfemme-twst",
-   "c-hottoys-stitch-party",
-   "c-sagara-pouch",
-   "c-yolu-peterpan"
+   "c-jillstuart-cinderella",
+   "s-stands-pinocchio",
+   "s-urupocha-peterpan",
+   "s-urupocha-autumn"
   ],
   "changed": [],
-  "summary": "コラボ5件（一番くじ『モンスターズ・インク』、axes femme×ツイステ、ホットトイズ スティッチ・パーティー、さがら刺繍ポーチ、YOLU×ピーター・パン）を追加"
+  "summary": "コラボ1件（JILL STUART Beauty シンデレラ ギフトセット）、公式ストア3件（Disney stanDs『ピノキオ』、うるぽちゃちゃん『ピーター・パン』、うるぽちゃちゃん 制服ミッキー＆秋プー）を追加"
  },
  "items": [
   {
@@ -165,6 +164,48 @@
    "src": "ディズニーストア公式",
    "addedAt": "2026-10-11-initial",
    "releaseLabel": "9月末〜10月"
+  },
+  {
+   "id": "s-stands-pinocchio",
+   "cat": "store",
+   "grp": "Disney stanDs",
+   "title": "Disney stanDs『ピノキオ』",
+   "release": "2026-09-28",
+   "releaseLabel": "9月末〜10月",
+   "price": "—",
+   "where": "ディズニーストア",
+   "desc": "ピノキオやゼペット、フィガロ、ジミニー・クリケット、正直ジョン、ギデオンが並ぶ『ピノキオ』のスタンドシリーズ。",
+   "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon",
+   "src": "ディズニーストア公式",
+   "addedAt": "2026-10-18"
+  },
+  {
+   "id": "s-urupocha-peterpan",
+   "cat": "store",
+   "grp": "うるぽちゃちゃん",
+   "title": "うるぽちゃちゃん『ピーター・パン』",
+   "release": "2026-09-28",
+   "releaseLabel": "9月末〜10月",
+   "price": "—",
+   "where": "ディズニーストア",
+   "desc": "ピーター・パンやティンカー・ベル、ウェンディたちが、うるうるの瞳のうるぽちゃちゃんシリーズで登場。",
+   "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon",
+   "src": "ディズニーストア公式",
+   "addedAt": "2026-10-18"
+  },
+  {
+   "id": "s-urupocha-autumn",
+   "cat": "store",
+   "grp": "うるぽちゃちゃん",
+   "title": "うるぽちゃちゃん 制服姿のミッキー＆フレンズ／秋スタイルのプー＆フレンズ",
+   "release": "2026-09-28",
+   "releaseLabel": "9月末〜10月",
+   "price": "—",
+   "where": "ディズニーストア",
+   "desc": "制服姿のミッキー＆フレンズと、秋のよそおいのプー＆フレンズのうるぽちゃちゃん。",
+   "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon",
+   "src": "ディズニーストア公式",
+   "addedAt": "2026-10-18"
   },
   {
    "id": "p-tds25-autumn",
@@ -581,6 +622,19 @@
    "url": "https://www.disney.co.jp/store/news/information/if20260814_101",
    "src": "ディズニーストア公式／トラベル Watch",
    "addedAt": "2026-10-15"
+  },
+  {
+   "id": "c-jillstuart-cinderella",
+   "cat": "collab",
+   "grp": "コスメ",
+   "title": "JILL STUART Beauty シンデレラ ギフトセット",
+   "release": "2026-11-19",
+   "price": "9,000円／9,800円／19,800円（3種）",
+   "where": "ランド：ハリントンズ・ジュエリー＆ウォッチ、シー：ベッラ・ミンニ・コレクション",
+   "desc": "シンデレラとシンデレラ城をテーマにしたJILL STUART Beautyとのパーク限定コラボ。ポーチやミラー、リップティント、ハンドクリームを箱入りギフトセット3種で展開。",
+   "url": "https://ure.pia.co.jp/articles/-/3510627",
+   "src": "ウレぴあ総研",
+   "addedAt": "2026-10-18"
   },
   {
    "id": "p-tds25-swarovski",
