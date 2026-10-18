@@ -1,20 +1,19 @@
 {
- "updatedAt": "2026-10-18T04:55:00+09:00",
+ "updatedAt": "2026-10-19T05:03:52+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "added": [
-   "c-jillstuart-cinderella",
-   "s-stands-pinocchio",
-   "s-urupocha-peterpan",
-   "s-urupocha-autumn"
+   "s-xmas-ornament-2026",
+   "c-ichibankuji-toystory-2026",
+   "c-skater-kirameki-woody"
   ],
   "changed": [],
-  "summary": "コラボ1件（JILL STUART Beauty シンデレラ ギフトセット）、公式ストア3件（Disney stanDs『ピノキオ』、うるぽちゃちゃん『ピーター・パン』、うるぽちゃちゃん 制服ミッキー＆秋プー）を追加"
+  "summary": "公式ストア1件（クリスマスオーナメント2026）、コラボ2件（一番くじ『トイ・ストーリー』、スケーター ウッディ柄キッチンスポンジ）を追加"
  },
  "items": [
   {
@@ -382,6 +381,19 @@
    "addedAt": "2026-10-15"
   },
   {
+   "id": "c-skater-kirameki-woody",
+   "cat": "collab",
+   "grp": "キッチン雑貨",
+   "title": "スケーター キラメキキッチンスポンジ『トイ・ストーリー』ウッディ",
+   "release": "2026-10-13",
+   "price": "各440円",
+   "where": "スケーター公式オンラインショップ、全国の量販店・雑貨店",
+   "desc": "きらきら素材のキッチンスポンジにウッディ柄が加わり、バズ・エイリアンとあわせて3柄に。",
+   "url": "https://premium.gamepedia.jp/hobby/archives/278048",
+   "src": "キャラホビ",
+   "addedAt": "2026-10-19"
+  },
+  {
    "id": "s-pooh100-collection",
    "cat": "store",
    "grp": "くまのプーさん100周年",
@@ -460,6 +472,20 @@
    "url": "https://premium.gamepedia.jp/hobby/archives/276519",
    "src": "キャラホビ",
    "addedAt": "2026-10-17"
+  },
+  {
+   "id": "s-xmas-ornament-2026",
+   "cat": "store",
+   "grp": "クリスマス2026",
+   "title": "ディズニーキャラクター クリスマスオーナメント 2026",
+   "release": "2026-10-16",
+   "releaseLabel": "発売中（10月16日時点）",
+   "price": "ミッキー／ミニー各2,200円／汽車に乗ったミッキー（ドーム）3,000円／ジュディ＆ニック（ライトアップ）2,800円",
+   "where": "ディズニーストア",
+   "desc": "ミッキーやプリンセス、ズートピアの仲間など多彩なキャラクターの2026年版オーナメント。ライトアップ式やドーム型も並ぶ。",
+   "url": "https://ure.pia.co.jp/articles/-/3507719",
+   "src": "ウレぴあ総研",
+   "addedAt": "2026-10-19"
   },
   {
    "id": "c-famima-101",
@@ -648,6 +674,19 @@
    "url": "https://castel.jp/p/10689",
    "src": "キャステル",
    "addedAt": "2026-10-11-initial"
+  },
+  {
+   "id": "c-ichibankuji-toystory-2026",
+   "cat": "collab",
+   "grp": "くじ",
+   "title": "一番くじ『トイ・ストーリー』Toys' Glorious Memories",
+   "release": "2026-12-19",
+   "price": "1回781円",
+   "where": "一番くじ取扱店",
+   "desc": "『トイ・ストーリー』のおもちゃたちの思い出をテーマにした一番くじ。",
+   "url": "https://premium.gamepedia.jp/hobby/kuji/s-01J7DKHA6WRPRTVJK2VQABZHZ6",
+   "src": "キャラホビ",
+   "addedAt": "2026-10-19"
   },
   {
    "id": "c-pooh100-kawaisouni",
