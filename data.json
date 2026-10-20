@@ -1,18 +1,20 @@
 {
- "updatedAt": "2026-10-20T04:55:00+09:00",
+ "updatedAt": "2026-10-21T04:55:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "added": [
-   "c-avail-disney-1024",
-   "c-sega-akaihoppe-purekira"
+   "c-workman-2026aw",
+   "c-sega-prize-2026-11",
+   "c-disney-poster-collection-book",
+   "c-columbia-mickeys-outdoor-club"
   ],
   "changed": [],
-  "summary": "コラボ2件（アベイル ディズニーグッズ、セガ 赤いほっぺぬいぐるみ ピュアキラVer.）を追加"
+  "summary": "コラボ4件（ワークマン秋冬ディズニー、セガ11月プライズ、ディズニー ポスターコレクション、コロンビア MICKEY'S OUTDOOR CLUB）を追加"
  },
  "items": [
   {
@@ -259,6 +261,19 @@
    "src": "ディズニーストア公式",
    "addedAt": "2026-10-11-initial",
    "releaseLabel": "2026年10月予定"
+  },
+  {
+   "id": "c-columbia-mickeys-outdoor-club",
+   "cat": "collab",
+   "grp": "アパレル",
+   "title": "コロンビア『MICKEY'S OUTDOOR CLUB』コレクション",
+   "release": "2026-10-01",
+   "price": "—",
+   "where": "コロンビア（店舗・公式オンライン）",
+   "desc": "キャンプファイヤーを囲む家族時間をテーマにした、コロンビアのミッキーデザイン新作コレクション。",
+   "url": "https://prtimes.jp/main/html/rd/p/000000210.000075300.html",
+   "src": "PR TIMES",
+   "addedAt": "2026-10-21"
   },
   {
    "id": "c-happykuji-halloween",
@@ -581,6 +596,20 @@
    "addedAt": "2026-10-20"
   },
   {
+   "id": "c-workman-2026aw",
+   "cat": "collab",
+   "grp": "アパレル・雑貨",
+   "title": "ワークマン ディズニーデザイン 2026秋冬",
+   "release": "2026-11-01",
+   "releaseLabel": "10〜11月順次（11月分は11月予定）",
+   "price": "ショルダーバッグ1,500円／裏毛スウェットシャツ1,900円／マザーズリュック3,990円",
+   "where": "ワークマン各店（店舗により取り扱いが異なる）",
+   "desc": "ワークマンの秋冬ディズニーデザイン商品。10月はポーチやトート付きバッグ、11月はスウェットやマザーズリュック、ニットキャップなど防寒小物が予定されている。",
+   "url": "https://ure.pia.co.jp/articles/-/3458301",
+   "src": "ウレぴあ総研",
+   "addedAt": "2026-10-21"
+  },
+  {
    "id": "c-yolu-peterpan",
    "cat": "collab",
    "grp": "コスメ・ヘアケア",
@@ -619,6 +648,20 @@
    "url": "https://prtimes.jp/main/html/rd/p/000000177.000119340.html",
    "src": "PR TIMES（オリエンタルランド）",
    "addedAt": "2026-10-12"
+  },
+  {
+   "id": "c-sega-prize-2026-11",
+   "cat": "collab",
+   "grp": "プライズ（ゲームセンター景品）",
+   "title": "セガ ディズニープライズ 11月登場分（モンスターズ・インク、スティッチ、プーさん寝そべりLLほか）",
+   "release": "2026-11-06",
+   "releaseLabel": "11月6日から週ごとに順次",
+   "price": "—",
+   "where": "ゲームセンター（セガのプライズ）",
+   "desc": "11月6日のモンスターズ・インクぬいぐるみやベイマックス赤いほっぺマスコットを皮切りに、スティッチのウィンターコスチュームマスコット、プーさん寝そべりLLぬいぐるみなどが週ごとに入荷予定。",
+   "url": "https://premium.gamepedia.jp/hobby/prize/s-01J7DKHA6WRPRTVJK2VQABZHZ6",
+   "src": "キャラホビ",
+   "addedAt": "2026-10-21"
   },
   {
    "id": "c-happykuji-ornament2026",
@@ -699,6 +742,19 @@
    "url": "https://castel.jp/p/10689",
    "src": "キャステル",
    "addedAt": "2026-10-11-initial"
+  },
+  {
+   "id": "c-disney-poster-collection-book",
+   "cat": "collab",
+   "grp": "書籍",
+   "title": "『ディズニー ポスターコレクション』（世界文化社）",
+   "release": "2026-12-10",
+   "price": "—",
+   "where": "書店・通販",
+   "desc": "『白雪姫』から『トイ・ストーリー』まで、ディズニー作品の大判ヴィンテージポスター28枚を収めた書籍。",
+   "url": "https://prtimes.jp/main/html/rd/p/000002403.000009728.html",
+   "src": "PR TIMES",
+   "addedAt": "2026-10-21"
   },
   {
    "id": "c-ichibankuji-toystory-2026",
