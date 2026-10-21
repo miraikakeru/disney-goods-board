@@ -1,20 +1,17 @@
 {
- "updatedAt": "2026-10-21T04:55:00+09:00",
+ "updatedAt": "2026-10-22T04:55:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "added": [
-   "c-workman-2026aw",
-   "c-sega-prize-2026-11",
-   "c-disney-poster-collection-book",
-   "c-columbia-mickeys-outdoor-club"
+   "c-bellemaison-nightmare-xmas"
   ],
   "changed": [],
-  "summary": "コラボ4件（ワークマン秋冬ディズニー、セガ11月プライズ、ディズニー ポスターコレクション、コロンビア MICKEY'S OUTDOOR CLUB）を追加"
+  "summary": "コラボ1件（ベルメゾン『ナイトメアー・ビフォア・クリスマス』クリスマス限定アイテム）を追加"
  },
  "items": [
   {
@@ -568,6 +565,19 @@
    "url": "https://premium.gamepedia.jp/hobby/archives/270520",
    "src": "キャラホビ",
    "addedAt": "2026-10-17"
+  },
+  {
+   "id": "c-bellemaison-nightmare-xmas",
+   "cat": "collab",
+   "grp": "ナイトメアー・ビフォア・クリスマス",
+   "title": "ベルメゾン『ナイトメアー・ビフォア・クリスマス』クリスマス限定アイテム",
+   "release": "2026-10-21",
+   "price": "ジャックのクリスマスニット11,900円／3WAYブランケット3,990円／3連アクキー1,890円",
+   "where": "ベルメゾンネット「ディズニーファンタジーショップ」（オンライン）",
+   "desc": "ジャック・スケリントン柄のユニセックスニットや持ち運べる3WAYブランケットなど、クリスマス向けの3アイテム。",
+   "url": "https://premium.gamepedia.jp/hobby/archives/275280",
+   "src": "キャラホビ",
+   "addedAt": "2026-10-22"
   },
   {
    "id": "c-avail-disney-1024",
