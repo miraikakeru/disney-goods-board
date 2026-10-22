@@ -1,17 +1,21 @@
 {
- "updatedAt": "2026-10-22T04:55:00+09:00",
+ "updatedAt": "2026-10-23T04:55:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "added": [
-   "c-bellemaison-nightmare-xmas"
+   "p-retro-stationery-2026",
+   "c-tokyobanana-xmas-2026",
+   "c-furyu-gal-leopard"
   ],
-  "changed": [],
-  "summary": "コラボ1件（ベルメゾン『ナイトメアー・ビフォア・クリスマス』クリスマス限定アイテム）を追加"
+  "changed": [
+   "s-monsters25"
+  ],
+  "summary": "パーク1件（レトロ文具）・コラボ2件（東京ばな奈クリスマス缶、フリュー ギャルっぽレオパード）を追加、モンスターズ・インク25周年の発売日・価格を更新"
  },
  "items": [
   {
@@ -129,20 +133,6 @@
    "price": "—",
    "where": "ディズニーストア",
    "desc": "ぬいぐるみ、ぬいぐるみキーホルダー、ステーショナリー、壁掛け時計。",
-   "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon",
-   "src": "ディズニーストア公式",
-   "addedAt": "2026-10-11-initial",
-   "releaseLabel": "9月末〜10月"
-  },
-  {
-   "id": "s-monsters25",
-   "cat": "store",
-   "grp": "10月の新作",
-   "title": "『モンスターズ・インク』25周年グッズ",
-   "release": "2026-09-28",
-   "price": "—",
-   "where": "ディズニーストア",
-   "desc": "ぬいぐるみやビッグバッグ。サリー＆マイクの特大ぬいぐるみセットは受注生産。",
    "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon",
    "src": "ディズニーストア公式",
    "addedAt": "2026-10-11-initial",
@@ -271,6 +261,20 @@
    "url": "https://prtimes.jp/main/html/rd/p/000000210.000075300.html",
    "src": "PR TIMES",
    "addedAt": "2026-10-21"
+  },
+  {
+   "id": "c-furyu-gal-leopard",
+   "cat": "collab",
+   "grp": "プライズ（ゲームセンター景品）",
+   "title": "フリュー ミッキーマウス＆ミニーマウス「ギャルっぽレオパード」",
+   "release": "2026-10-01",
+   "releaseLabel": "2026年10月より順次",
+   "price": "—",
+   "where": "全国のアミューズメント施設（フリューのプライズ）",
+   "desc": "ミッキーとミニーを平成ギャル風カップルに描いたフリュー限定アートのプライズ。大きな毛布、クッション、ミニミラーなど5種類を展開。",
+   "url": "https://animeanime.jp/article/2026/10/19/103988.html",
+   "src": "アニメ！アニメ！",
+   "addedAt": "2026-10-23"
   },
   {
    "id": "c-happykuji-halloween",
@@ -580,6 +584,19 @@
    "addedAt": "2026-10-22"
   },
   {
+   "id": "s-monsters25",
+   "cat": "store",
+   "grp": "映画25周年",
+   "title": "『モンスターズ・インク』25周年グッズ",
+   "release": "2026-10-23",
+   "price": "ぬいぐるみ＜サリー＞3,800円／トートバッグ6,900円／ペンケース3,300円",
+   "where": "ディズニーストア（10/20からディズニーフラッグシップ東京・東京ディズニーリゾート店・公式オンラインで先行）",
+   "desc": "デフォルメしたサリーやマイクのぬいぐるみ、フサフサのトート、Spirit Jerseyの長袖Tシャツなどをそろえた25周年コレクション。",
+   "url": "https://www.cinemacafe.net/article/2026/10/17/113379.html",
+   "src": "シネマカフェ",
+   "addedAt": "2026-10-11-initial"
+  },
+  {
    "id": "c-avail-disney-1024",
    "cat": "collab",
    "grp": "アパレル・雑貨",
@@ -618,6 +635,20 @@
    "url": "https://ure.pia.co.jp/articles/-/3458301",
    "src": "ウレぴあ総研",
    "addedAt": "2026-10-21"
+  },
+  {
+   "id": "c-tokyobanana-xmas-2026",
+   "cat": "collab",
+   "grp": "お菓子",
+   "title": "東京ばな奈「ミッキー＆フレンズ＜クリスマス＞」2026限定缶",
+   "release": "2026-11-01",
+   "until": "2026-12-25",
+   "price": "13枚入2,700円／イヤープレートセット4,500円",
+   "where": "東京ばな奈s（JR東京駅店）ほか",
+   "desc": "Disney SWEETS COLLECTION by 東京ばな奈の毎年恒例のクリスマス缶。2026年はクリスマストレインのデザインで、イヤープレート付きセットもある。",
+   "url": "https://game.watch.impress.co.jp/docs/news/2150243.html",
+   "src": "GAME Watch",
+   "addedAt": "2026-10-23"
   },
   {
    "id": "c-yolu-peterpan",
@@ -752,6 +783,19 @@
    "url": "https://castel.jp/p/10689",
    "src": "キャステル",
    "addedAt": "2026-10-11-initial"
+  },
+  {
+   "id": "p-retro-stationery-2026",
+   "cat": "park",
+   "grp": "ステーショナリー",
+   "title": "ミッキー＆フレンズ レトロデザインの文具グッズ",
+   "release": "2026-11-26",
+   "price": "ペンケース1,800円／スタンプセット1,800円／ボールペンセット1,400円",
+   "where": "ランド：グランドエンポーリアム、シー：イル・ポスティーノ・ステーショナリー",
+   "desc": "ミッキー、ミニー、ドナルド、デイジーをレトロな雰囲気で描いた文具シリーズ。イヤホンケースやステッカー、ランダム柄のポーチなども。",
+   "url": "https://ure.pia.co.jp/articles/-/3520134",
+   "src": "ウレぴあ総研",
+   "addedAt": "2026-10-23"
   },
   {
    "id": "c-disney-poster-collection-book",
