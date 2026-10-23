@@ -1,21 +1,20 @@
 {
- "updatedAt": "2026-10-23T04:55:00+09:00",
+ "updatedAt": "2026-10-24T04:55:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "added": [
-   "p-retro-stationery-2026",
-   "c-tokyobanana-xmas-2026",
-   "c-furyu-gal-leopard"
+   "s-xmas-2026",
+   "s-frozen-xmas-2026",
+   "s-happy-birthday-mickey-2026",
+   "s-white-winter-2026"
   ],
-  "changed": [
-   "s-monsters25"
-  ],
-  "summary": "パーク1件（レトロ文具）・コラボ2件（東京ばな奈クリスマス缶、フリュー ギャルっぽレオパード）を追加、モンスターズ・インク25周年の発売日・価格を更新"
+  "changed": [],
+  "summary": "ディズニーストア11月発売予定の4シリーズ（DISNEY CHRISTMAS／FROZEN CHRISTMAS／HAPPY BIRTHDAY MICKEY／WHITE WINTER）を追加"
  },
  "items": [
   {
@@ -649,6 +648,62 @@
    "url": "https://game.watch.impress.co.jp/docs/news/2150243.html",
    "src": "GAME Watch",
    "addedAt": "2026-10-23"
+  },
+  {
+   "cat": "store",
+   "release": "2026-11-01",
+   "releaseLabel": "2026年11月予定",
+   "price": "—",
+   "where": "ディズニーストア",
+   "url": "https://dpost.jp/2026/10/23/wp-142718/",
+   "src": "Dpost（ディズニーストア11月発売予定リスト）",
+   "addedAt": "2026-10-24",
+   "id": "s-xmas-2026",
+   "grp": "DISNEY CHRISTMAS 2026",
+   "title": "DISNEY CHRISTMAS 2026",
+   "desc": "ツリーをイメージした衣装のミッキー＆フレンズのぬいぐるみや、キャラクターデザインのツリー・リースなどクリスマスの飾りつけアイテム。"
+  },
+  {
+   "cat": "store",
+   "release": "2026-11-01",
+   "releaseLabel": "2026年11月予定",
+   "price": "—",
+   "where": "ディズニーストア",
+   "url": "https://dpost.jp/2026/10/23/wp-142718/",
+   "src": "Dpost（ディズニーストア11月発売予定リスト）",
+   "addedAt": "2026-10-24",
+   "id": "s-frozen-xmas-2026",
+   "grp": "DISNEY CHRISTMAS 2026",
+   "title": "FROZEN CHRISTMAS 2026（『アナと雪の女王／家族の思い出』）",
+   "desc": "キャラクターをあしらったツリー＆リース（LEDライト付きあり）や、スノーギースが揺れるグラスツリーなど、アナ雪の世界観のデコレーション。"
+  },
+  {
+   "cat": "store",
+   "release": "2026-11-01",
+   "releaseLabel": "2026年11月予定",
+   "price": "—",
+   "where": "ディズニーストア",
+   "url": "https://dpost.jp/2026/10/23/wp-142718/",
+   "src": "Dpost（ディズニーストア11月発売予定リスト）",
+   "addedAt": "2026-10-24",
+   "id": "s-happy-birthday-mickey-2026",
+   "grp": "ミッキーマウス誕生日",
+   "title": "HAPPY BIRTHDAY MICKEY",
+   "desc": "11月18日のミッキーの誕生日に向けたシリーズ。フォーマル衣装のミッキーのぬいぐるみ、キーホルダー、フィギュア、バッグなどで、チップ＆デールもおそろいの衣装で登場。"
+  },
+  {
+   "cat": "store",
+   "release": "2026-11-01",
+   "releaseLabel": "2026年11月予定",
+   "price": "—",
+   "where": "ディズニーストア（一部アイテムは限定店舗）",
+   "url": "https://dpost.jp/2026/10/23/wp-142718/",
+   "src": "Dpost（ディズニーストア11月発売予定リスト）",
+   "addedAt": "2026-10-24",
+   "id": "s-white-winter-2026",
+   "grp": "WHITE WINTER 2026",
+   "title": "WHITE WINTER 2026",
+   "desc": "プーさんのぬいぐるみを中心に、モバイルポシェット、湯たんぽ、セーター、トートなど冬向けアイテム。ピグレットやイーヨー、ミッキー、スティッチのぬいぐるみキーホルダーも。"
   },
   {
    "id": "c-yolu-peterpan",
