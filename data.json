@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T10:48:28+09:00",
+ "updatedAt": "2026-10-25T10:58:26+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
@@ -10,10 +10,19 @@
   "added": [
    "s-beauty-beast35",
    "c-avail-monsters-1031",
-   "c-hottoys-happyhole"
+   "c-hottoys-happyhole",
+   "c-lovechrome-disney-2026holiday",
+   "c-fantasyshop-tokyost-5th",
+   "c-ichibankuji-rememberme",
+   "c-gashapon-fuwafuwa-mejirushi",
+   "c-gashapon-zootopia2-miniature",
+   "c-capsule-toystory5-1026",
+   "c-shimamura-disney-roomwear-1021",
+   "c-duskin-toystory-box",
+   "c-enisie-frozen-glowpack"
   ],
   "changed": [],
-  "summary": "ディズニーストア『美女と野獣』35周年、アベイル『モンスターズ・インク』、ハッピー・ホールのディズニー新作の3件を追加"
+  "summary": "ディズニーストア『美女と野獣』35周年、アベイル『モンスターズ・インク』、ハッピー・ホールのディズニー新作の3件を追加。追加調査でラブクロム、東京駅のDisney Fantasy Shop、一番くじ『リメンバー・ミー』、ガシャポン、しまむら、ダスキン、エニシーなど9件を追加"
  },
  "items": [
   {
@@ -282,6 +291,20 @@
    "src": "PASH! PLUS",
    "addedAt": "2026-10-12",
    "img": "https://www.pashplus.jp/wp-content/uploads/8d39f3a0b07511262f03bfb5a876f653.jpg"
+  },
+  {
+   "id": "c-enisie-frozen-glowpack",
+   "cat": "collab",
+   "grp": "コスメ・美容",
+   "title": "エニシー グローパック Queen『アナと雪の女王』限定パッケージ",
+   "release": "2026-10-05",
+   "price": "12,100円（5回分）",
+   "where": "美容サロン、リズム公式EC",
+   "desc": "炭酸ガスパックを『アナと雪の女王』デザインの限定パッケージで。ランダムでオリジナルステッカー付き。",
+   "url": "https://prtimes.jp/main/html/rd/p/000000010.000101256.html",
+   "img": "https://prcdn.freetls.fastly.net/release_image/101256/10/101256-10-39d79c86ed7a6dd59d4cc3e39e029272-2315x2322.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+   "src": "PR TIMES（リズム）",
+   "addedAt": "2026-10-25"
   },
   {
    "id": "p-duffy-regular",
@@ -556,6 +579,36 @@
    "img": "https://www.inside-games.jp/imgs/ogp_f/1792957.jpg"
   },
   {
+   "id": "c-gashapon-zootopia2-miniature",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "ガシャポン『ズートピア2』ミニチュア＆パッケージコレクション",
+   "release": "2026-10-19",
+   "releaseLabel": "10月第4週",
+   "price": "1回500円（全4種）",
+   "where": "ガシャポン設置店",
+   "desc": "『ズートピア2』に登場する商品を再現したミニチュアとパッケージのコレクション。",
+   "url": "https://gashapon.jp/products/detail.html?jan_code=4582770026955000",
+   "img": "https://gashapon.jp/disney/images/item_renew/2026/item137/img_dp.png",
+   "src": "ガシャポン公式",
+   "addedAt": "2026-10-25"
+  },
+  {
+   "id": "c-duskin-toystory-box",
+   "cat": "collab",
+   "grp": "雑貨",
+   "title": "ダスキン「くらしキレイBOX」トイ・ストーリーデザイン",
+   "release": "2026-10-19",
+   "until": "2026-12-18",
+   "price": "1,500円",
+   "where": "ダスキン（訪問販売・公式サイト・コンタクトセンター）",
+   "desc": "洗剤や掃除道具を詰め合わせた数量限定の年末ボックスを『トイ・ストーリー』デザインで。2個以上購入でエコバッグのプレゼントも。",
+   "url": "https://prtimes.jp/main/html/rd/p/000001160.000005720.html",
+   "img": "https://prcdn.freetls.fastly.net/release_image/5720/1160/5720-1160-dc1ebe256cd14a1878a75df0564acbc8-294x240.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+   "src": "PR TIMES（ダスキン）",
+   "addedAt": "2026-10-25"
+  },
+  {
    "id": "c-hottoys-stitch-party",
    "cat": "collab",
    "grp": "ポップアップ",
@@ -598,6 +651,20 @@
    "src": "キャラホビ",
    "addedAt": "2026-10-22",
    "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/14141838/1021_1.jpg"
+  },
+  {
+   "id": "c-shimamura-disney-roomwear-1021",
+   "cat": "collab",
+   "grp": "アパレル",
+   "title": "しまむら ディズニー レディースルームウェア2点セット",
+   "release": "2026-10-21",
+   "price": "2,200円",
+   "where": "全国のしまむら、しまむらオンラインストア",
+   "desc": "くまのプーさん、ズートピア、ベイマックスのデザインのもこもこルームウェア上下セット。",
+   "url": "https://puchipurabu.com/shimamura-disney/",
+   "img": "https://puchipurabu.com/wp-content/uploads/2026/10/shima-2610204.jpg",
+   "src": "ぷちぷらぶ",
+   "addedAt": "2026-10-25"
   },
   {
    "id": "c-hottoys-happyhole",
@@ -643,6 +710,51 @@
    "img": "https://www.inside-games.jp/imgs/ogp_f/1795377.png"
   },
   {
+   "id": "c-fantasyshop-tokyost-5th",
+   "cat": "collab",
+   "grp": "雑貨",
+   "title": "Disney Fantasy Shop by ベルメゾン 東京駅店 5周年グッズ",
+   "release": "2026-10-26",
+   "releaseLabel": "10月26日から順次",
+   "price": "ブランケット3,790円／パスケース2,290円／アクリル万年カレンダー3,190円",
+   "where": "Disney Fantasy Shop 東京駅店（京葉線地下八重洲口改札内）、ブランケットはベルメゾンネットでも",
+   "desc": "東京駅をテーマにしたミッキー＆フレンズの新グッズ。10月29〜31日は合言葉で購入金額に応じたノベルティがもらえる5周年キャンペーンも。",
+   "url": "https://ure.pia.co.jp/articles/-/3522472",
+   "img": "https://urepia.ismcdn.jp/mwimgs/a/b/-/img_ab7144b976f41e01dab16dac7c4da1e2197828.jpg",
+   "src": "ウレぴあ総研",
+   "addedAt": "2026-10-25"
+  },
+  {
+   "id": "c-gashapon-fuwafuwa-mejirushi",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "ガシャポン「ディズニーキャラクター」ふわふわめじるしアクセサリー",
+   "release": "2026-10-26",
+   "releaseLabel": "10月第5週",
+   "price": "1回300円（全5種）",
+   "where": "ガシャポン設置店",
+   "desc": "キャラクターのふわふわマスコットが付いた目印用アクセサリー。",
+   "url": "https://gashapon.jp/products/detail.html?jan_code=4582770068252000",
+   "img": "https://gashapon.jp/disney/images/item_renew/2026/item135/img_dp.png",
+   "src": "ガシャポン公式",
+   "addedAt": "2026-10-25"
+  },
+  {
+   "id": "c-capsule-toystory5-1026",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "『トイ・ストーリー5』カプセルトイ（肩ズンFig.／HAHAHA!Fig.）",
+   "release": "2026-10-26",
+   "releaseLabel": "10月26日週",
+   "price": "各1回400円（全5種）",
+   "where": "カプセルトイ設置店",
+   "desc": "肩にのせられる「肩ズンFig.」と、笑顔の「HAHAHA!Fig.」の『トイ・ストーリー5』版。",
+   "url": "https://gacha-now.net/brand/disney",
+   "img": "https://gachaimg.com/thumb/fig-5-part1-7391a187.webp",
+   "src": "ガチャなう",
+   "addedAt": "2026-10-25"
+  },
+  {
    "id": "s-beauty-beast35",
    "cat": "store",
    "grp": "『美女と野獣』公開35周年",
@@ -655,6 +767,20 @@
    "src": "GAME Watch",
    "addedAt": "2026-10-25",
    "img": "https://game.watch.impress.co.jp/img/gmw/list/2150/619/0.jpg"
+  },
+  {
+   "id": "c-lovechrome-disney-2026holiday",
+   "cat": "collab",
+   "grp": "コスメ・美容",
+   "title": "ラブクロム ディズニーデザイン限定コーム／HOLIDAY 26 ギフトボックス",
+   "release": "2026-10-28",
+   "price": "コーム16,500円（ラプンツェル・シンデレラ）／7,700円（ミッキー＆ミニー）／ギフトボックス8,250円〜",
+   "where": "ラブクロム直営店・公式オンライン、LOFT、PLAZA、伊勢丹新宿店ほか",
+   "desc": "ラプンツェル、シンデレラ、ミッキー＆ミニーをデザインした限定コーム3種。バッグチャーム付きのホリデーギフトボックスは11月4日発売。",
+   "url": "https://straightpress.jp/20261022/1745132",
+   "img": "https://straightpress.jp/wp-content/uploads/2026/10/Higu202610221021-300x225.jpg",
+   "src": "STRAIGHT PRESS",
+   "addedAt": "2026-10-25"
   },
   {
    "id": "c-sega-akaihoppe-purekira",
@@ -683,6 +809,19 @@
    "src": "にじめん",
    "addedAt": "2026-10-25",
    "img": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/10/e82626b34d1b481b8c399ff5ec1b2a79.jpg"
+  },
+  {
+   "id": "c-ichibankuji-rememberme",
+   "cat": "collab",
+   "grp": "コンビニ・くじ",
+   "title": "一番くじ『リメンバー・ミー』Colorful Memories",
+   "release": "2026-10-31",
+   "price": "—",
+   "where": "一番くじ取扱店",
+   "desc": "『リメンバー・ミー』の一番くじ。店頭で10月31日から発売予定。",
+   "url": "https://1kuji.com/characters/150",
+   "src": "一番くじ倶楽部",
+   "addedAt": "2026-10-25"
   },
   {
    "id": "c-workman-2026aw",
