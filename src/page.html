@@ -2,62 +2,90 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@500&display=swap">
 <style>
-/* Layout: 夜空の帯（星）→ 区分タブ（すべて／パーク／公式ストア／コラボ）＋時期フィルタ → お気に入り → 「これから発売」「発売済み」の2段カードグリッド */
+/* Layout: 夜のパーク風ヘッダー（星・花火・電飾）＋「まもなく発売」横スクロール → 区分タブ・検索・時期 → お気に入り → 「これから発売」「発売済み」のチケット風カード */
 :root{
-  --bg:#f3f2f8; --surface:#ffffff; --sunk:#e8e7f2; --ink:#1b1a33; --muted:#5d5b7a; --line:#d9d7e8;
-  --band:#141a46; --band-2:#232d74; --band-ink:#f7f4ff; --band-muted:#b7b9e6; --gold:#c99a2e; --gold-soft:#f0d98a;
-  --park:#2f5fd0; --store:#c0306a; --collab:#0f8676; --soon:#b7791f; --new:#d6455d;
+  --bg:#f6f3fb; --surface:#ffffff; --sunk:#ece8f6; --ink:#1d1a3a; --muted:#625e85; --line:#ddd7ee;
+  --night:#0f1340; --night-2:#2a2f86; --hero-ink:#ffffff; --hero-muted:#c3c5ef; --gold:#b98c22; --gold-soft:#f3dc8f;
+  --park:#2f5fd0; --store:#c0306a; --collab:#0f8676; --soon:#a8701a; --new:#d6455d;
+  --ph-a:#efeaf9; --ph-b:#f6f2fd; --shadow:rgba(30,20,90,.35); --on-c:#ffffff;
   --f-display:"Kaisei Decol","Hiragino Mincho ProN","Yu Mincho",serif;
   --f-body:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
   --f-data:"DM Mono",ui-monospace,Menlo,monospace;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0d0f22; --surface:#161935; --sunk:#1f2346; --ink:#ebeaff; --muted:#a3a5cc; --line:#2a2e57;
-  --band:#0a0d26; --band-2:#1a2160; --band-ink:#f7f4ff; --band-muted:#a9acdf; --gold:#e8c25e; --gold-soft:#f0d98a;
-  --park:#7fa3ff; --store:#ff7aa8; --collab:#4fd1bd; --soon:#f0b64a; --new:#ff7b8f; color-scheme:dark}}
+  --bg:#0c0e24; --surface:#171a3a; --sunk:#20244a; --ink:#ecebff; --muted:#a6a8d0; --line:#2c3060;
+  --night:#080a22; --night-2:#1d2370; --gold:#e8c25e; --gold-soft:#f3dc8f;
+  --park:#86a8ff; --store:#ff80ad; --collab:#56d6c2; --soon:#f0b64a; --new:#ff7b8f;
+  --ph-a:#1e2148; --ph-b:#252a55; --shadow:rgba(0,0,0,.6); --on-c:#0c0e24; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#0d0f22; --surface:#161935; --sunk:#1f2346; --ink:#ebeaff; --muted:#a3a5cc; --line:#2a2e57;
-  --band:#0a0d26; --band-2:#1a2160; --band-ink:#f7f4ff; --band-muted:#a9acdf; --gold:#e8c25e; --gold-soft:#f0d98a;
-  --park:#7fa3ff; --store:#ff7aa8; --collab:#4fd1bd; --soon:#f0b64a; --new:#ff7b8f; color-scheme:dark}
+  --bg:#0c0e24; --surface:#171a3a; --sunk:#20244a; --ink:#ecebff; --muted:#a6a8d0; --line:#2c3060;
+  --night:#080a22; --night-2:#1d2370; --gold:#e8c25e; --gold-soft:#f3dc8f;
+  --park:#86a8ff; --store:#ff80ad; --collab:#56d6c2; --soon:#f0b64a; --new:#ff7b8f;
+  --ph-a:#1e2148; --ph-b:#252a55; --shadow:rgba(0,0,0,.6); --on-c:#0c0e24; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.65;margin:0}
 a{color:inherit}
 button{font:inherit;cursor:pointer}
 :focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 
-.band{position:relative;overflow:hidden;color:var(--band-ink);padding-inline:16px;padding-block:26px 22px;
-  background:radial-gradient(120% 140% at 85% -20%,var(--band-2),var(--band) 60%)}
-.band canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.band-in{position:relative;max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:flex-end;justify-content:space-between}
-.eyebrow{font-family:var(--f-data);font-size:11px;letter-spacing:.2em;color:var(--gold-soft);text-transform:uppercase}
-h1{font-family:var(--f-display);font-weight:700;font-size:clamp(26px,4vw,40px);line-height:1.2;margin:6px 0 8px;letter-spacing:.04em;text-wrap:balance}
-.lead{margin:0;color:var(--band-muted);font-size:13px;max-width:56ch}
+/* ヘッダー */
+.hero{position:relative;overflow:hidden;color:var(--hero-ink);padding:30px 16px 0;background:radial-gradient(120% 120% at 80% -10%,var(--night-2),var(--night) 62%)}
+.hero svg.fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-in{position:relative;max-width:1200px;margin:0 auto}
+.hero-top{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:flex-end;justify-content:space-between}
+.eyebrow{font-family:var(--f-data);font-size:11px;letter-spacing:.22em;color:#f3dc8f}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(27px,4.4vw,46px);line-height:1.2;margin:8px 0 6px;letter-spacing:.05em;
+  background:linear-gradient(180deg,#fff 30%,#f3dc8f);-webkit-background-clip:text;background-clip:text;color:transparent;text-wrap:balance}
+h1 .nw{display:inline-block}
+.lead{margin:0;color:var(--hero-muted);font-size:13px;max-width:56ch}
 .stats{display:flex;flex-wrap:wrap;gap:8px}
-.stat{border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:7px 14px;min-width:104px;background:rgba(255,255,255,.05)}
-.stat .k{font-size:10px;letter-spacing:.12em;color:var(--band-muted)}
-.stat .v{font-family:var(--f-data);font-size:15px;color:var(--band-ink);font-variant-numeric:tabular-nums}
-.stat.hl .v{color:var(--gold-soft)}
+.stat{border:1px solid rgba(243,220,143,.28);border-radius:12px;padding:6px 14px;min-width:100px;background:rgba(255,255,255,.06)}
+.stat .k{font-size:10px;letter-spacing:.12em;color:var(--hero-muted)}
+.stat .v{font-family:var(--f-data);font-size:15px;font-variant-numeric:tabular-nums}
+.stat.hl .v{color:#f3dc8f}
+.lights{display:block;width:100%;height:42px;margin:10px 0 4px}
+.lights .b{animation:tw 3.2s ease-in-out infinite}
+.lights .b:nth-child(2n){animation-delay:-1.1s} .lights .b:nth-child(3n){animation-delay:-2.2s}
+@keyframes tw{50%{opacity:.35}}
+.feat-head{display:flex;align-items:center;gap:10px;font-family:var(--f-display);font-weight:700;font-size:15px;color:#f3dc8f;letter-spacing:.08em;margin:0 0 10px}
+.feat-head::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(243,220,143,.6),transparent)}
+.feat-row{display:flex;gap:14px;overflow-x:auto;padding:2px 2px 26px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:rgba(243,220,143,.4) transparent}
+.feat{flex:0 0 250px;scroll-snap-align:start;background:rgba(255,255,255,.06);border:1px solid rgba(243,220,143,.32);border-radius:16px;overflow:hidden;text-decoration:none;color:#fff;display:flex;flex-direction:column;transition:transform .15s,border-color .15s}
+.feat:hover{transform:translateY(-2px);border-color:rgba(243,220,143,.8)}
+.feat .ph{aspect-ratio:1.91/1;background:linear-gradient(135deg,#3a3f9a,#6b4aa8);position:relative;overflow:hidden;display:grid;place-items:center}
+.feat .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.feat .ph svg{width:34px;height:34px;color:rgba(243,220,143,.75)}
+.feat .b{padding:9px 12px 11px}
+.feat .cd{font-family:var(--f-data);font-size:11px;color:#f3dc8f}
+.feat .t{font-weight:700;font-size:13px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 
-.wrap{max-width:1240px;margin:0 auto;padding-inline:16px;padding-block:18px 48px;display:flex;flex-direction:column;gap:18px}
+/* 本体 */
+.wrap{max-width:1200px;margin:0 auto;padding-inline:16px;padding-block:20px 48px;display:flex;flex-direction:column;gap:18px}
 .controls{display:flex;flex-direction:column;gap:10px}
-.cats{display:flex;gap:6px;flex-wrap:wrap}
-.cat{--c:var(--ink);border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 16px;font-size:14px;font-weight:700;display:inline-flex;gap:8px;align-items:center}
+.cats{display:flex;gap:8px;flex-wrap:wrap}
+.cat{--c:var(--night);border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 16px;font-size:14px;font-weight:700;display:inline-flex;gap:7px;align-items:center}
+.cat svg{width:18px;height:18px;flex:none}
 .cat .n{font-family:var(--f-data);font-size:12px;font-weight:500;color:var(--muted)}
-.cat[aria-pressed="true"]{background:var(--c);border-color:var(--c);color:var(--surface)}
-.cat[aria-pressed="true"] .n{color:var(--surface);opacity:.85}
+.cat[aria-pressed="true"]{background:var(--c);border-color:var(--c);color:var(--on-c)}
+.cat[aria-pressed="true"] .n{color:var(--on-c);opacity:.85}
+.cat[data-k="all"][aria-pressed="true"]{color:#fff}
+.cat[data-k="all"][aria-pressed="true"] .n{color:#fff}
 .cat[data-k="park"]{--c:var(--park)} .cat[data-k="store"]{--c:var(--store)} .cat[data-k="collab"]{--c:var(--collab)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .cat[data-k="all"]{--c:var(--night-2)}}
+:root[data-theme="dark"] .cat[data-k="all"]{--c:var(--night-2)}
 .row2{display:flex;gap:8px 14px;flex-wrap:wrap;align-items:center}
-#q{flex:1 1 240px;min-width:0;max-width:420px;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 12px}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface)}
-.seg button{border:none;background:none;color:var(--muted);padding:7px 12px;font-size:13px}
+#q{flex:1 1 240px;min-width:0;max-width:420px;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 16px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{border:none;background:none;color:var(--muted);padding:7px 14px;font-size:13px}
 .seg button[aria-pressed="true"]{background:var(--sunk);color:var(--ink);font-weight:700}
-.note{font-size:12px;color:var(--muted);background:var(--sunk);border-radius:8px;padding:8px 12px}
+.note{font-size:12px;color:var(--muted);background:var(--sunk);border-radius:10px;padding:8px 12px}
 
-.fav{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:12px 16px}
+.fav{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:12px 16px}
 .fav summary{cursor:pointer;font-weight:700;display:flex;gap:8px;align-items:center;list-style:none}
 .fav summary::-webkit-details-marker{display:none}
 .fav summary::before{content:"▸";color:var(--muted);transition:transform .15s}
 .fav[open] summary::before{transform:rotate(90deg)}
+.fav summary .s{color:var(--gold)}
 .cnt{font-family:var(--f-data);font-size:12px;background:var(--sunk);padding:1px 8px;border-radius:99px;color:var(--muted);font-weight:500}
 .fav-list{display:flex;flex-direction:column;gap:6px;margin-top:10px}
 .fav-item{display:flex;gap:10px;align-items:baseline;font-size:13px;min-width:0}
@@ -67,64 +95,95 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(26px,4vw,40px);l
 .x{border:none;background:none;color:var(--muted);font-size:12px;padding:0 4px;margin-left:auto;flex:none}
 .empty{color:var(--muted);font-size:13px;margin:6px 0 0}
 
-.sec h2{font-family:var(--f-display);font-weight:700;font-size:20px;margin:6px 0 10px;display:flex;align-items:center;gap:10px;letter-spacing:.04em}
+.sec h2{font-family:var(--f-display);font-weight:700;font-size:21px;margin:6px 0 12px;display:flex;align-items:center;gap:10px;letter-spacing:.05em}
+.sec h2 .sp{color:var(--gold)}
 .sec h2 .cnt{font-family:var(--f-data)}
 .sec h2::after{content:"";flex:1;height:1px;background:var(--line)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
-.card{--c:var(--muted);position:relative;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 14px 12px;display:grid;grid-template-columns:62px 1fr;gap:4px 12px;align-content:start;min-width:0}
-.thumb{grid-column:1/-1;margin:-14px -14px 8px;aspect-ratio:1.91/1;background:var(--sunk);border-radius:11px 11px 0 0;overflow:hidden;display:block}
-.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;align-items:start}
+
+/* カード */
+.card{--c:var(--muted);position:relative;background:var(--surface);border-radius:16px;overflow:hidden;min-width:0;
+  box-shadow:0 0 0 1px var(--line),0 10px 24px -16px var(--shadow);transition:box-shadow .15s,transform .15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 0 0 1px color-mix(in srgb,var(--c) 55%,var(--line)),0 14px 28px -16px var(--shadow)}
 .card[data-cat="park"]{--c:var(--park)} .card[data-cat="store"]{--c:var(--store)} .card[data-cat="collab"]{--c:var(--collab)}
-.card:hover{border-color:var(--c)}
-.date{grid-row:span 4;text-align:center;border-radius:10px;background:color-mix(in srgb,var(--c) 12%,var(--surface));color:var(--c);padding:8px 2px 6px;align-self:start}
-.date .md{font-family:var(--f-data);font-size:17px;line-height:1.1;font-variant-numeric:tabular-nums}
-.date .y{font-family:var(--f-data);font-size:10px;opacity:.8}
+.thumb{display:block;aspect-ratio:1.91/1;overflow:hidden;background:repeating-linear-gradient(45deg,var(--ph-a) 0 10px,var(--ph-b) 10px 20px)}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.card:hover .thumb img{transform:scale(1.03)}
+.thumb.noimg{aspect-ratio:auto;height:46px;background:linear-gradient(110deg,color-mix(in srgb,var(--c) 18%,var(--surface)),var(--surface) 70%)}
+.ribbon{position:absolute;top:12px;left:0;background:var(--c);color:var(--on-c);font-size:11px;font-weight:700;letter-spacing:.04em;padding:3px 14px 3px 10px;clip-path:polygon(0 0,100% 0,90% 50%,100% 100%,0 100%)}
+.star{position:absolute;top:9px;right:9px;z-index:1;border:none;background:var(--surface);border-radius:50%;width:32px;height:32px;font-size:16px;line-height:1;color:var(--muted);box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.star[aria-pressed="true"]{color:var(--gold)}
+.stub{display:grid;grid-template-columns:70px 1fr;position:relative}
+.stub::before,.stub::after{content:"";position:absolute;left:62px;width:16px;height:16px;border-radius:50%;background:var(--bg);top:-8px}
+.stub::after{top:auto;bottom:-8px}
+.date{border-right:2px dashed var(--line);text-align:center;padding:14px 4px;color:var(--c)}
+.date .m{font-family:var(--f-data);font-size:10.5px;opacity:.85;letter-spacing:.04em}
+.date .d{font-family:var(--f-display);font-weight:700;font-size:27px;line-height:1.05}
 .date .w{font-size:11px;font-weight:700}
-.date.approx .md{font-size:12px;line-height:1.3;font-family:var(--f-body);font-weight:700}
-.top{display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding-right:34px}
-.badge{font-size:10px;font-weight:700;letter-spacing:.04em;padding:1px 7px;border-radius:4px;background:color-mix(in srgb,var(--c) 14%,var(--surface));color:var(--c)}
-.badge.st{--c:var(--muted)}
-.badge.soon{--c:var(--soon)} .badge.new{background:var(--new);color:var(--surface)}
+.date.approx .lbl{font-size:12px;font-weight:700;line-height:1.35;padding-top:4px}
+.body{padding:12px 14px 12px;min-width:0;display:flex;flex-direction:column;gap:3px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.badge{font-size:10px;font-weight:700;letter-spacing:.04em;padding:1px 7px;border-radius:4px;background:var(--sunk);color:var(--muted)}
+.badge.soon{background:color-mix(in srgb,var(--soon) 14%,var(--surface));color:var(--soon)}
+.badge.new{background:var(--new);color:var(--on-c)}
 .grp{font-size:11px;color:var(--muted)}
-.card h3{margin:0;font-size:15px;line-height:1.45;min-width:0;overflow-wrap:anywhere}
+.card h3{margin:0;font-size:15px;line-height:1.45;overflow-wrap:anywhere}
 .card h3 a{text-decoration:none}
 .card h3 a:hover{text-decoration:underline;text-decoration-color:var(--c)}
-.desc{margin:0;font-size:12.5px;color:var(--muted);min-width:0}
-dl.meta{grid-column:1/-1;margin:8px 0 0;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:12px;border-top:1px dashed var(--line);padding-top:8px}
+.desc{margin:0;font-size:12.5px;color:var(--muted)}
+.price{align-self:flex-start;margin-top:4px;font-size:12px;font-weight:700;background:color-mix(in srgb,var(--c) 11%,var(--surface));color:var(--c);border-radius:6px;padding:2px 8px;overflow-wrap:anywhere}
+dl.meta{margin:4px 0 0;display:grid;grid-template-columns:auto 1fr;gap:1px 10px;font-size:12px}
 dl.meta dt{color:var(--muted)} dl.meta dd{margin:0;min-width:0;overflow-wrap:anywhere}
-.src{grid-column:1/-1;display:flex;justify-content:space-between;gap:8px;font-size:11px;color:var(--muted);margin-top:4px}
-.src a{color:var(--c);font-weight:700;text-decoration:none}
-.star{position:absolute;top:10px;right:10px;z-index:1;border:1px solid var(--line);background:var(--surface);border-radius:8px;width:30px;height:30px;font-size:15px;line-height:1;color:var(--muted)}
-.star[aria-pressed="true"]{color:var(--gold);border-color:var(--gold)}
-footer{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.src{display:flex;justify-content:space-between;gap:8px;font-size:11px;color:var(--muted);margin-top:6px;padding-top:6px;border-top:1px dashed var(--line)}
+.src a{color:var(--c);font-weight:700;text-decoration:none;flex:none}
+
+footer{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:4px;border-top:1px dashed var(--line);padding-top:12px}
 footer a{color:var(--muted)}
-@media (max-width:480px){.grid{grid-template-columns:1fr}.card{grid-template-columns:54px 1fr}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media (max-width:480px){.grid{grid-template-columns:1fr}.feat{flex-basis:215px}.stats{gap:6px}.stat{min-width:0;padding:5px 10px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 
-<div class="band">
-  <canvas id="sky" aria-hidden="true"></canvas>
-  <div class="band-in">
-    <div>
-      <div class="eyebrow">Tokyo Disney Resort · Disney Store · Collaboration</div>
-      <h1>ディズニーグッズ速報ボード</h1>
-      <p class="lead">パーク、ディズニーストア、他ブランドとのコラボの新作グッズを発売日順にまとめています。毎朝5時に更新。</p>
+<header class="hero">
+  <svg class="fx" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="#fff" opacity=".7"><circle cx="80" cy="60" r="1.4"/><circle cx="240" cy="120" r="1"/><circle cx="420" cy="40" r="1.6"/><circle cx="610" cy="90" r="1"/><circle cx="700" cy="150" r="1.2"/><circle cx="980" cy="200" r="1"/><circle cx="1120" cy="140" r="1"/><circle cx="330" cy="200" r="1.1"/><circle cx="760" cy="30" r="1.2"/><circle cx="150" cy="260" r="1"/><circle cx="520" cy="230" r="1.2"/></g>
+    <g stroke-linecap="round" fill="none">
+      <g stroke="#f3dc8f" stroke-width="2" opacity=".85" transform="translate(860 42) scale(.8)"><path d="M0-14V-44M0 14V44M-14 0H-44M14 0H44M-10-10L-31-31M10 10L31 31M10-10L31-31M-10 10L-31 31"/></g>
+      <g stroke="#ff9fd0" stroke-width="2.4" opacity=".7" transform="translate(1085 56) scale(.5)"><path d="M0-14V-44M0 14V44M-14 0H-44M14 0H44M-10-10L-31-31M10 10L31 31M10-10L31-31M-10 10L-31 31"/></g>
+      <g stroke="#9fd8ff" stroke-width="3" opacity=".6" transform="translate(735 30) scale(.42)"><path d="M0-14V-44M0 14V44M-14 0H-44M14 0H44M-10-10L-31-31M10 10L31 31M10-10L31-31M-10 10L-31 31"/></g>
+    </g>
+  </svg>
+  <div class="hero-in">
+    <div class="hero-top">
+      <div>
+        <div class="eyebrow">TOKYO DISNEY RESORT · DISNEY STORE · COLLABORATION</div>
+        <h1><span class="nw">ディズニーグッズ</span><span class="nw">速報ボード</span></h1>
+        <p class="lead">パーク・公式ストア・コラボの新作グッズを発売日順にまとめています。毎朝5時に更新。</p>
+      </div>
+      <div class="stats">
+        <div class="stat hl"><div class="k">これから発売</div><div class="v" id="stSoon">—</div></div>
+        <div class="stat"><div class="k">掲載グッズ</div><div class="v" id="stAll">—</div></div>
+        <div class="stat"><div class="k">最終更新</div><div class="v" id="stUpd">—</div></div>
+      </div>
     </div>
-    <div class="stats">
-      <div class="stat hl"><div class="k">これから発売</div><div class="v" id="stSoon">—</div></div>
-      <div class="stat"><div class="k">掲載グッズ</div><div class="v" id="stAll">—</div></div>
-      <div class="stat"><div class="k">最終更新</div><div class="v" id="stUpd">—</div></div>
+    <svg class="lights" viewBox="0 0 1200 42" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 6 Q300 44 600 10 Q900 44 1200 6" fill="none" stroke="#c9a03a" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+      <g><circle class="b" cx="60" cy="13" r="4" fill="#f3dc8f"/><circle class="b" cx="150" cy="21" r="4" fill="#ffb3d9"/><circle class="b" cx="240" cy="25" r="4" fill="#f3dc8f"/><circle class="b" cx="330" cy="26" r="4" fill="#a8dcff"/><circle class="b" cx="420" cy="23" r="4" fill="#f3dc8f"/><circle class="b" cx="510" cy="16" r="4" fill="#ffb3d9"/><circle class="b" cx="690" cy="16" r="4" fill="#f3dc8f"/><circle class="b" cx="780" cy="23" r="4" fill="#a8dcff"/><circle class="b" cx="870" cy="26" r="4" fill="#f3dc8f"/><circle class="b" cx="960" cy="24" r="4" fill="#ffb3d9"/><circle class="b" cx="1050" cy="18" r="4" fill="#f3dc8f"/><circle class="b" cx="1140" cy="10" r="4" fill="#a8dcff"/></g>
+    </svg>
+    <div id="featWrap" hidden>
+      <div class="feat-head">✦ まもなく発売</div>
+      <div class="feat-row" id="feat"></div>
     </div>
+    <div style="height:8px"></div>
   </div>
-</div>
+</header>
 
 <div class="wrap">
   <div class="controls">
     <div class="cats" role="group" aria-label="区分">
       <button class="cat" type="button" data-k="all" aria-pressed="true">すべて <span class="n" id="n-all"></span></button>
-      <button class="cat" type="button" data-k="park" aria-pressed="false">パーク <span class="n" id="n-park"></span></button>
-      <button class="cat" type="button" data-k="store" aria-pressed="false">公式ストア <span class="n" id="n-store"></span></button>
-      <button class="cat" type="button" data-k="collab" aria-pressed="false">コラボ <span class="n" id="n-collab"></span></button>
+      <button class="cat" type="button" data-k="park" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="10" r="7"/><path d="M12 3v14M5 10h14M7 5l10 10M17 5L7 15M8 21l4-4 4 4"/></svg>パーク <span class="n" id="n-park"></span></button>
+      <button class="cat" type="button" data-k="store" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>公式ストア <span class="n" id="n-store"></span></button>
+      <button class="cat" type="button" data-k="collab" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l2.2 5.6L20 9l-4.5 3.8L17 19l-5-3-5 3 1.5-6.2L4 9l5.8-.4z"/></svg>コラボ <span class="n" id="n-collab"></span></button>
     </div>
     <div class="row2">
       <input id="q" type="search" placeholder="キャラクター・商品・ブランドで絞り込み（例：プーさん）" aria-label="絞り込み">
@@ -138,16 +197,16 @@ footer a{color:var(--muted)}
   </div>
 
   <details class="fav" id="fav">
-    <summary>★ お気に入り <span class="cnt" id="favcnt">0</span></summary>
+    <summary><span class="s">★</span> お気に入り <span class="cnt" id="favcnt">0</span></summary>
     <div class="fav-list" id="favList"></div>
   </details>
 
-  <section class="sec" id="secSoon"><h2>これから発売 <span class="cnt" id="cSoon">0</span></h2><div class="grid" id="gSoon"></div></section>
-  <section class="sec" id="secOut"><h2>発売済み <span class="cnt" id="cOut">0</span></h2><div class="grid" id="gOut"></div></section>
+  <section class="sec" id="secSoon"><h2><span class="sp">✦</span>これから発売 <span class="cnt" id="cSoon">0</span></h2><div class="grid" id="gSoon"></div></section>
+  <section class="sec" id="secOut"><h2><span class="sp">✦</span>発売済み <span class="cnt" id="cOut">0</span></h2><div class="grid" id="gOut"></div></section>
   <p class="empty" id="none" hidden>条件に合うグッズはありません。</p>
 
   <footer>
-    <div>情報は公式発表とニュース記事をもとに毎朝5時（日本時間）に更新しています。価格・販売状況は変わることがあるので、購入前にリンク先で確認してください。お気に入りはこのブラウザ内に保存されます。</div>
+    <div>情報は公式発表とニュース記事をもとに毎朝5時（日本時間）に更新しています。価格・販売状況は変わることがあるので、購入前にリンク先で確認してください。商品画像は各リンク先の記事・公式ページのものです。お気に入りはこのブラウザ内に保存されます。</div>
     <div>公式：<a href="https://www.tokyodisneyresort.jp/" target="_blank" rel="noopener">東京ディズニーリゾート</a> ・ <a href="https://store.disney.co.jp/" target="_blank" rel="noopener">ディズニーストア.jp</a> ・ <a href="https://www.disney.co.jp/store/news" target="_blank" rel="noopener">ディズニーストア ニュース</a></div>
   </footer>
 </div>
@@ -156,46 +215,65 @@ footer a{color:var(--muted)}
 const DEFAULT_DATA = /*__DATA__*/null;
 const CAT = {park:"パーク", store:"公式ストア", collab:"コラボ"};
 const WD = ["日","月","火","水","木","金","土"];
+const MON = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+const ICON = {
+  park:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="10" r="7"/><path d="M12 3v14M5 10h14M7 5l10 10M17 5L7 15M8 21l4-4 4 4"/></svg>',
+  store:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>',
+  collab:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.2 5.6L20 9l-4.5 3.8L17 19l-5-3-5 3 1.5-6.2L4 9l5.8-.4z"/></svg>'
+};
 const $ = s => document.querySelector(s);
 const esc = s => String(s==null?"":s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl = u => /^https?:\/\//i.test(String(u||"")) ? String(u) : "#";
+const safeImg = u => /^https:\/\//i.test(String(u||"")) ? String(u) : "";
 const state = {cat:"all", when:"all", q:""};
 let DATA = DEFAULT_DATA || {items:[]};
 
 function todayJST(){ return new Date(Date.now()+9*3600e3).toISOString().slice(0,10); }
 function addDays(iso,n){ const d=new Date(iso+"T00:00:00Z"); d.setUTCDate(d.getUTCDate()+n); return d.toISOString().slice(0,10); }
+function monthsAgo(iso,n){ const d=new Date(iso+"T00:00:00Z"); d.setUTCMonth(d.getUTCMonth()-n); return d.toISOString().slice(0,10); }
+function daysBetween(a,b){ return Math.round((new Date(b+"T00:00:00Z")-new Date(a+"T00:00:00Z"))/864e5); }
 function status(it,today){
   if(it.release > today) return "soon";
   if(it.release >= addDays(today,-14)) return "new";
   return "out";
 }
+function md(iso){ const d=new Date(iso+"T00:00:00Z"); return isNaN(d) ? "" : `${d.getUTCMonth()+1}/${d.getUTCDate()}(${WD[d.getUTCDay()]})`; }
 function dateBox(it){
-  if(it.releaseLabel) return `<div class="date approx"><div class="md">${esc(it.releaseLabel)}</div></div>`;
+  if(it.releaseLabel) return `<div class="date approx"><div class="lbl">${esc(it.releaseLabel)}</div></div>`;
   const d = new Date(it.release+"T00:00:00Z");
-  if(isNaN(d)) return `<div class="date approx"><div class="md">未定</div></div>`;
-  return `<div class="date"><div class="y">${d.getUTCFullYear()}</div><div class="md">${d.getUTCMonth()+1}.${String(d.getUTCDate()).padStart(2,"0")}</div><div class="w">${WD[d.getUTCDay()]}</div></div>`;
+  if(isNaN(d)) return `<div class="date approx"><div class="lbl">未定</div></div>`;
+  return `<div class="date"><div class="m">${d.getUTCFullYear()} ${MON[d.getUTCMonth()]}</div><div class="d">${d.getUTCDate()}</div><div class="w">${WD[d.getUTCDay()]}</div></div>`;
 }
 function matches(it,q){ return !q || [it.title,it.grp,it.desc,it.where,it.price,it.src].join(" ").toLowerCase().includes(q.toLowerCase()); }
+const IMG_ERR = `onerror="this.parentNode.classList.add('noimg');this.remove()"`;
 function card(it,today){
-  const st = status(it,today), on = favs.has(it.id);
+  const st = status(it,today), on = favs.has(it.id), img = safeImg(it.img), url = esc(safeUrl(it.url));
   const recent = /^\d{4}-\d{2}-\d{2}$/.test(it.addedAt||"") && it.addedAt >= addDays(today,-2);
-  const stBadge = st==="soon" ? `<span class="badge soon">発売予定</span>` : st==="new" ? `<span class="badge st">発売中</span>` : "";
-  const img = /^https:\/\//i.test(String(it.img||"")) ? `<a class="thumb" href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="${esc(it.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></a>` : "";
+  const stBadge = st==="soon" ? `<span class="badge soon">発売予定</span>` : st==="new" ? `<span class="badge">発売中</span>` : "";
+  const hasPrice = it.price && it.price!=="—";
   return `<article class="card" data-cat="${esc(it.cat)}">
-    ${img}${dateBox(it)}
-    <div class="top"><span class="badge">${CAT[it.cat]||""}</span>${stBadge}${recent?'<span class="badge new">NEW</span>':""}<span class="grp">${esc(it.grp)}</span></div>
-    <h3><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">${esc(it.title)}</a></h3>
-    ${it.desc?`<p class="desc">${esc(it.desc)}</p>`:""}
-    <dl class="meta">
-      ${it.price&&it.price!=="—"?`<dt>価格</dt><dd>${esc(it.price)}</dd>`:""}
-      ${it.where?`<dt>販売</dt><dd>${esc(it.where)}</dd>`:""}
-      ${it.until?`<dt>期間</dt><dd>〜${esc(it.until.slice(5).replace("-","/"))}</dd>`:""}
-    </dl>
-    <div class="src"><span>出典：${esc(it.src)}</span><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">詳しく見る ↗</a></div>
+    <a class="thumb${img?"":" noimg"}" href="${url}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">${img?`<img src="${esc(img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" ${IMG_ERR}>`:""}</a>
+    <span class="ribbon">${CAT[it.cat]||""}</span>
     <button class="star" type="button" data-id="${esc(it.id)}" aria-pressed="${on}" aria-label="${on?"お気に入りから外す":"お気に入りに保存"}">${on?"★":"☆"}</button>
+    <div class="stub">${dateBox(it)}
+      <div class="body">
+        <div class="tags">${stBadge}${recent?'<span class="badge new">NEW</span>':""}<span class="grp">${esc(it.grp)}</span></div>
+        <h3><a href="${url}" target="_blank" rel="noopener">${esc(it.title)}</a></h3>
+        ${it.desc?`<p class="desc">${esc(it.desc)}</p>`:""}
+        ${hasPrice?`<span class="price">${esc(it.price)}</span>`:""}
+        ${(it.where||it.until)?`<dl class="meta">${it.where?`<dt>販売</dt><dd>${esc(it.where)}</dd>`:""}${it.until?`<dt>期間</dt><dd>〜${esc(it.until.slice(5).replace("-","/"))}</dd>`:""}</dl>`:""}
+        <div class="src"><span>出典：${esc(it.src)}</span><a href="${url}" target="_blank" rel="noopener">詳しく見る ↗</a></div>
+      </div>
+    </div>
   </article>`;
 }
-function monthsAgo(iso,n){ const d=new Date(iso+"T00:00:00Z"); d.setUTCMonth(d.getUTCMonth()-n); return d.toISOString().slice(0,10); }
+function featCard(it,today){
+  const img = safeImg(it.img), n = daysBetween(today,it.release);
+  const when = `${n===1?"明日":`あと${n}日`} · ${md(it.release)}`;
+  return `<a class="feat" href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">
+    <div class="ph">${ICON[it.cat]||""}${img?`<img src="${esc(img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">`:""}</div>
+    <div class="b"><div class="cd">${when}</div><div class="t">${esc(it.title)}</div></div></a>`;
+}
 function render(){
   const today = todayJST(), cutoff = monthsAgo(today,2), items = (DATA.items||[]).filter(i => !(i.release <= cutoff));
   const counts = {all:items.length, park:0, store:0, collab:0};
@@ -207,6 +285,13 @@ function render(){
   $("#stUpd").textContent = u;
   const note = state.cat!=="all" && (DATA.notes||{})[state.cat];
   $("#catNote").hidden = !note; $("#catNote").textContent = note||"";
+
+  // まもなく発売：発売日が確定していて30日以内のもの（画像があるものを優先して最大12件、発売日順）
+  const near = items.filter(i => i.release>today && i.release<=addDays(today,30) && !i.releaseLabel)
+    .sort((a,b)=> (safeImg(b.img)?1:0)-(safeImg(a.img)?1:0) || a.release.localeCompare(b.release)).slice(0,12)
+    .sort((a,b)=>a.release.localeCompare(b.release));
+  $("#featWrap").hidden = !near.length;
+  $("#feat").innerHTML = near.map(i=>featCard(i,today)).join("");
 
   const list = items.filter(i => (state.cat==="all"||i.cat===state.cat) && matches(i,state.q));
   const soon = list.filter(i=>i.release>today).sort((a,b)=>a.release.localeCompare(b.release));
@@ -246,18 +331,6 @@ document.addEventListener("click", e => {
 });
 let qt; $("#q").addEventListener("input", e => { clearTimeout(qt); qt=setTimeout(()=>{ state.q=e.target.value.trim(); render(); },120); });
 try{ const c=localStorage.getItem(LS+"-cat"); if(c&&c!=="all"){ const b=document.querySelector(`.cat[data-k="${c}"]`); if(b) b.click(); } }catch(e){}
-
-/* 夜空の星（帯の背景） */
-(function sky(){
-  const cv=$("#sky"), ctx=cv.getContext&&cv.getContext("2d"); if(!ctx) return;
-  const dpr=Math.min(2,window.devicePixelRatio||1); const W=cv.clientWidth, H=cv.clientHeight;
-  cv.width=W*dpr; cv.height=H*dpr; ctx.scale(dpr,dpr);
-  let s=7; const rnd=()=>{ s=(s*16807)%2147483647; return s/2147483647; };
-  for(let i=0;i<Math.round(W*H/2600);i++){ const x=rnd()*W,y=rnd()*H,r=rnd()*1.2+.2; ctx.globalAlpha=.25+rnd()*.6; ctx.fillStyle="#fff"; ctx.beginPath(); ctx.arc(x,y,r,0,7); ctx.fill(); }
-  ctx.globalAlpha=.9; ctx.fillStyle="#f0d98a";
-  [[.62,.28,5],[.78,.62,3.5],[.92,.2,4]].forEach(([fx,fy,R])=>{ const x=fx*W,y=fy*H; ctx.beginPath();
-    for(let k=0;k<8;k++){ const a=k*Math.PI/4, rr=k%2?R*.28:R; ctx.lineTo(x+Math.cos(a)*rr,y+Math.sin(a)*rr); } ctx.closePath(); ctx.fill(); });
-})();
 
 function adopt(d){ if(d && Array.isArray(d.items)){ DATA=d; render(); return true; } return false; }
 render();
