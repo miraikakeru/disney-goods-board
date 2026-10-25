@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T04:55:00+09:00",
+ "updatedAt": "2026-10-25T10:48:28+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
@@ -17,19 +17,6 @@
  },
  "items": [
   {
-   "id": "p-duffy-autumn",
-   "cat": "park",
-   "grp": "ダッフィー＆フレンズ",
-   "title": "オータム・サプライズ！",
-   "release": "2026-08-25",
-   "price": "—",
-   "where": "東京ディズニーシー",
-   "desc": "ハロウィーンを楽しむダッフィーたちがテーマの秋シリーズ。",
-   "url": "https://castel.jp/p/10414",
-   "src": "キャステル",
-   "addedAt": "2026-10-11-initial"
-  },
-  {
    "id": "s-halloween",
    "cat": "store",
    "grp": "ハロウィーン",
@@ -40,7 +27,8 @@
    "desc": "ハロウィーンのぬいぐるみやキーチェーン、猫のミニーとフィガロのシリーズ。",
    "url": "https://premium.gamepedia.jp/hobby/archives/238143",
    "src": "キャラホビ",
-   "addedAt": "2026-10-11-initial"
+   "addedAt": "2026-10-11-initial",
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/08/28113005/94_1.jpg"
   },
   {
    "id": "p-villains",
@@ -53,7 +41,8 @@
    "desc": "フロットサム＆ジェットサムの肩のせぬいぐるみ、ナイトメアー・ビフォア・クリスマスのバッグなど。",
    "url": "https://castel.jp/item/168854/",
    "src": "キャステル",
-   "addedAt": "2026-10-11-initial"
+   "addedAt": "2026-10-11-initial",
+   "img": "https://c01.castel.jp/1200x/0/villains-merchandise-to-be-released-on-september-3-2026-p168854.jpg?mod=20260812201507"
   },
   {
    "id": "c-kodansha-pooh",
@@ -80,7 +69,8 @@
    "url": "https://castel.jp/p/10362",
    "src": "キャステル",
    "addedAt": "2026-10-11-initial",
-   "until": "2026-10-31"
+   "until": "2026-10-31",
+   "img": "https://c02.castel.jp/800x/0/mickey-and-minnie-p162467.jpg?mod=20260812193605"
   },
   {
    "id": "p-halloween-kowagari",
@@ -94,7 +84,8 @@
    "url": "https://travel.watch.impress.co.jp/docs/news/2141176.html",
    "src": "トラベル Watch",
    "addedAt": "2026-10-11-initial",
-   "until": "2026-10-31"
+   "until": "2026-10-31",
+   "img": "https://travel.watch.impress.co.jp/img/trw/list/2141/176/01.jpg"
   },
   {
    "id": "c-unlikely",
@@ -107,7 +98,8 @@
    "desc": "ひび割れ加工のミッキープリントを施したラグランスウェット。",
    "url": "https://prtimes.jp/main/html/rd/p/000001480.000006099.html",
    "src": "PR TIMES",
-   "addedAt": "2026-10-11-initial"
+   "addedAt": "2026-10-11-initial",
+   "img": "https://prcdn.freetls.fastly.net/release_image/6099/1480/6099-1480-7073b017033782ae98aae1878dc9af7e-3900x2600.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
   },
   {
    "id": "p-halloween-headband",
@@ -120,7 +112,8 @@
    "desc": "白・黒のレース付きカチューシャなど、ハロウィーン向けの身につけグッズ。",
    "url": "https://castel.jp/item/168855/",
    "src": "キャステル",
-   "addedAt": "2026-10-11-initial"
+   "addedAt": "2026-10-11-initial",
+   "img": "https://c03.castel.jp/1200x/0/headbands-and-other-items-perfect-for-halloween-released-on-september-24-2026-p168855.jpg?mod=20260812203014"
   },
   {
    "id": "s-dumbo85",
@@ -258,7 +251,8 @@
    "desc": "キャンプファイヤーを囲む家族時間をテーマにした、コロンビアのミッキーデザイン新作コレクション。",
    "url": "https://prtimes.jp/main/html/rd/p/000000210.000075300.html",
    "src": "PR TIMES",
-   "addedAt": "2026-10-21"
+   "addedAt": "2026-10-21",
+   "img": "https://prcdn.freetls.fastly.net/release_image/75300/210/75300-210-43bbdbb76354c27e1d7a894263f02d5d-3900x2224.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
   },
   {
    "id": "c-furyu-gal-leopard",
@@ -272,7 +266,8 @@
    "desc": "ミッキーとミニーを平成ギャル風カップルに描いたフリュー限定アートのプライズ。大きな毛布、クッション、ミニミラーなど5種類を展開。",
    "url": "https://animeanime.jp/article/2026/10/19/103988.html",
    "src": "アニメ！アニメ！",
-   "addedAt": "2026-10-23"
+   "addedAt": "2026-10-23",
+   "img": "https://animeanime.jp/imgs/ogp_f/945208.jpg"
   },
   {
    "id": "c-happykuji-halloween",
@@ -285,7 +280,8 @@
    "desc": "お菓子パーティーがテーマで、ハロウィン衣装のキャラクターが並ぶくじ。A賞はスティッチ、Last賞はパンプキンのミッキーの大きなぬいぐるみ。",
    "url": "https://www.pashplus.jp/goods/495047/",
    "src": "PASH! PLUS",
-   "addedAt": "2026-10-12"
+   "addedAt": "2026-10-12",
+   "img": "https://www.pashplus.jp/wp-content/uploads/8d39f3a0b07511262f03bfb5a876f653.jpg"
   },
   {
    "id": "p-duffy-regular",
@@ -298,7 +294,8 @@
    "desc": "くっつきぬいぐるみ（ダッフィー、シェリーメイ）とシュシュが新登場。マグ・プレート・トートも。",
    "url": "https://castel.jp/p/10678",
    "src": "キャステル",
-   "addedAt": "2026-10-11-initial"
+   "addedAt": "2026-10-11-initial",
+   "img": "https://c04.castel.jp/800x/0/699598063-p169965.jpg?mod=20260928132822"
   },
   {
    "id": "s-fluffy-animal",
@@ -311,7 +308,8 @@
    "desc": "ふわもこ素材のシリーズ。ナナとマリーのマグ＆ソーサー、ルシファーのルームウェアなど。",
    "url": "https://www.disney.co.jp/store/news/new/disney-fluffy-animal_261005",
    "src": "ディズニーストア公式",
-   "addedAt": "2026-10-11-initial"
+   "addedAt": "2026-10-11-initial",
+   "img": "https://lumiere-a.akamaihd.net/v1/images/storenews_261005_677x677_3b5a8be2.jpeg?region=0%2C0%2C677%2C677"
   },
   {
    "id": "c-alpen-2026aw",
@@ -325,7 +323,8 @@
    "desc": "100周年のクラシック・プーやヴィンテージコミック柄のミッキーなどを使った、アルペン限定のウェア。",
    "url": "https://prtimes.jp/main/html/rd/p/000000701.000042346.html",
    "src": "PR TIMES",
-   "addedAt": "2026-10-13"
+   "addedAt": "2026-10-13",
+   "img": "https://prcdn.freetls.fastly.net/release_image/42346/701/42346-701-59762a84230710b16c5a9db7bc971a68-3600x1680.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
   },
   {
    "id": "c-belluna-2026aw",
@@ -339,7 +338,8 @@
    "desc": "ミッキー＆ミニーやプー、101匹わんちゃん、『トイ・ストーリー5』デザインの裏毛トレーナーやトラックジャケット全7種。",
    "url": "https://prtimes.jp/main/html/rd/p/000000731.000016236.html",
    "src": "PR TIMES",
-   "addedAt": "2026-10-13"
+   "addedAt": "2026-10-13",
+   "img": "https://prcdn.freetls.fastly.net/release_image/16236/731/16236-731-f7a18984adf0998381323f9d483d3700-1500x928.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
   },
   {
    "id": "c-rodeo",
@@ -352,7 +352,8 @@
    "desc": "秋冬向けのディズニースペシャルデザインアイテム。",
    "url": "https://www.cinemacafe.net/article/2026/10/08/113195.html",
    "src": "シネマカフェ",
-   "addedAt": "2026-10-11-initial"
+   "addedAt": "2026-10-11-initial",
+   "img": "https://www.cinemacafe.net/imgs/ogp_f/838370.jpg"
   },
   {
    "id": "s-pooh100-project",
@@ -365,7 +366,8 @@
    "desc": "100周年プロジェクトのスタート。フラッグシップ東京の地下が10/9から「100エーカーの森」の装飾に。",
    "url": "https://travel.watch.impress.co.jp/docs/news/2144427.html",
    "src": "トラベル Watch",
-   "addedAt": "2026-10-11-initial"
+   "addedAt": "2026-10-11-initial",
+   "img": "https://asset.watch.impress.co.jp/img/trw/docs/2144/427/001_l.jpg"
   },
   {
    "id": "c-gdc-holiday",
@@ -378,7 +380,8 @@
    "desc": "GDCがミッキーマウスをあしらったホリデー向けのスウェットとTシャツの2型を発売。",
    "url": "https://www.fullress.com/disney-mickey-mouse-gdc-holiday-special/",
    "src": "fullress",
-   "addedAt": "2026-10-13"
+   "addedAt": "2026-10-13",
+   "img": "https://www.fullress.com/wp-content/uploads/2026/10/1111qGaregwegsd-1-768x959.jpg"
   },
   {
    "id": "c-lawson-zootopia",
@@ -391,7 +394,8 @@
    "desc": "ローソン限定のディズニーグッズシリーズ第5弾として、『ズートピア』のめじるしアクリルチャームやステッカー類が店頭に登場。",
    "url": "https://convenicheck.com/newitem/newit_lawson/137843/",
    "src": "コンビニチェック",
-   "addedAt": "2026-10-15"
+   "addedAt": "2026-10-15",
+   "img": "https://convenicheck.com/wp-content/uploads/2026/10/lawson_zootpiagd26101.jpg"
   },
   {
    "id": "c-skater-kirameki-woody",
@@ -404,7 +408,8 @@
    "desc": "きらきら素材のキッチンスポンジにウッディ柄が加わり、バズ・エイリアンとあわせて3柄に。",
    "url": "https://premium.gamepedia.jp/hobby/archives/278048",
    "src": "キャラホビ",
-   "addedAt": "2026-10-19"
+   "addedAt": "2026-10-19",
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/17164312/news_image_001-9-4.jpg"
   },
   {
    "id": "c-goldengoose-mickey",
@@ -418,7 +423,8 @@
    "desc": "宇宙モチーフのミッキー＆フレンズを、スニーカー「Super-Star」やボンバージャケット、キャップなどに展開。10/23に銀座でその場でデザインを加えるCo-Creationイベントも開催。",
    "url": "https://prtimes.jp/main/html/rd/p/000000034.000122351.html",
    "src": "PR TIMES",
-   "addedAt": "2026-10-14"
+   "addedAt": "2026-10-14",
+   "img": "https://prcdn.freetls.fastly.net/release_image/122351/34/122351-34-acb21701b2fd2fc9e7fa1e637d986acc-1920x1080.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
   },
   {
    "id": "s-pooh100-collection",
@@ -431,7 +437,8 @@
    "desc": "原作100周年プロジェクト「HAPPIER WITH YOU.」の記念コレクション。",
    "url": "https://travel.watch.impress.co.jp/docs/news/2144427.html",
    "src": "トラベル Watch",
-   "addedAt": "2026-10-11-initial"
+   "addedAt": "2026-10-11-initial",
+   "img": "https://asset.watch.impress.co.jp/img/trw/docs/2144/427/006_m.jpg"
   },
   {
    "id": "p-donald-home",
@@ -444,7 +451,8 @@
    "desc": "ドナルドをあしらったクッションやティッシュボックスカバー、バススポンジなど、家で使える雑貨のシリーズ。",
    "url": "https://ure.pia.co.jp/articles/-/3466913",
    "src": "ウレぴあ総研",
-   "addedAt": "2026-10-12"
+   "addedAt": "2026-10-12",
+   "img": "https://urepia.ismcdn.jp/mwimgs/d/0/-/img_d0a11b25f572f1f8d1036e21f92077b5109873.jpg"
   },
   {
    "id": "p-tds25-imagining",
@@ -457,7 +465,8 @@
    "desc": "写真家・浅田政志さんがパークで撮影したミッキーたちの写真を使った25周年グッズ。ポーチやレジャーシートもある。",
    "url": "https://ure.pia.co.jp/articles/-/3447712",
    "src": "ウレぴあ総研",
-   "addedAt": "2026-10-12"
+   "addedAt": "2026-10-12",
+   "img": "https://urepia.ismcdn.jp/mwimgs/f/6/-/img_f61e4da69bf85c599689b8bb1c61f3f383382.jpg"
   },
   {
    "id": "c-axesfemme-twst",
@@ -470,7 +479,8 @@
    "desc": "ナイトレイブンカレッジの制服や式典服をイメージしたシャツやジャケット。シャツは7寮のカラー展開。",
    "url": "https://premium.gamepedia.jp/hobby/archives/276519",
    "src": "キャラホビ",
-   "addedAt": "2026-10-17"
+   "addedAt": "2026-10-17",
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/15195826/axes_femme__1.jpg"
   },
   {
    "id": "s-japantour-kanagawa",
@@ -484,7 +494,8 @@
    "desc": "公式オンラインストアのグッズを全国9都市で販売する巡回イベントの第1会場。ぬいぐるみや雑貨のほか会場限定アイテムもあり、以降は沖縄・愛知・山口などを巡る予定。",
    "url": "https://www.disney.co.jp/store/news/information/if20261009_101",
    "src": "ディズニーストア公式",
-   "addedAt": "2026-10-15"
+   "addedAt": "2026-10-15",
+   "img": "https://lumiere-a.akamaihd.net/v1/images/26_0810_405_banner_1200x677px_81c00bc8.jpeg?region=0,0,1200,677"
   },
   {
    "id": "s-xmas-ornament-2026",
@@ -498,7 +509,8 @@
    "desc": "ミッキーやプリンセス、ズートピアの仲間など多彩なキャラクターの2026年版オーナメント。ライトアップ式やドーム型も並ぶ。",
    "url": "https://ure.pia.co.jp/articles/-/3507719",
    "src": "ウレぴあ総研",
-   "addedAt": "2026-10-19"
+   "addedAt": "2026-10-19",
+   "img": "https://urepia.ismcdn.jp/mwimgs/9/e/-/img_9efd92e7a949bdaf35de57f9cf1d0fef80763.jpg"
   },
   {
    "id": "c-famima-101",
@@ -511,7 +523,8 @@
    "desc": "A賞は全長約60cmのビッグぬいぐるみ。ブランケット、トート、きんちゃく、スカーフなど。",
    "url": "https://prtimes.jp/main/html/rd/p/000000082.000108253.html",
    "src": "PR TIMES",
-   "addedAt": "2026-10-11-initial"
+   "addedAt": "2026-10-11-initial",
+   "img": "https://prcdn.freetls.fastly.net/release_image/108253/82/108253-82-46131ef0882376e31f5f927137c9c800-3840x2160.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
   },
   {
    "id": "c-ichibankuji-monsters",
@@ -524,7 +537,8 @@
    "desc": "サリー・マイク・ブーがドア倉庫に隠れる場面を立体化したA賞フィギュアを中心に、エネルギータンク型コインバンクやモニター掛けぬいぐるみなどがそろう一番くじ。",
    "url": "https://www.cinemacafe.net/article/2026/10/16/113361.html",
    "src": "シネマカフェ",
-   "addedAt": "2026-10-17"
+   "addedAt": "2026-10-17",
+   "img": "https://www.cinemacafe.net/imgs/ogp_f/837072.webp"
   },
   {
    "id": "c-gashapon-cat-swing",
@@ -538,7 +552,8 @@
    "desc": "マリー、フィガロ、ルシファー、モチの猫キャラ全4種のスイングマスコット。ボールチェーンと猫型プレート付き。",
    "url": "https://www.inside-games.jp/article/2026/10/13/189177.html",
    "src": "インサイド",
-   "addedAt": "2026-10-14"
+   "addedAt": "2026-10-14",
+   "img": "https://www.inside-games.jp/imgs/ogp_f/1792957.jpg"
   },
   {
    "id": "c-hottoys-stitch-party",
@@ -552,7 +567,8 @@
    "desc": "ホットトイズのスティッチ展示イベントで、『トイ・ストーリー』の仮装をしたスティッチのコスビやぬいぐるみキーチェーンなどを先行販売。入場無料。",
    "url": "https://premium.gamepedia.jp/hobby/archives/275334",
    "src": "キャラホビ",
-   "addedAt": "2026-10-17"
+   "addedAt": "2026-10-17",
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/14144047/SHIBUYA_TSUTAYA_1.jpg"
   },
   {
    "id": "c-sagara-pouch",
@@ -566,7 +582,8 @@
    "desc": "アリエル、スティッチ、ベイマックス、トイ・ストーリー、ズートピアのキャラクターをもこもこのさがら刺繍で表現したカラビナ付きポーチ。",
    "url": "https://premium.gamepedia.jp/hobby/archives/270520",
    "src": "キャラホビ",
-   "addedAt": "2026-10-17"
+   "addedAt": "2026-10-17",
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/08122239/1-41.jpg"
   },
   {
    "id": "c-bellemaison-nightmare-xmas",
@@ -579,7 +596,8 @@
    "desc": "ジャック・スケリントン柄のユニセックスニットや持ち運べる3WAYブランケットなど、クリスマス向けの3アイテム。",
    "url": "https://premium.gamepedia.jp/hobby/archives/275280",
    "src": "キャラホビ",
-   "addedAt": "2026-10-22"
+   "addedAt": "2026-10-22",
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/14141838/1021_1.jpg"
   },
   {
    "id": "c-hottoys-happyhole",
@@ -593,7 +611,8 @@
    "desc": "スティッチや森のなかまたちのブラインド型ぬいぐるみキーチェーンと、ハニカム型ケースに入ったプーさんのフィギュアの新作。",
    "url": "https://prtimes.jp/main/html/rd/p/000000225.000070091.html",
    "src": "PR TIMES（ホットトイズジャパン）",
-   "addedAt": "2026-10-25"
+   "addedAt": "2026-10-25",
+   "img": "https://prcdn.freetls.fastly.net/release_image/70091/225/70091-225-f245581289c082014144f8eb1febe37e-1400x1400.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
   },
   {
    "id": "s-monsters25",
@@ -606,7 +625,8 @@
    "desc": "デフォルメしたサリーやマイクのぬいぐるみ、フサフサのトート、Spirit Jerseyの長袖Tシャツなどをそろえた25周年コレクション。",
    "url": "https://www.cinemacafe.net/article/2026/10/17/113379.html",
    "src": "シネマカフェ",
-   "addedAt": "2026-10-11-initial"
+   "addedAt": "2026-10-11-initial",
+   "img": "https://www.cinemacafe.net/imgs/ogp_f/839951.jpg"
   },
   {
    "id": "c-avail-disney-1024",
@@ -619,7 +639,8 @@
    "desc": "ヒョウ柄の服を着たミッキーのスタジャンや、パステルカラーの『ダンボ』アイテムなどがそろう。『ズートピア』『トイ・ストーリー』のペットグッズも登場予定。",
    "url": "https://www.inside-games.jp/article/2026/10/19/189482.html",
    "src": "インサイド",
-   "addedAt": "2026-10-20"
+   "addedAt": "2026-10-20",
+   "img": "https://www.inside-games.jp/imgs/ogp_f/1795377.png"
   },
   {
    "id": "s-beauty-beast35",
@@ -632,7 +653,8 @@
    "desc": "水彩タッチの描き起こしアートを使ったホーム雑貨やぬいぐるみキーチェーン、ルミエールやコグスワースのフィギュアなどがそろう35周年記念シリーズ。",
    "url": "https://game.watch.impress.co.jp/docs/news/2150619.html",
    "src": "GAME Watch",
-   "addedAt": "2026-10-25"
+   "addedAt": "2026-10-25",
+   "img": "https://game.watch.impress.co.jp/img/gmw/list/2150/619/0.jpg"
   },
   {
    "id": "c-sega-akaihoppe-purekira",
@@ -645,7 +667,8 @@
    "desc": "赤いほっぺが特徴のミッキー＆フレンズのぬいぐるみに、きらきらした「ピュアキラ」仕様が登場。全4種のプライズ景品。",
    "url": "https://premium.gamepedia.jp/hobby/prize/s-01J7DKHA6WRPRTVJK2VQABZHZ6",
    "src": "キャラホビ",
-   "addedAt": "2026-10-20"
+   "addedAt": "2026-10-20",
+   "img": "https://assets.gamepedia.jp/prize/proxy/e84a74f96529b058e7dcfdb96ff2ace3.webp"
   },
   {
    "id": "c-avail-monsters-1031",
@@ -658,7 +681,8 @@
    "desc": "サリーやマイクのバッグ、圧縮できるトラベル収納、刺しゅう入りプルオーバーなど、550〜3,850円のモンスターズ・インクデザイン。",
    "url": "https://nijimen.kusuguru.co.jp/topics/643070",
    "src": "にじめん",
-   "addedAt": "2026-10-25"
+   "addedAt": "2026-10-25",
+   "img": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/10/e82626b34d1b481b8c399ff5ec1b2a79.jpg"
   },
   {
    "id": "c-workman-2026aw",
@@ -672,7 +696,8 @@
    "desc": "ワークマンの秋冬ディズニーデザイン商品。10月はポーチやトート付きバッグ、11月はスウェットやマザーズリュック、ニットキャップなど防寒小物が予定されている。",
    "url": "https://ure.pia.co.jp/articles/-/3458301",
    "src": "ウレぴあ総研",
-   "addedAt": "2026-10-21"
+   "addedAt": "2026-10-21",
+   "img": "https://urepia.ismcdn.jp/mwimgs/5/7/-/img_57218e5a09e5b8a42c4706d4feda0f19114339.jpg"
   },
   {
    "id": "c-tokyobanana-xmas-2026",
@@ -686,7 +711,8 @@
    "desc": "Disney SWEETS COLLECTION by 東京ばな奈の毎年恒例のクリスマス缶。2026年はクリスマストレインのデザインで、イヤープレート付きセットもある。",
    "url": "https://game.watch.impress.co.jp/docs/news/2150243.html",
    "src": "GAME Watch",
-   "addedAt": "2026-10-23"
+   "addedAt": "2026-10-23",
+   "img": "https://game.watch.impress.co.jp/img/gmw/list/2150/243/0.jpg"
   },
   {
    "cat": "store",
@@ -755,7 +781,8 @@
    "desc": "夜間美容ヘアケアのYOLUから、ピーター・パンのデザインをまとったシャンプー＆トリートメントのセットが2種登場。",
    "url": "https://premium.gamepedia.jp/hobby/archives/276131",
    "src": "キャラホビ",
-   "addedAt": "2026-10-17"
+   "addedAt": "2026-10-17",
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/15144703/YOLU_112_1.jpg"
   },
   {
    "id": "p-duffy-winter",
@@ -769,7 +796,8 @@
    "desc": "冬のプログラムに合わせた新作で、クリスマス向けグッズ（12/25まで）や雪だるまデザインの「アワ・リトル・スノーフレンズ」も同時に登場。",
    "url": "https://game.watch.impress.co.jp/docs/news/2146085.html",
    "src": "GAME Watch／オリエンタルランド",
-   "addedAt": "2026-10-12"
+   "addedAt": "2026-10-12",
+   "img": "https://game.watch.impress.co.jp/img/gmw/list/2146/085/59.jpg"
   },
   {
    "id": "p-tds25-steiff-duffy",
@@ -782,7 +810,8 @@
    "desc": "東京ディズニーシー25周年を記念したシュタイフ製ダッフィーの数量限定品。",
    "url": "https://prtimes.jp/main/html/rd/p/000000177.000119340.html",
    "src": "PR TIMES（オリエンタルランド）",
-   "addedAt": "2026-10-12"
+   "addedAt": "2026-10-12",
+   "img": "https://prcdn.freetls.fastly.net/release_image/119340/177/119340-177-b9f8cb430f0b452f38da392691d71cd8-3000x2001.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
   },
   {
    "id": "c-sega-prize-2026-11",
@@ -809,7 +838,8 @@
    "desc": "赤い衣装のミッキーたちのフィギュアオーナメントやアクリルオーナメントが当たるくじ。Last賞は約65cmのミッキーぬいぐるみ。",
    "url": "https://www.cinemacafe.net/article/2026/10/07/113156.html",
    "src": "シネマカフェ",
-   "addedAt": "2026-10-13"
+   "addedAt": "2026-10-13",
+   "img": "https://www.cinemacafe.net/imgs/ogp_f/838012.jpg"
   },
   {
    "id": "p-xmas-2026",
@@ -823,7 +853,8 @@
    "url": "https://travel.watch.impress.co.jp/docs/news/2146525.html",
    "src": "トラベル Watch",
    "addedAt": "2026-10-11-initial",
-   "until": "2026-12-25"
+   "until": "2026-12-25",
+   "img": "https://travel.watch.impress.co.jp/img/trw/list/2146/525/001.jpg"
   },
   {
    "id": "p-xmas-lillinglin",
@@ -837,7 +868,8 @@
    "url": "https://castel.jp/p/10686",
    "src": "キャステル",
    "addedAt": "2026-10-11-initial",
-   "until": "2026-12-25"
+   "until": "2026-12-25",
+   "img": "https://c04.castel.jp/800x/0/1319362295-p170255.jpg?mod=20261007180753"
   },
   {
    "id": "c-jillstuart-cinderella",
@@ -850,7 +882,8 @@
    "desc": "シンデレラとシンデレラ城をテーマにしたJILL STUART Beautyとのパーク限定コラボ。ポーチやミラー、リップティント、ハンドクリームを箱入りギフトセット3種で展開。",
    "url": "https://ure.pia.co.jp/articles/-/3510627",
    "src": "ウレぴあ総研",
-   "addedAt": "2026-10-18"
+   "addedAt": "2026-10-18",
+   "img": "https://urepia.ismcdn.jp/mwimgs/b/2/-/img_b22666b2cc41f471895dc92476a7c4d449709.jpg"
   },
   {
    "id": "s-kagoshima-open",
@@ -863,7 +896,8 @@
    "desc": "新店舗のオープンに合わせ、薩摩犬を抱えたミッキーと黒豚を抱えたミニーのぬいぐるみキーチェーンなど店舗限定品を数量限定で販売。オープン当日はアプリでの来店予約制。",
    "url": "https://www.disney.co.jp/store/news/information/if20260814_101",
    "src": "ディズニーストア公式／トラベル Watch",
-   "addedAt": "2026-10-15"
+   "addedAt": "2026-10-15",
+   "img": "https://lumiere-a.akamaihd.net/v1/images/26_0721_402_banner_1200x677px_cd55148d.jpeg?region=0,0,1200,677"
   },
   {
    "id": "p-tds25-swarovski",
@@ -876,7 +910,8 @@
    "desc": "スワロフスキー・クリスタルを使った高額シリーズ。ネックレス・ブレスレット・ぬいぐるみチャームなど。",
    "url": "https://castel.jp/p/10689",
    "src": "キャステル",
-   "addedAt": "2026-10-11-initial"
+   "addedAt": "2026-10-11-initial",
+   "img": "https://c04.castel.jp/800x/0/309200271-p170283.jpg?mod=20261008170818"
   },
   {
    "id": "p-retro-stationery-2026",
@@ -889,7 +924,8 @@
    "desc": "ミッキー、ミニー、ドナルド、デイジーをレトロな雰囲気で描いた文具シリーズ。イヤホンケースやステッカー、ランダム柄のポーチなども。",
    "url": "https://ure.pia.co.jp/articles/-/3520134",
    "src": "ウレぴあ総研",
-   "addedAt": "2026-10-23"
+   "addedAt": "2026-10-23",
+   "img": "https://urepia.ismcdn.jp/mwimgs/6/6/-/img_66a6b0eb7952194a3f3c95a4021397b585247.jpg"
   },
   {
    "id": "c-disney-poster-collection-book",
@@ -902,7 +938,8 @@
    "desc": "『白雪姫』から『トイ・ストーリー』まで、ディズニー作品の大判ヴィンテージポスター28枚を収めた書籍。",
    "url": "https://prtimes.jp/main/html/rd/p/000002403.000009728.html",
    "src": "PR TIMES",
-   "addedAt": "2026-10-21"
+   "addedAt": "2026-10-21",
+   "img": "https://prcdn.freetls.fastly.net/release_image/9728/2403/9728-2403-b668bf5795c71fcf185e96e4c78709d6-970x600.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
   },
   {
    "id": "c-ichibankuji-toystory-2026",
@@ -915,7 +952,8 @@
    "desc": "『トイ・ストーリー』のおもちゃたちの思い出をテーマにした一番くじ。",
    "url": "https://premium.gamepedia.jp/hobby/kuji/s-01J7DKHA6WRPRTVJK2VQABZHZ6",
    "src": "キャラホビ",
-   "addedAt": "2026-10-19"
+   "addedAt": "2026-10-19",
+   "img": "https://tfi.gamepedia.jp/image/w=200,fit=pad,f=webp/assets.gamepedia.jp/kuji/proxy/c6eec38a1233bd912f2fea0ef73beeef.webp"
   },
   {
    "id": "c-pooh100-kawaisouni",
@@ -929,7 +967,8 @@
    "desc": "「おぱんちゅうさぎ」作者の可哀想に！さんが、プーがイーヨーにはちみつをふるまう場面を描いた100周年プロジェクトのコラボアイテム。",
    "url": "https://nlab.itmedia.co.jp/cont/articles/3987071/",
    "src": "ねとらぼ",
-   "addedAt": "2026-10-14"
+   "addedAt": "2026-10-14",
+   "img": "https://research.image.itmedia.co.jp/wp-content/uploads/2025/10/1759914218_yjt.jpg"
   },
   {
    "id": "s-pooh100-charm",
@@ -943,7 +982,8 @@
    "url": "https://travel.watch.impress.co.jp/docs/news/2144427.html",
    "src": "トラベル Watch",
    "addedAt": "2026-10-11-initial",
-   "releaseLabel": "2027年4月ごろ"
+   "releaseLabel": "2027年4月ごろ",
+   "img": "https://asset.watch.impress.co.jp/img/trw/docs/2144/427/002_l.jpg"
   }
  ]
 }

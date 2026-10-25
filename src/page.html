@@ -72,6 +72,8 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(26px,4vw,40px);l
 .sec h2::after{content:"";flex:1;height:1px;background:var(--line)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
 .card{--c:var(--muted);position:relative;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 14px 12px;display:grid;grid-template-columns:62px 1fr;gap:4px 12px;align-content:start;min-width:0}
+.thumb{grid-column:1/-1;margin:-14px -14px 8px;aspect-ratio:1.91/1;background:var(--sunk);border-radius:11px 11px 0 0;overflow:hidden;display:block}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
 .card[data-cat="park"]{--c:var(--park)} .card[data-cat="store"]{--c:var(--store)} .card[data-cat="collab"]{--c:var(--collab)}
 .card:hover{border-color:var(--c)}
 .date{grid-row:span 4;text-align:center;border-radius:10px;background:color-mix(in srgb,var(--c) 12%,var(--surface));color:var(--c);padding:8px 2px 6px;align-self:start}
@@ -92,7 +94,7 @@ dl.meta{grid-column:1/-1;margin:8px 0 0;display:grid;grid-template-columns:auto 
 dl.meta dt{color:var(--muted)} dl.meta dd{margin:0;min-width:0;overflow-wrap:anywhere}
 .src{grid-column:1/-1;display:flex;justify-content:space-between;gap:8px;font-size:11px;color:var(--muted);margin-top:4px}
 .src a{color:var(--c);font-weight:700;text-decoration:none}
-.star{position:absolute;top:10px;right:10px;border:1px solid var(--line);background:var(--surface);border-radius:8px;width:30px;height:30px;font-size:15px;line-height:1;color:var(--muted)}
+.star{position:absolute;top:10px;right:10px;z-index:1;border:1px solid var(--line);background:var(--surface);border-radius:8px;width:30px;height:30px;font-size:15px;line-height:1;color:var(--muted)}
 .star[aria-pressed="true"]{color:var(--gold);border-color:var(--gold)}
 footer{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:4px}
 footer a{color:var(--muted)}
@@ -178,8 +180,9 @@ function card(it,today){
   const st = status(it,today), on = favs.has(it.id);
   const recent = /^\d{4}-\d{2}-\d{2}$/.test(it.addedAt||"") && it.addedAt >= addDays(today,-2);
   const stBadge = st==="soon" ? `<span class="badge soon">発売予定</span>` : st==="new" ? `<span class="badge st">発売中</span>` : "";
+  const img = /^https:\/\//i.test(String(it.img||"")) ? `<a class="thumb" href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="${esc(it.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></a>` : "";
   return `<article class="card" data-cat="${esc(it.cat)}">
-    ${dateBox(it)}
+    ${img}${dateBox(it)}
     <div class="top"><span class="badge">${CAT[it.cat]||""}</span>${stBadge}${recent?'<span class="badge new">NEW</span>':""}<span class="grp">${esc(it.grp)}</span></div>
     <h3><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">${esc(it.title)}</a></h3>
     ${it.desc?`<p class="desc">${esc(it.desc)}</p>`:""}
@@ -192,8 +195,9 @@ function card(it,today){
     <button class="star" type="button" data-id="${esc(it.id)}" aria-pressed="${on}" aria-label="${on?"お気に入りから外す":"お気に入りに保存"}">${on?"★":"☆"}</button>
   </article>`;
 }
+function monthsAgo(iso,n){ const d=new Date(iso+"T00:00:00Z"); d.setUTCMonth(d.getUTCMonth()-n); return d.toISOString().slice(0,10); }
 function render(){
-  const today = todayJST(), items = DATA.items||[];
+  const today = todayJST(), cutoff = monthsAgo(today,2), items = (DATA.items||[]).filter(i => !(i.release <= cutoff));
   const counts = {all:items.length, park:0, store:0, collab:0};
   items.forEach(i => { if(counts[i.cat]!=null) counts[i.cat]++; });
   Object.keys(counts).forEach(k => { const el=$("#n-"+k); if(el) el.textContent = counts[k]; });
