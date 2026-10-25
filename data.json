@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T10:58:26+09:00",
+ "updatedAt": "2026-10-25T13:50:37+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
@@ -19,9 +19,13 @@
    "c-capsule-toystory5-1026",
    "c-shimamura-disney-roomwear-1021",
    "c-duskin-toystory-box",
-   "c-enisie-frozen-glowpack"
+   "c-enisie-frozen-glowpack",
+   "p-costume-fabric-bags-1029"
   ],
-  "changed": [],
+  "changed": [
+   "s-monsters25",
+   "p-tds25-steiff-duffy"
+  ],
   "summary": "ディズニーストア『美女と野獣』35周年、アベイル『モンスターズ・インク』、ハッピー・ホールのディズニー新作の3件を追加。追加調査でラブクロム、東京駅のDisney Fantasy Shop、一番くじ『リメンバー・ミー』、ガシャポン、しまむら、ダスキン、エニシーなど9件を追加"
  },
  "items": [
@@ -37,7 +41,11 @@
    "url": "https://premium.gamepedia.jp/hobby/archives/238143",
    "src": "キャラホビ",
    "addedAt": "2026-10-11-initial",
-   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/08/28113005/94_1.jpg"
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/08/28113005/94_1.jpg",
+   "chars": [
+    "ミッキー＆フレンズ",
+    "ディズニーの猫たち"
+   ]
   },
   {
    "id": "p-villains",
@@ -51,7 +59,11 @@
    "url": "https://castel.jp/item/168854/",
    "src": "キャステル",
    "addedAt": "2026-10-11-initial",
-   "img": "https://c01.castel.jp/1200x/0/villains-merchandise-to-be-released-on-september-3-2026-p168854.jpg?mod=20260812201507"
+   "img": "https://c01.castel.jp/1200x/0/villains-merchandise-to-be-released-on-september-3-2026-p168854.jpg?mod=20260812201507",
+   "chars": [
+    "ヴィランズ",
+    "ナイトメアー・ビフォア・クリスマス"
+   ]
   },
   {
    "id": "c-kodansha-pooh",
@@ -64,7 +76,10 @@
    "desc": "プーさんグッズ1,053点を収録したムック。ミニブック付き。",
    "url": "https://www.gamespark.jp/release/prtimes/20260910/312923.html",
    "src": "PR TIMES",
-   "addedAt": "2026-10-11-initial"
+   "addedAt": "2026-10-11-initial",
+   "chars": [
+    "くまのプーさん"
+   ]
   },
   {
    "id": "p-halloween",
@@ -79,7 +94,10 @@
    "src": "キャステル",
    "addedAt": "2026-10-11-initial",
    "until": "2026-10-31",
-   "img": "https://c02.castel.jp/800x/0/mickey-and-minnie-p162467.jpg?mod=20260812193605"
+   "img": "https://c02.castel.jp/800x/0/mickey-and-minnie-p162467.jpg?mod=20260812193605",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "p-halloween-kowagari",
@@ -108,7 +126,10 @@
    "url": "https://prtimes.jp/main/html/rd/p/000001480.000006099.html",
    "src": "PR TIMES",
    "addedAt": "2026-10-11-initial",
-   "img": "https://prcdn.freetls.fastly.net/release_image/6099/1480/6099-1480-7073b017033782ae98aae1878dc9af7e-3900x2600.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+   "img": "https://prcdn.freetls.fastly.net/release_image/6099/1480/6099-1480-7073b017033782ae98aae1878dc9af7e-3900x2600.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "p-halloween-headband",
@@ -122,7 +143,11 @@
    "url": "https://castel.jp/item/168855/",
    "src": "キャステル",
    "addedAt": "2026-10-11-initial",
-   "img": "https://c03.castel.jp/1200x/0/headbands-and-other-items-perfect-for-halloween-released-on-september-24-2026-p168855.jpg?mod=20260812203014"
+   "img": "https://c03.castel.jp/1200x/0/headbands-and-other-items-perfect-for-halloween-released-on-september-24-2026-p168855.jpg?mod=20260812203014",
+   "chars": [
+    "ヴィランズ",
+    "ナイトメアー・ビフォア・クリスマス"
+   ]
   },
   {
    "id": "s-dumbo85",
@@ -136,7 +161,10 @@
    "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon",
    "src": "ディズニーストア公式",
    "addedAt": "2026-10-11-initial",
-   "releaseLabel": "9月末〜10月"
+   "releaseLabel": "9月末〜10月",
+   "chars": [
+    "ダンボ"
+   ]
   },
   {
    "id": "s-palnui-alice",
@@ -150,7 +178,10 @@
    "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon",
    "src": "ディズニーストア公式",
    "addedAt": "2026-10-11-initial",
-   "releaseLabel": "9月末〜10月"
+   "releaseLabel": "9月末〜10月",
+   "chars": [
+    "ふしぎの国のアリス"
+   ]
   },
   {
    "id": "s-stands-pinocchio",
@@ -164,7 +195,10 @@
    "desc": "ピノキオやゼペット、フィガロ、ジミニー・クリケット、正直ジョン、ギデオンが並ぶ『ピノキオ』のスタンドシリーズ。",
    "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon",
    "src": "ディズニーストア公式",
-   "addedAt": "2026-10-18"
+   "addedAt": "2026-10-18",
+   "chars": [
+    "ピノキオ"
+   ]
   },
   {
    "id": "s-urupocha-autumn",
@@ -178,7 +212,11 @@
    "desc": "制服姿のミッキー＆フレンズと、秋のよそおいのプー＆フレンズのうるぽちゃちゃん。",
    "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon",
    "src": "ディズニーストア公式",
-   "addedAt": "2026-10-18"
+   "addedAt": "2026-10-18",
+   "chars": [
+    "ミッキー＆フレンズ",
+    "くまのプーさん"
+   ]
   },
   {
    "id": "s-urupocha-peterpan",
@@ -192,7 +230,10 @@
    "desc": "ピーター・パンやティンカー・ベル、ウェンディたちが、うるうるの瞳のうるぽちゃちゃんシリーズで登場。",
    "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon",
    "src": "ディズニーストア公式",
-   "addedAt": "2026-10-18"
+   "addedAt": "2026-10-18",
+   "chars": [
+    "ピーター・パン"
+   ]
   },
   {
    "id": "c-maryquant",
@@ -206,7 +247,10 @@
    "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon",
    "src": "ディズニーストア公式",
    "addedAt": "2026-10-11-initial",
-   "releaseLabel": "2026年10月予定"
+   "releaseLabel": "2026年10月予定",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "p-tds25-autumn",
@@ -219,7 +263,10 @@
    "desc": "防寒素材のカチューシャ・ファンキャップ・手袋・マフラーなど身につけグッズ。ランドでは販売なし。",
    "url": "https://castel.jp/p/10309",
    "src": "キャステル",
-   "addedAt": "2026-10-11-initial"
+   "addedAt": "2026-10-11-initial",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "s-book-of-pooh",
@@ -233,7 +280,10 @@
    "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon",
    "src": "ディズニーストア公式",
    "addedAt": "2026-10-11-initial",
-   "releaseLabel": "2026年10月予定"
+   "releaseLabel": "2026年10月予定",
+   "chars": [
+    "くまのプーさん"
+   ]
   },
   {
    "id": "s-cheshire",
@@ -247,7 +297,10 @@
    "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon",
    "src": "ディズニーストア公式",
    "addedAt": "2026-10-11-initial",
-   "releaseLabel": "2026年10月予定"
+   "releaseLabel": "2026年10月予定",
+   "chars": [
+    "ふしぎの国のアリス"
+   ]
   },
   {
    "id": "c-columbia-mickeys-outdoor-club",
@@ -261,7 +314,10 @@
    "url": "https://prtimes.jp/main/html/rd/p/000000210.000075300.html",
    "src": "PR TIMES",
    "addedAt": "2026-10-21",
-   "img": "https://prcdn.freetls.fastly.net/release_image/75300/210/75300-210-43bbdbb76354c27e1d7a894263f02d5d-3900x2224.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+   "img": "https://prcdn.freetls.fastly.net/release_image/75300/210/75300-210-43bbdbb76354c27e1d7a894263f02d5d-3900x2224.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "c-furyu-gal-leopard",
@@ -276,7 +332,10 @@
    "url": "https://animeanime.jp/article/2026/10/19/103988.html",
    "src": "アニメ！アニメ！",
    "addedAt": "2026-10-23",
-   "img": "https://animeanime.jp/imgs/ogp_f/945208.jpg"
+   "img": "https://animeanime.jp/imgs/ogp_f/945208.jpg",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "c-happykuji-halloween",
@@ -290,7 +349,11 @@
    "url": "https://www.pashplus.jp/goods/495047/",
    "src": "PASH! PLUS",
    "addedAt": "2026-10-12",
-   "img": "https://www.pashplus.jp/wp-content/uploads/8d39f3a0b07511262f03bfb5a876f653.jpg"
+   "img": "https://www.pashplus.jp/wp-content/uploads/8d39f3a0b07511262f03bfb5a876f653.jpg",
+   "chars": [
+    "ミッキー＆フレンズ",
+    "スティッチ"
+   ]
   },
   {
    "id": "c-enisie-frozen-glowpack",
@@ -304,7 +367,10 @@
    "url": "https://prtimes.jp/main/html/rd/p/000000010.000101256.html",
    "img": "https://prcdn.freetls.fastly.net/release_image/101256/10/101256-10-39d79c86ed7a6dd59d4cc3e39e029272-2315x2322.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
    "src": "PR TIMES（リズム）",
-   "addedAt": "2026-10-25"
+   "addedAt": "2026-10-25",
+   "chars": [
+    "アナと雪の女王"
+   ]
   },
   {
    "id": "p-duffy-regular",
@@ -318,7 +384,10 @@
    "url": "https://castel.jp/p/10678",
    "src": "キャステル",
    "addedAt": "2026-10-11-initial",
-   "img": "https://c04.castel.jp/800x/0/699598063-p169965.jpg?mod=20260928132822"
+   "img": "https://c04.castel.jp/800x/0/699598063-p169965.jpg?mod=20260928132822",
+   "chars": [
+    "ダッフィー＆フレンズ"
+   ]
   },
   {
    "id": "s-fluffy-animal",
@@ -332,7 +401,11 @@
    "url": "https://www.disney.co.jp/store/news/new/disney-fluffy-animal_261005",
    "src": "ディズニーストア公式",
    "addedAt": "2026-10-11-initial",
-   "img": "https://lumiere-a.akamaihd.net/v1/images/storenews_261005_677x677_3b5a8be2.jpeg?region=0%2C0%2C677%2C677"
+   "img": "https://lumiere-a.akamaihd.net/v1/images/storenews_261005_677x677_3b5a8be2.jpeg?region=0%2C0%2C677%2C677",
+   "chars": [
+    "101匹わんちゃん",
+    "ディズニーの猫たち"
+   ]
   },
   {
    "id": "c-alpen-2026aw",
@@ -347,7 +420,11 @@
    "url": "https://prtimes.jp/main/html/rd/p/000000701.000042346.html",
    "src": "PR TIMES",
    "addedAt": "2026-10-13",
-   "img": "https://prcdn.freetls.fastly.net/release_image/42346/701/42346-701-59762a84230710b16c5a9db7bc971a68-3600x1680.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+   "img": "https://prcdn.freetls.fastly.net/release_image/42346/701/42346-701-59762a84230710b16c5a9db7bc971a68-3600x1680.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+   "chars": [
+    "くまのプーさん",
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "c-belluna-2026aw",
@@ -362,7 +439,13 @@
    "url": "https://prtimes.jp/main/html/rd/p/000000731.000016236.html",
    "src": "PR TIMES",
    "addedAt": "2026-10-13",
-   "img": "https://prcdn.freetls.fastly.net/release_image/16236/731/16236-731-f7a18984adf0998381323f9d483d3700-1500x928.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+   "img": "https://prcdn.freetls.fastly.net/release_image/16236/731/16236-731-f7a18984adf0998381323f9d483d3700-1500x928.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+   "chars": [
+    "ミッキー＆フレンズ",
+    "くまのプーさん",
+    "101匹わんちゃん",
+    "トイ・ストーリー"
+   ]
   },
   {
    "id": "c-rodeo",
@@ -376,7 +459,11 @@
    "url": "https://www.cinemacafe.net/article/2026/10/08/113195.html",
    "src": "シネマカフェ",
    "addedAt": "2026-10-11-initial",
-   "img": "https://www.cinemacafe.net/imgs/ogp_f/838370.jpg"
+   "img": "https://www.cinemacafe.net/imgs/ogp_f/838370.jpg",
+   "chars": [
+    "ミッキー＆フレンズ",
+    "ヴィランズ"
+   ]
   },
   {
    "id": "s-pooh100-project",
@@ -390,7 +477,10 @@
    "url": "https://travel.watch.impress.co.jp/docs/news/2144427.html",
    "src": "トラベル Watch",
    "addedAt": "2026-10-11-initial",
-   "img": "https://asset.watch.impress.co.jp/img/trw/docs/2144/427/001_l.jpg"
+   "img": "https://asset.watch.impress.co.jp/img/trw/docs/2144/427/001_l.jpg",
+   "chars": [
+    "くまのプーさん"
+   ]
   },
   {
    "id": "c-gdc-holiday",
@@ -404,7 +494,10 @@
    "url": "https://www.fullress.com/disney-mickey-mouse-gdc-holiday-special/",
    "src": "fullress",
    "addedAt": "2026-10-13",
-   "img": "https://www.fullress.com/wp-content/uploads/2026/10/1111qGaregwegsd-1-768x959.jpg"
+   "img": "https://www.fullress.com/wp-content/uploads/2026/10/1111qGaregwegsd-1-768x959.jpg",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "c-lawson-zootopia",
@@ -418,7 +511,10 @@
    "url": "https://convenicheck.com/newitem/newit_lawson/137843/",
    "src": "コンビニチェック",
    "addedAt": "2026-10-15",
-   "img": "https://convenicheck.com/wp-content/uploads/2026/10/lawson_zootpiagd26101.jpg"
+   "img": "https://convenicheck.com/wp-content/uploads/2026/10/lawson_zootpiagd26101.jpg",
+   "chars": [
+    "ズートピア"
+   ]
   },
   {
    "id": "c-skater-kirameki-woody",
@@ -432,7 +528,10 @@
    "url": "https://premium.gamepedia.jp/hobby/archives/278048",
    "src": "キャラホビ",
    "addedAt": "2026-10-19",
-   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/17164312/news_image_001-9-4.jpg"
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/17164312/news_image_001-9-4.jpg",
+   "chars": [
+    "トイ・ストーリー"
+   ]
   },
   {
    "id": "c-goldengoose-mickey",
@@ -447,7 +546,10 @@
    "url": "https://prtimes.jp/main/html/rd/p/000000034.000122351.html",
    "src": "PR TIMES",
    "addedAt": "2026-10-14",
-   "img": "https://prcdn.freetls.fastly.net/release_image/122351/34/122351-34-acb21701b2fd2fc9e7fa1e637d986acc-1920x1080.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+   "img": "https://prcdn.freetls.fastly.net/release_image/122351/34/122351-34-acb21701b2fd2fc9e7fa1e637d986acc-1920x1080.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "s-pooh100-collection",
@@ -461,7 +563,10 @@
    "url": "https://travel.watch.impress.co.jp/docs/news/2144427.html",
    "src": "トラベル Watch",
    "addedAt": "2026-10-11-initial",
-   "img": "https://asset.watch.impress.co.jp/img/trw/docs/2144/427/006_m.jpg"
+   "img": "https://asset.watch.impress.co.jp/img/trw/docs/2144/427/006_m.jpg",
+   "chars": [
+    "くまのプーさん"
+   ]
   },
   {
    "id": "p-donald-home",
@@ -475,7 +580,10 @@
    "url": "https://ure.pia.co.jp/articles/-/3466913",
    "src": "ウレぴあ総研",
    "addedAt": "2026-10-12",
-   "img": "https://urepia.ismcdn.jp/mwimgs/d/0/-/img_d0a11b25f572f1f8d1036e21f92077b5109873.jpg"
+   "img": "https://urepia.ismcdn.jp/mwimgs/d/0/-/img_d0a11b25f572f1f8d1036e21f92077b5109873.jpg",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "p-tds25-imagining",
@@ -489,7 +597,10 @@
    "url": "https://ure.pia.co.jp/articles/-/3447712",
    "src": "ウレぴあ総研",
    "addedAt": "2026-10-12",
-   "img": "https://urepia.ismcdn.jp/mwimgs/f/6/-/img_f61e4da69bf85c599689b8bb1c61f3f383382.jpg"
+   "img": "https://urepia.ismcdn.jp/mwimgs/f/6/-/img_f61e4da69bf85c599689b8bb1c61f3f383382.jpg",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "c-axesfemme-twst",
@@ -503,7 +614,10 @@
    "url": "https://premium.gamepedia.jp/hobby/archives/276519",
    "src": "キャラホビ",
    "addedAt": "2026-10-17",
-   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/15195826/axes_femme__1.jpg"
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/15195826/axes_femme__1.jpg",
+   "chars": [
+    "ツイステッドワンダーランド"
+   ]
   },
   {
    "id": "s-japantour-kanagawa",
@@ -533,7 +647,12 @@
    "url": "https://ure.pia.co.jp/articles/-/3507719",
    "src": "ウレぴあ総研",
    "addedAt": "2026-10-19",
-   "img": "https://urepia.ismcdn.jp/mwimgs/9/e/-/img_9efd92e7a949bdaf35de57f9cf1d0fef80763.jpg"
+   "img": "https://urepia.ismcdn.jp/mwimgs/9/e/-/img_9efd92e7a949bdaf35de57f9cf1d0fef80763.jpg",
+   "chars": [
+    "ミッキー＆フレンズ",
+    "プリンセス",
+    "ズートピア"
+   ]
   },
   {
    "id": "c-famima-101",
@@ -547,7 +666,10 @@
    "url": "https://prtimes.jp/main/html/rd/p/000000082.000108253.html",
    "src": "PR TIMES",
    "addedAt": "2026-10-11-initial",
-   "img": "https://prcdn.freetls.fastly.net/release_image/108253/82/108253-82-46131ef0882376e31f5f927137c9c800-3840x2160.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+   "img": "https://prcdn.freetls.fastly.net/release_image/108253/82/108253-82-46131ef0882376e31f5f927137c9c800-3840x2160.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+   "chars": [
+    "101匹わんちゃん"
+   ]
   },
   {
    "id": "c-ichibankuji-monsters",
@@ -561,7 +683,10 @@
    "url": "https://www.cinemacafe.net/article/2026/10/16/113361.html",
    "src": "シネマカフェ",
    "addedAt": "2026-10-17",
-   "img": "https://www.cinemacafe.net/imgs/ogp_f/837072.webp"
+   "img": "https://www.cinemacafe.net/imgs/ogp_f/837072.webp",
+   "chars": [
+    "モンスターズ・インク"
+   ]
   },
   {
    "id": "c-gashapon-cat-swing",
@@ -576,7 +701,10 @@
    "url": "https://www.inside-games.jp/article/2026/10/13/189177.html",
    "src": "インサイド",
    "addedAt": "2026-10-14",
-   "img": "https://www.inside-games.jp/imgs/ogp_f/1792957.jpg"
+   "img": "https://www.inside-games.jp/imgs/ogp_f/1792957.jpg",
+   "chars": [
+    "ディズニーの猫たち"
+   ]
   },
   {
    "id": "c-gashapon-zootopia2-miniature",
@@ -591,7 +719,10 @@
    "url": "https://gashapon.jp/products/detail.html?jan_code=4582770026955000",
    "img": "https://gashapon.jp/disney/images/item_renew/2026/item137/img_dp.png",
    "src": "ガシャポン公式",
-   "addedAt": "2026-10-25"
+   "addedAt": "2026-10-25",
+   "chars": [
+    "ズートピア"
+   ]
   },
   {
    "id": "c-duskin-toystory-box",
@@ -606,7 +737,10 @@
    "url": "https://prtimes.jp/main/html/rd/p/000001160.000005720.html",
    "img": "https://prcdn.freetls.fastly.net/release_image/5720/1160/5720-1160-dc1ebe256cd14a1878a75df0564acbc8-294x240.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
    "src": "PR TIMES（ダスキン）",
-   "addedAt": "2026-10-25"
+   "addedAt": "2026-10-25",
+   "chars": [
+    "トイ・ストーリー"
+   ]
   },
   {
    "id": "c-hottoys-stitch-party",
@@ -621,7 +755,11 @@
    "url": "https://premium.gamepedia.jp/hobby/archives/275334",
    "src": "キャラホビ",
    "addedAt": "2026-10-17",
-   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/14144047/SHIBUYA_TSUTAYA_1.jpg"
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/14144047/SHIBUYA_TSUTAYA_1.jpg",
+   "chars": [
+    "スティッチ",
+    "トイ・ストーリー"
+   ]
   },
   {
    "id": "c-sagara-pouch",
@@ -636,7 +774,14 @@
    "url": "https://premium.gamepedia.jp/hobby/archives/270520",
    "src": "キャラホビ",
    "addedAt": "2026-10-17",
-   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/08122239/1-41.jpg"
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/08122239/1-41.jpg",
+   "chars": [
+    "プリンセス",
+    "スティッチ",
+    "ベイマックス",
+    "トイ・ストーリー",
+    "ズートピア"
+   ]
   },
   {
    "id": "c-bellemaison-nightmare-xmas",
@@ -650,7 +795,10 @@
    "url": "https://premium.gamepedia.jp/hobby/archives/275280",
    "src": "キャラホビ",
    "addedAt": "2026-10-22",
-   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/14141838/1021_1.jpg"
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/14141838/1021_1.jpg",
+   "chars": [
+    "ナイトメアー・ビフォア・クリスマス"
+   ]
   },
   {
    "id": "c-shimamura-disney-roomwear-1021",
@@ -664,7 +812,12 @@
    "url": "https://puchipurabu.com/shimamura-disney/",
    "img": "https://puchipurabu.com/wp-content/uploads/2026/10/shima-2610204.jpg",
    "src": "ぷちぷらぶ",
-   "addedAt": "2026-10-25"
+   "addedAt": "2026-10-25",
+   "chars": [
+    "くまのプーさん",
+    "ズートピア",
+    "ベイマックス"
+   ]
   },
   {
    "id": "c-hottoys-happyhole",
@@ -679,7 +832,11 @@
    "url": "https://prtimes.jp/main/html/rd/p/000000225.000070091.html",
    "src": "PR TIMES（ホットトイズジャパン）",
    "addedAt": "2026-10-25",
-   "img": "https://prcdn.freetls.fastly.net/release_image/70091/225/70091-225-f245581289c082014144f8eb1febe37e-1400x1400.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+   "img": "https://prcdn.freetls.fastly.net/release_image/70091/225/70091-225-f245581289c082014144f8eb1febe37e-1400x1400.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+   "chars": [
+    "スティッチ",
+    "くまのプーさん"
+   ]
   },
   {
    "id": "s-monsters25",
@@ -688,12 +845,15 @@
    "title": "『モンスターズ・インク』25周年グッズ",
    "release": "2026-10-23",
    "price": "ぬいぐるみ＜サリー＞3,800円／トートバッグ6,900円／ペンケース3,300円",
-   "where": "ディズニーストア（10/20からディズニーフラッグシップ東京・東京ディズニーリゾート店・公式オンラインで先行）",
+   "where": "ディズニーストア（10/20からディズニーフラッグシップ東京・東京ディズニーリゾート店・公式オンラインで先行、10/23から各店）",
    "desc": "デフォルメしたサリーやマイクのぬいぐるみ、フサフサのトート、Spirit Jerseyの長袖Tシャツなどをそろえた25周年コレクション。",
    "url": "https://www.cinemacafe.net/article/2026/10/17/113379.html",
    "src": "シネマカフェ",
    "addedAt": "2026-10-11-initial",
-   "img": "https://www.cinemacafe.net/imgs/ogp_f/839951.jpg"
+   "img": "https://www.cinemacafe.net/imgs/ogp_f/839951.jpg",
+   "chars": [
+    "モンスターズ・インク"
+   ]
   },
   {
    "id": "c-avail-disney-1024",
@@ -707,7 +867,13 @@
    "url": "https://www.inside-games.jp/article/2026/10/19/189482.html",
    "src": "インサイド",
    "addedAt": "2026-10-20",
-   "img": "https://www.inside-games.jp/imgs/ogp_f/1795377.png"
+   "img": "https://www.inside-games.jp/imgs/ogp_f/1795377.png",
+   "chars": [
+    "ミッキー＆フレンズ",
+    "ダンボ",
+    "ズートピア",
+    "トイ・ストーリー"
+   ]
   },
   {
    "id": "c-fantasyshop-tokyost-5th",
@@ -722,7 +888,10 @@
    "url": "https://ure.pia.co.jp/articles/-/3522472",
    "img": "https://urepia.ismcdn.jp/mwimgs/a/b/-/img_ab7144b976f41e01dab16dac7c4da1e2197828.jpg",
    "src": "ウレぴあ総研",
-   "addedAt": "2026-10-25"
+   "addedAt": "2026-10-25",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "c-gashapon-fuwafuwa-mejirushi",
@@ -752,7 +921,10 @@
    "url": "https://gacha-now.net/brand/disney",
    "img": "https://gachaimg.com/thumb/fig-5-part1-7391a187.webp",
    "src": "ガチャなう",
-   "addedAt": "2026-10-25"
+   "addedAt": "2026-10-25",
+   "chars": [
+    "トイ・ストーリー"
+   ]
   },
   {
    "id": "s-beauty-beast35",
@@ -766,7 +938,11 @@
    "url": "https://game.watch.impress.co.jp/docs/news/2150619.html",
    "src": "GAME Watch",
    "addedAt": "2026-10-25",
-   "img": "https://game.watch.impress.co.jp/img/gmw/list/2150/619/0.jpg"
+   "img": "https://game.watch.impress.co.jp/img/gmw/list/2150/619/0.jpg",
+   "chars": [
+    "美女と野獣",
+    "プリンセス"
+   ]
   },
   {
    "id": "c-lovechrome-disney-2026holiday",
@@ -780,6 +956,23 @@
    "url": "https://straightpress.jp/20261022/1745132",
    "img": "https://straightpress.jp/wp-content/uploads/2026/10/Higu202610221021-300x225.jpg",
    "src": "STRAIGHT PRESS",
+   "addedAt": "2026-10-25",
+   "chars": [
+    "プリンセス",
+    "ミッキー＆フレンズ"
+   ]
+  },
+  {
+   "id": "p-costume-fabric-bags-1029",
+   "cat": "park",
+   "grp": "パークの衣装生地グッズ",
+   "title": "メディテレーニアンハーバーのコスチューム生地を使ったバッグ",
+   "release": "2026-10-29",
+   "price": "クラッチバッグ20,000円（2種）／ショルダーバッグ18,000円",
+   "where": "東京ディズニーリゾート・アプリのみ",
+   "desc": "東京ディズニーシーのメディテレーニアンハーバーにあるショップのキャストの衣装生地を一部に使ったバッグ。",
+   "url": "https://www.tokyodisneyresort.jp/goods/134002579/",
+   "src": "東京ディズニーリゾート公式",
    "addedAt": "2026-10-25"
   },
   {
@@ -794,7 +987,10 @@
    "url": "https://premium.gamepedia.jp/hobby/prize/s-01J7DKHA6WRPRTVJK2VQABZHZ6",
    "src": "キャラホビ",
    "addedAt": "2026-10-20",
-   "img": "https://assets.gamepedia.jp/prize/proxy/e84a74f96529b058e7dcfdb96ff2ace3.webp"
+   "img": "https://assets.gamepedia.jp/prize/proxy/e84a74f96529b058e7dcfdb96ff2ace3.webp",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "c-avail-monsters-1031",
@@ -808,7 +1004,10 @@
    "url": "https://nijimen.kusuguru.co.jp/topics/643070",
    "src": "にじめん",
    "addedAt": "2026-10-25",
-   "img": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/10/e82626b34d1b481b8c399ff5ec1b2a79.jpg"
+   "img": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/10/e82626b34d1b481b8c399ff5ec1b2a79.jpg",
+   "chars": [
+    "モンスターズ・インク"
+   ]
   },
   {
    "id": "c-ichibankuji-rememberme",
@@ -821,7 +1020,10 @@
    "desc": "『リメンバー・ミー』の一番くじ。店頭で10月31日から発売予定。",
    "url": "https://1kuji.com/characters/150",
    "src": "一番くじ倶楽部",
-   "addedAt": "2026-10-25"
+   "addedAt": "2026-10-25",
+   "chars": [
+    "リメンバー・ミー"
+   ]
   },
   {
    "id": "c-workman-2026aw",
@@ -851,7 +1053,10 @@
    "url": "https://game.watch.impress.co.jp/docs/news/2150243.html",
    "src": "GAME Watch",
    "addedAt": "2026-10-23",
-   "img": "https://game.watch.impress.co.jp/img/gmw/list/2150/243/0.jpg"
+   "img": "https://game.watch.impress.co.jp/img/gmw/list/2150/243/0.jpg",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "cat": "store",
@@ -865,7 +1070,10 @@
    "id": "s-xmas-2026",
    "grp": "DISNEY CHRISTMAS 2026",
    "title": "DISNEY CHRISTMAS 2026",
-   "desc": "ツリーをイメージした衣装のミッキー＆フレンズのぬいぐるみや、キャラクターデザインのツリー・リースなどクリスマスの飾りつけアイテム。"
+   "desc": "ツリーをイメージした衣装のミッキー＆フレンズのぬいぐるみや、キャラクターデザインのツリー・リースなどクリスマスの飾りつけアイテム。",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "cat": "store",
@@ -879,7 +1087,10 @@
    "id": "s-frozen-xmas-2026",
    "grp": "DISNEY CHRISTMAS 2026",
    "title": "FROZEN CHRISTMAS 2026（『アナと雪の女王／家族の思い出』）",
-   "desc": "キャラクターをあしらったツリー＆リース（LEDライト付きあり）や、スノーギースが揺れるグラスツリーなど、アナ雪の世界観のデコレーション。"
+   "desc": "キャラクターをあしらったツリー＆リース（LEDライト付きあり）や、スノーギースが揺れるグラスツリーなど、アナ雪の世界観のデコレーション。",
+   "chars": [
+    "アナと雪の女王"
+   ]
   },
   {
    "cat": "store",
@@ -893,7 +1104,10 @@
    "id": "s-happy-birthday-mickey-2026",
    "grp": "ミッキーマウス誕生日",
    "title": "HAPPY BIRTHDAY MICKEY",
-   "desc": "11月18日のミッキーの誕生日に向けたシリーズ。フォーマル衣装のミッキーのぬいぐるみ、キーホルダー、フィギュア、バッグなどで、チップ＆デールもおそろいの衣装で登場。"
+   "desc": "11月18日のミッキーの誕生日に向けたシリーズ。フォーマル衣装のミッキーのぬいぐるみ、キーホルダー、フィギュア、バッグなどで、チップ＆デールもおそろいの衣装で登場。",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "cat": "store",
@@ -907,7 +1121,12 @@
    "id": "s-white-winter-2026",
    "grp": "WHITE WINTER 2026",
    "title": "WHITE WINTER 2026",
-   "desc": "プーさんのぬいぐるみを中心に、モバイルポシェット、湯たんぽ、セーター、トートなど冬向けアイテム。ピグレットやイーヨー、ミッキー、スティッチのぬいぐるみキーホルダーも。"
+   "desc": "プーさんのぬいぐるみを中心に、モバイルポシェット、湯たんぽ、セーター、トートなど冬向けアイテム。ピグレットやイーヨー、ミッキー、スティッチのぬいぐるみキーホルダーも。",
+   "chars": [
+    "くまのプーさん",
+    "ミッキー＆フレンズ",
+    "スティッチ"
+   ]
   },
   {
    "id": "c-yolu-peterpan",
@@ -921,7 +1140,10 @@
    "url": "https://premium.gamepedia.jp/hobby/archives/276131",
    "src": "キャラホビ",
    "addedAt": "2026-10-17",
-   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/15144703/YOLU_112_1.jpg"
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/10/15144703/YOLU_112_1.jpg",
+   "chars": [
+    "ピーター・パン"
+   ]
   },
   {
    "id": "p-duffy-winter",
@@ -936,7 +1158,10 @@
    "url": "https://game.watch.impress.co.jp/docs/news/2146085.html",
    "src": "GAME Watch／オリエンタルランド",
    "addedAt": "2026-10-12",
-   "img": "https://game.watch.impress.co.jp/img/gmw/list/2146/085/59.jpg"
+   "img": "https://game.watch.impress.co.jp/img/gmw/list/2146/085/59.jpg",
+   "chars": [
+    "ダッフィー＆フレンズ"
+   ]
   },
   {
    "id": "p-tds25-steiff-duffy",
@@ -945,12 +1170,15 @@
    "title": "シュタイフ プロデュース ダッフィー（25周年記念）",
    "release": "2026-11-02",
    "price": "99,000円（限定3,000個）",
-   "where": "シー入園後に公式アプリで購入（状況によりマクダックス・デパートメントストア）",
+   "where": "東京ディズニーシー入園後に東京ディズニーリゾート・アプリで購入（シー：マクダックス・デパートメントストアで販売する場合あり）",
    "desc": "東京ディズニーシー25周年を記念したシュタイフ製ダッフィーの数量限定品。",
    "url": "https://prtimes.jp/main/html/rd/p/000000177.000119340.html",
    "src": "PR TIMES（オリエンタルランド）",
    "addedAt": "2026-10-12",
-   "img": "https://prcdn.freetls.fastly.net/release_image/119340/177/119340-177-b9f8cb430f0b452f38da392691d71cd8-3000x2001.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+   "img": "https://prcdn.freetls.fastly.net/release_image/119340/177/119340-177-b9f8cb430f0b452f38da392691d71cd8-3000x2001.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+   "chars": [
+    "ダッフィー＆フレンズ"
+   ]
   },
   {
    "id": "c-sega-prize-2026-11",
@@ -964,7 +1192,13 @@
    "desc": "11月6日のモンスターズ・インクぬいぐるみやベイマックス赤いほっぺマスコットを皮切りに、スティッチのウィンターコスチュームマスコット、プーさん寝そべりLLぬいぐるみなどが週ごとに入荷予定。",
    "url": "https://premium.gamepedia.jp/hobby/prize/s-01J7DKHA6WRPRTVJK2VQABZHZ6",
    "src": "キャラホビ",
-   "addedAt": "2026-10-21"
+   "addedAt": "2026-10-21",
+   "chars": [
+    "モンスターズ・インク",
+    "スティッチ",
+    "くまのプーさん",
+    "ベイマックス"
+   ]
   },
   {
    "id": "c-happykuji-ornament2026",
@@ -978,7 +1212,10 @@
    "url": "https://www.cinemacafe.net/article/2026/10/07/113156.html",
    "src": "シネマカフェ",
    "addedAt": "2026-10-13",
-   "img": "https://www.cinemacafe.net/imgs/ogp_f/838012.jpg"
+   "img": "https://www.cinemacafe.net/imgs/ogp_f/838012.jpg",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "p-xmas-2026",
@@ -993,7 +1230,10 @@
    "src": "トラベル Watch",
    "addedAt": "2026-10-11-initial",
    "until": "2026-12-25",
-   "img": "https://travel.watch.impress.co.jp/img/trw/list/2146/525/001.jpg"
+   "img": "https://travel.watch.impress.co.jp/img/trw/list/2146/525/001.jpg",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "p-xmas-lillinglin",
@@ -1022,7 +1262,10 @@
    "url": "https://ure.pia.co.jp/articles/-/3510627",
    "src": "ウレぴあ総研",
    "addedAt": "2026-10-18",
-   "img": "https://urepia.ismcdn.jp/mwimgs/b/2/-/img_b22666b2cc41f471895dc92476a7c4d449709.jpg"
+   "img": "https://urepia.ismcdn.jp/mwimgs/b/2/-/img_b22666b2cc41f471895dc92476a7c4d449709.jpg",
+   "chars": [
+    "プリンセス"
+   ]
   },
   {
    "id": "s-kagoshima-open",
@@ -1036,7 +1279,10 @@
    "url": "https://www.disney.co.jp/store/news/information/if20260814_101",
    "src": "ディズニーストア公式／トラベル Watch",
    "addedAt": "2026-10-15",
-   "img": "https://lumiere-a.akamaihd.net/v1/images/26_0721_402_banner_1200x677px_cd55148d.jpeg?region=0,0,1200,677"
+   "img": "https://lumiere-a.akamaihd.net/v1/images/26_0721_402_banner_1200x677px_cd55148d.jpeg?region=0,0,1200,677",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "p-tds25-swarovski",
@@ -1064,7 +1310,10 @@
    "url": "https://ure.pia.co.jp/articles/-/3520134",
    "src": "ウレぴあ総研",
    "addedAt": "2026-10-23",
-   "img": "https://urepia.ismcdn.jp/mwimgs/6/6/-/img_66a6b0eb7952194a3f3c95a4021397b585247.jpg"
+   "img": "https://urepia.ismcdn.jp/mwimgs/6/6/-/img_66a6b0eb7952194a3f3c95a4021397b585247.jpg",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ]
   },
   {
    "id": "c-disney-poster-collection-book",
@@ -1092,7 +1341,10 @@
    "url": "https://premium.gamepedia.jp/hobby/kuji/s-01J7DKHA6WRPRTVJK2VQABZHZ6",
    "src": "キャラホビ",
    "addedAt": "2026-10-19",
-   "img": "https://tfi.gamepedia.jp/image/w=200,fit=pad,f=webp/assets.gamepedia.jp/kuji/proxy/c6eec38a1233bd912f2fea0ef73beeef.webp"
+   "img": "https://tfi.gamepedia.jp/image/w=200,fit=pad,f=webp/assets.gamepedia.jp/kuji/proxy/c6eec38a1233bd912f2fea0ef73beeef.webp",
+   "chars": [
+    "トイ・ストーリー"
+   ]
   },
   {
    "id": "c-pooh100-kawaisouni",
@@ -1107,7 +1359,10 @@
    "url": "https://nlab.itmedia.co.jp/cont/articles/3987071/",
    "src": "ねとらぼ",
    "addedAt": "2026-10-14",
-   "img": "https://research.image.itmedia.co.jp/wp-content/uploads/2025/10/1759914218_yjt.jpg"
+   "img": "https://research.image.itmedia.co.jp/wp-content/uploads/2025/10/1759914218_yjt.jpg",
+   "chars": [
+    "くまのプーさん"
+   ]
   },
   {
    "id": "s-pooh100-charm",
@@ -1122,7 +1377,10 @@
    "src": "トラベル Watch",
    "addedAt": "2026-10-11-initial",
    "releaseLabel": "2027年4月ごろ",
-   "img": "https://asset.watch.impress.co.jp/img/trw/docs/2144/427/002_l.jpg"
+   "img": "https://asset.watch.impress.co.jp/img/trw/docs/2144/427/002_l.jpg",
+   "chars": [
+    "くまのプーさん"
+   ]
   }
  ]
 }
