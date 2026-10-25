@@ -1,32 +1,17 @@
 {
- "updatedAt": "2026-10-25T13:50:37+09:00",
+ "updatedAt": "2026-10-26T04:58:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-10-25",
-  "added": [
-   "s-beauty-beast35",
-   "c-avail-monsters-1031",
-   "c-hottoys-happyhole",
-   "c-lovechrome-disney-2026holiday",
-   "c-fantasyshop-tokyost-5th",
-   "c-ichibankuji-rememberme",
-   "c-gashapon-fuwafuwa-mejirushi",
-   "c-gashapon-zootopia2-miniature",
-   "c-capsule-toystory5-1026",
-   "c-shimamura-disney-roomwear-1021",
-   "c-duskin-toystory-box",
-   "c-enisie-frozen-glowpack",
-   "p-costume-fabric-bags-1029"
-  ],
+  "date": "2026-10-26",
+  "added": [],
   "changed": [
-   "s-monsters25",
-   "p-tds25-steiff-duffy"
+   "s-dumbo85"
   ],
-  "summary": "ディズニーストア『美女と野獣』35周年、アベイル『モンスターズ・インク』、ハッピー・ホールのディズニー新作の3件を追加。追加調査でラブクロム、東京駅のDisney Fantasy Shop、一番くじ『リメンバー・ミー』、ガシャポン、しまむら、ダスキン、エニシーなど9件を追加"
+  "summary": "新規グッズの追加はなし。ディズニーストア『ダンボ』85周年コレクションの発売日（10月6日）と価格を確定"
  },
  "items": [
   {
@@ -147,23 +132,6 @@
    "chars": [
     "ヴィランズ",
     "ナイトメアー・ビフォア・クリスマス"
-   ]
-  },
-  {
-   "id": "s-dumbo85",
-   "cat": "store",
-   "grp": "10月の新作",
-   "title": "『ダンボ』公開85周年コレクション",
-   "release": "2026-09-28",
-   "price": "—",
-   "where": "ディズニーストア",
-   "desc": "ぬいぐるみ、ぬいぐるみキーホルダー、ステーショナリー、壁掛け時計。",
-   "url": "https://www.disney.co.jp/store/news/new/202610_comingsoon",
-   "src": "ディズニーストア公式",
-   "addedAt": "2026-10-11-initial",
-   "releaseLabel": "9月末〜10月",
-   "chars": [
-    "ダンボ"
    ]
   },
   {
@@ -371,6 +339,23 @@
    "chars": [
     "アナと雪の女王"
    ]
+  },
+  {
+   "id": "s-dumbo85",
+   "cat": "store",
+   "grp": "10月の新作",
+   "title": "『ダンボ』公開85周年コレクション",
+   "release": "2026-10-06",
+   "price": "時計16,000円／ぬいぐるみキーチェーン各2,800円／ブランケット ぬいぐるみ付き5,500円",
+   "where": "ディズニーストア",
+   "desc": "映画公開85周年を記念した限定コレクション「DISNEY DUMBO 85TH ANNIVERSARY」。ベイビーなダンボとティモシーをあしらったスピリットジャージーや時計、マグなどがそろう。",
+   "url": "https://travel.watch.impress.co.jp/docs/news/2146005.html",
+   "src": "トラベル Watch",
+   "addedAt": "2026-10-11-initial",
+   "chars": [
+    "ダンボ"
+   ],
+   "img": "https://travel.watch.impress.co.jp/img/trw/list/2146/005/001.jpg"
   },
   {
    "id": "p-duffy-regular",
