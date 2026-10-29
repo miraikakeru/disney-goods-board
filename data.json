@@ -1,19 +1,21 @@
 {
- "updatedAt": "2026-10-29T04:55:14+09:00",
+ "updatedAt": "2026-10-30T04:53:52+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "added": [
-   "c-donki-disney-winter-2026",
-   "c-tokyobanana-zootopia-2026",
-   "c-gustafwestman-mickey"
+   "c-shimamura-disney-dogs-1031",
+   "c-skater-mickey-grid-lunch",
+   "c-maisondefleur-mickey-friends-1101"
   ],
-  "changed": [],
-  "summary": "コラボ3件追加（ドン・キホーテ冬物、東京ばな奈ズートピア、グスタフ・ウェストマン）。Webページを開けず検索結果のみで確認"
+  "changed": [
+   "c-donki-disney-winter-2026"
+  ],
+  "summary": "コラボ3件追加（しまむら犬キャラ、スケーター ランチグッズ、Maison de FLEUR）、ドン・キホーテ冬物の価格を確定"
  },
  "items": [
   {
@@ -963,6 +965,23 @@
    "addedAt": "2026-10-25"
   },
   {
+   "id": "c-skater-mickey-grid-lunch",
+   "cat": "collab",
+   "grp": "雑貨",
+   "title": "スケーター ミッキー＆フレンズ グリッド柄ランチグッズ（6種）",
+   "release": "2026-10-29",
+   "price": "2段ランチボックス2,035円／マグボトル2,750円／コンビセット990円",
+   "where": "スケーター公式オンライン、全国の雑貨店・量販店など",
+   "desc": "すっきりしたグリッド柄にミッキーたちをワンポイントで入れた、大人も使いやすいランチボックスやボトルのシリーズ。",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ],
+   "url": "https://prtimes.jp/main/html/rd/p/000000339.000084027.html",
+   "img": "https://prcdn.freetls.fastly.net/release_image/84027/339/84027-339-dd5af45d48c905c544530eb9d94aa131-1200x1200.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+   "src": "PR TIMES",
+   "addedAt": "2026-10-30"
+  },
+  {
    "id": "c-sega-akaihoppe-purekira",
    "cat": "collab",
    "grp": "プライズ（ゲームセンター景品）",
@@ -1018,8 +1037,8 @@
    "grp": "アパレル",
    "title": "ドン・キホーテ／アピタ ディズニー冬物アパレル・雑貨",
    "release": "2026-10-31",
-   "price": "—",
-   "where": "ドン・キホーテ、アピタほか",
+   "price": "裏起毛ZIPパーカ2,999円＋税／ボア上下セット3,999円＋税",
+   "where": "ドン・キホーテ、アピタ（10月31日9時から順次）",
    "desc": "ナイトメアーやヴィランズ、ズートピアなどのキャラクターを使った裏起毛・ボアのパーカーやルームウェアなど、冬向けのアパレルと雑貨がまとめて登場する。",
    "chars": [
     "ナイトメアー・ビフォア・クリスマス",
@@ -1033,6 +1052,24 @@
    "url": "https://www.inside-games.jp/article/2026/10/28/189971.html",
    "src": "インサイド",
    "addedAt": "2026-10-29"
+  },
+  {
+   "id": "c-shimamura-disney-dogs-1031",
+   "cat": "collab",
+   "grp": "アパレル",
+   "title": "しまむら ディズニーの犬キャラクターグッズ（プルート／101匹わんちゃん）",
+   "release": "2026-10-31",
+   "price": "—",
+   "where": "全国のしまむら、しまむらパーク（オンラインは同日15時から）",
+   "desc": "プルートや『101匹わんちゃん』の犬たちをモチーフにした、耳付きキャップやポーチ付き2WAYバッグなどの日常使いアイテム。",
+   "chars": [
+    "ミッキー＆フレンズ",
+    "101匹わんちゃん"
+   ],
+   "url": "https://animeanime.jp/article/2026/10/29/104322.html",
+   "img": "https://animeanime.jp/imgs/p/jtKDOVlKAvjRrNw8SXAVejagI61Nrq_oqaqr/949332.jpg",
+   "src": "アニメ！アニメ！",
+   "addedAt": "2026-10-30"
   },
   {
    "id": "c-workman-2026aw",
@@ -1136,6 +1173,23 @@
     "ミッキー＆フレンズ",
     "スティッチ"
    ]
+  },
+  {
+   "id": "c-maisondefleur-mickey-friends-1101",
+   "cat": "collab",
+   "grp": "バッグ・ファッション雑貨",
+   "title": "Maison de FLEUR Disney Collection「MICKEY＆FRIENDS」マルチポケットトート／スカーフ",
+   "release": "2026-11-01",
+   "price": "マルチポケットトート8,800円／スカーフ3,500円",
+   "where": "Maison de FLEUR店舗、STRIPE CLUB（12時〜）、ZOZOTOWN",
+   "desc": "日本橋三越の先行販売で完売したカラーが再登場する、ミッキー＆フレンズを描いたトートとスカーフ。チップ＆デール柄スカーフはSTRIPE CLUB限定。",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ],
+   "url": "https://prtimes.jp/main/html/rd/p/000001343.000036659.html",
+   "img": "https://prcdn.freetls.fastly.net/release_image/36659/1343/36659-1343-a7dc9e7e6eadfb6581bfb245aceea0ab-1100x550.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+   "src": "PR TIMES",
+   "addedAt": "2026-10-30"
   },
   {
    "id": "c-yolu-peterpan",
