@@ -1,21 +1,20 @@
 {
- "updatedAt": "2026-10-30T04:53:52+09:00",
+ "updatedAt": "2026-10-31T04:47:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "added": [
-   "c-shimamura-disney-dogs-1031",
-   "c-skater-mickey-grid-lunch",
-   "c-maisondefleur-mickey-friends-1101"
+   "c-happykuji-zootopia-nick-1128"
   ],
   "changed": [
-   "c-donki-disney-winter-2026"
+   "s-xmas-2026",
+   "s-frozen-xmas-2026"
   ],
-  "summary": "コラボ3件追加（しまむら犬キャラ、スケーター ランチグッズ、Maison de FLEUR）、ドン・キホーテ冬物の価格を確定"
+  "summary": "コラボ1件追加（Happyくじ『ズートピア』ニック）、ディズニーストアのクリスマス2コレクションの発売日（11/3先行・11/6店舗）と価格を確定"
  },
  "items": [
   {
@@ -1106,37 +1105,37 @@
   },
   {
    "cat": "store",
-   "release": "2026-11-01",
-   "releaseLabel": "2026年11月予定",
-   "price": "—",
-   "where": "ディズニーストア",
-   "url": "https://dpost.jp/2026/10/23/wp-142718/",
-   "src": "Dpost（ディズニーストア11月発売予定リスト）",
+   "release": "2026-11-03",
+   "price": "ぬいぐるみ各5,600円／ぬいぐるみキーチェーン各3,300円／アドベントカレンダー5,700円／スノードーム8,000円",
+   "where": "ディズニーストア店舗（11月6日〜）／フラッグシップ東京・東京ディズニーリゾート店・公式オンライン（11月3日〜先行）",
+   "url": "https://prtimes.jp/main/html/rd/p/000000802.000002021.html",
+   "src": "PR TIMES（ディズニーストア）",
    "addedAt": "2026-10-24",
    "id": "s-xmas-2026",
    "grp": "DISNEY CHRISTMAS 2026",
    "title": "DISNEY CHRISTMAS 2026",
-   "desc": "ツリーをイメージした衣装のミッキー＆フレンズのぬいぐるみや、キャラクターデザインのツリー・リースなどクリスマスの飾りつけアイテム。",
+   "desc": "レトロな赤・緑・白のアートで彩ったミッキー＆フレンズのクリスマスコレクション。ツリー衣装のぬいぐるみやツリー、オーナメント、お菓子などがそろう。店舗は来店予約制。",
    "chars": [
     "ミッキー＆フレンズ"
-   ]
+   ],
+   "img": "https://prcdn.freetls.fastly.net/release_image/2021/802/2021-802-32dca0ef1f81d7a5da229496820b876e-3900x2048.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
   },
   {
    "cat": "store",
-   "release": "2026-11-01",
-   "releaseLabel": "2026年11月予定",
-   "price": "—",
-   "where": "ディズニーストア",
-   "url": "https://dpost.jp/2026/10/23/wp-142718/",
-   "src": "Dpost（ディズニーストア11月発売予定リスト）",
+   "release": "2026-11-03",
+   "price": "ぬいぐるみキーチェーン各2,800円／ガラスツリー4,600円／リース6,600円／スノードーム9,000円",
+   "where": "ディズニーストア店舗（11月6日〜）／フラッグシップ東京・東京ディズニーリゾート店・公式オンライン（11月3日〜先行）",
+   "url": "https://prtimes.jp/main/html/rd/p/000000802.000002021.html",
+   "src": "PR TIMES（ディズニーストア）",
    "addedAt": "2026-10-24",
    "id": "s-frozen-xmas-2026",
    "grp": "DISNEY CHRISTMAS 2026",
    "title": "FROZEN CHRISTMAS 2026（『アナと雪の女王／家族の思い出』）",
-   "desc": "キャラクターをあしらったツリー＆リース（LEDライト付きあり）や、スノーギースが揺れるグラスツリーなど、アナ雪の世界観のデコレーション。",
+   "desc": "短編『アナと雪の女王／家族の思い出』がテーマのホリデーアイテム。ガラスツリーやリース、スノードーム、サー・ヨルゲンビョルゲンなどのぬいぐるみキーチェーン。",
    "chars": [
     "アナと雪の女王"
-   ]
+   ],
+   "img": "https://prcdn.freetls.fastly.net/release_image/2021/802/2021-802-32dca0ef1f81d7a5da229496820b876e-3900x2048.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
   },
   {
    "cat": "store",
@@ -1511,6 +1510,23 @@
    "chars": [
     "くまのプーさん"
    ]
+  },
+  {
+   "id": "c-happykuji-zootopia-nick-1128",
+   "cat": "collab",
+   "grp": "コンビニ・くじ",
+   "title": "Happyくじ『ズートピア』ニックコレクション",
+   "release": "2026-11-28",
+   "price": "1回880円",
+   "where": "セブン-イレブン、イトーヨーカドー、ゆめタウン",
+   "desc": "11月29日「いいニックの日」にちなんだニック中心のくじ。作中衣装を描き起こしたアートのフィギュア、ぬいぐるみチャーム、トートバッグなど全9等級＋Last賞。",
+   "chars": [
+    "ズートピア"
+   ],
+   "url": "https://ure.pia.co.jp/articles/-/3535112",
+   "img": "https://urepia.ismcdn.jp/mwimgs/b/f/-/img_bf45d9f228be34e9c7a7179e5686dfed87660.jpg",
+   "src": "ウレぴあ総研",
+   "addedAt": "2026-10-31"
   }
  ]
 }
