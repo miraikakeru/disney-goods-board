@@ -1,40 +1,19 @@
 {
- "updatedAt": "2026-10-31T04:47:00+09:00",
+ "updatedAt": "2026-11-01T04:55:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "added": [
-   "c-happykuji-zootopia-nick-1128"
+   "c-sparklink-agf2026"
   ],
-  "changed": [
-   "s-xmas-2026",
-   "s-frozen-xmas-2026"
-  ],
-  "summary": "コラボ1件追加（Happyくじ『ズートピア』ニック）、ディズニーストアのクリスマス2コレクションの発売日（11/3先行・11/6店舗）と価格を確定"
+  "changed": [],
+  "summary": "コラボ1件追加（スパークリンク・スターズ AGF2026グッズ）、発売から2か月を過ぎた1件を削除。Webページの取得が許可待ちで失敗したため検索結果の範囲で更新"
  },
  "items": [
-  {
-   "id": "s-halloween",
-   "cat": "store",
-   "grp": "ハロウィーン",
-   "title": "ディズニーストア ハロウィーン（DISNEY HALLOWEEN／CAT MINNIE AND FIGARO）",
-   "release": "2026-09-01",
-   "price": "ぬいぐるみ4,400円／ベレー帽4,500円／ニットカーディガン9,000円",
-   "where": "ディズニーストア（9/1フラッグシップ東京・オンライン先行、9/4から順次）",
-   "desc": "ハロウィーンのぬいぐるみやキーチェーン、猫のミニーとフィガロのシリーズ。",
-   "url": "https://premium.gamepedia.jp/hobby/archives/238143",
-   "src": "キャラホビ",
-   "addedAt": "2026-10-11-initial",
-   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/08/28113005/94_1.jpg",
-   "chars": [
-    "ミッキー＆フレンズ",
-    "ディズニーの猫たち"
-   ]
-  },
   {
    "id": "p-villains",
    "cat": "park",
@@ -1527,6 +1506,22 @@
    "img": "https://urepia.ismcdn.jp/mwimgs/b/f/-/img_bf45d9f228be34e9c7a7179e5686dfed87660.jpg",
    "src": "ウレぴあ総研",
    "addedAt": "2026-10-31"
+  },
+  {
+   "id": "c-sparklink-agf2026",
+   "cat": "collab",
+   "grp": "ゲーム関連グッズ",
+   "title": "『ディズニー スパークリンク・スターズ』AGF2026出展グッズ",
+   "release": "2026-11-07",
+   "price": "—",
+   "where": "AGF2026会場",
+   "desc": "11月4日配信開始のスマホゲーム『ディズニー スパークリンク・スターズ』が11月7日開幕のAGF2026に出展し、会場限定アイテムを含むグッズを販売します。",
+   "chars": [
+    "ディズニー スパークリンク・スターズ"
+   ],
+   "url": "https://www.4gamer.net/games/008/G100854/20261022029/",
+   "src": "4Gamer.net",
+   "addedAt": "2026-11-01"
   }
  ]
 }
