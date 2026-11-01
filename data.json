@@ -1,17 +1,19 @@
 {
- "updatedAt": "2026-11-01T04:55:00+09:00",
+ "updatedAt": "2026-11-02T04:55:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "added": [
-   "c-sparklink-agf2026"
+   "p-eto-2027",
+   "c-gashapon-crystal-mejirushi",
+   "c-bandaispirits-genie-magicalmoment"
   ],
   "changed": [],
-  "summary": "コラボ1件追加（スパークリンク・スターズ AGF2026グッズ）、発売から2か月を過ぎた1件を削除。Webページの取得が許可待ちで失敗したため検索結果の範囲で更新"
+  "summary": "パーク1件（干支ぬいぐるみ11/19）・コラボ2件（ガシャポン クリスタルめじるし、ジーニー プライズ）を追加。削除なし"
  },
  "items": [
   {
@@ -1084,40 +1086,6 @@
   },
   {
    "cat": "store",
-   "release": "2026-11-03",
-   "price": "ぬいぐるみ各5,600円／ぬいぐるみキーチェーン各3,300円／アドベントカレンダー5,700円／スノードーム8,000円",
-   "where": "ディズニーストア店舗（11月6日〜）／フラッグシップ東京・東京ディズニーリゾート店・公式オンライン（11月3日〜先行）",
-   "url": "https://prtimes.jp/main/html/rd/p/000000802.000002021.html",
-   "src": "PR TIMES（ディズニーストア）",
-   "addedAt": "2026-10-24",
-   "id": "s-xmas-2026",
-   "grp": "DISNEY CHRISTMAS 2026",
-   "title": "DISNEY CHRISTMAS 2026",
-   "desc": "レトロな赤・緑・白のアートで彩ったミッキー＆フレンズのクリスマスコレクション。ツリー衣装のぬいぐるみやツリー、オーナメント、お菓子などがそろう。店舗は来店予約制。",
-   "chars": [
-    "ミッキー＆フレンズ"
-   ],
-   "img": "https://prcdn.freetls.fastly.net/release_image/2021/802/2021-802-32dca0ef1f81d7a5da229496820b876e-3900x2048.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
-  },
-  {
-   "cat": "store",
-   "release": "2026-11-03",
-   "price": "ぬいぐるみキーチェーン各2,800円／ガラスツリー4,600円／リース6,600円／スノードーム9,000円",
-   "where": "ディズニーストア店舗（11月6日〜）／フラッグシップ東京・東京ディズニーリゾート店・公式オンライン（11月3日〜先行）",
-   "url": "https://prtimes.jp/main/html/rd/p/000000802.000002021.html",
-   "src": "PR TIMES（ディズニーストア）",
-   "addedAt": "2026-10-24",
-   "id": "s-frozen-xmas-2026",
-   "grp": "DISNEY CHRISTMAS 2026",
-   "title": "FROZEN CHRISTMAS 2026（『アナと雪の女王／家族の思い出』）",
-   "desc": "短編『アナと雪の女王／家族の思い出』がテーマのホリデーアイテム。ガラスツリーやリース、スノードーム、サー・ヨルゲンビョルゲンなどのぬいぐるみキーチェーン。",
-   "chars": [
-    "アナと雪の女王"
-   ],
-   "img": "https://prcdn.freetls.fastly.net/release_image/2021/802/2021-802-32dca0ef1f81d7a5da229496820b876e-3900x2048.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
-  },
-  {
-   "cat": "store",
    "release": "2026-11-01",
    "releaseLabel": "2026年11月予定",
    "price": "—",
@@ -1168,6 +1136,26 @@
    "img": "https://prcdn.freetls.fastly.net/release_image/36659/1343/36659-1343-a7dc9e7e6eadfb6581bfb245aceea0ab-1100x550.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
    "src": "PR TIMES",
    "addedAt": "2026-10-30"
+  },
+  {
+   "id": "c-gashapon-crystal-mejirushi",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "ガシャポン「ディズニーキャラクター」クリスタルめじるしアクセサリー",
+   "release": "2026-11-01",
+   "releaseLabel": "2026年11月予定",
+   "price": "1回300円（全5種）",
+   "where": "ガシャポン取扱店",
+   "desc": "ダイヤカット風のクリスタル調ボディで座りポーズのキャラクターを再現したカプセルトイ。カラビナやリングパーツ付きで持ち物の目印に使える。",
+   "chars": [
+    "くまのプーさん",
+    "スティッチ",
+    "ダンボ"
+   ],
+   "url": "https://www.inside-games.jp/article/2026/11/01/190163.html",
+   "img": "https://www.inside-games.jp/imgs/ogp_f/1791635.jpg",
+   "src": "インサイド",
+   "addedAt": "2026-11-02"
   },
   {
    "id": "c-yolu-peterpan",
@@ -1240,6 +1228,40 @@
    "addedAt": "2026-10-27"
   },
   {
+   "cat": "store",
+   "release": "2026-11-03",
+   "price": "ぬいぐるみ各5,600円／ぬいぐるみキーチェーン各3,300円／アドベントカレンダー5,700円／スノードーム8,000円",
+   "where": "ディズニーストア店舗（11月6日〜）／フラッグシップ東京・東京ディズニーリゾート店・公式オンライン（11月3日〜先行）",
+   "url": "https://prtimes.jp/main/html/rd/p/000000802.000002021.html",
+   "src": "PR TIMES（ディズニーストア）",
+   "addedAt": "2026-10-24",
+   "id": "s-xmas-2026",
+   "grp": "DISNEY CHRISTMAS 2026",
+   "title": "DISNEY CHRISTMAS 2026",
+   "desc": "レトロな赤・緑・白のアートで彩ったミッキー＆フレンズのクリスマスコレクション。ツリー衣装のぬいぐるみやツリー、オーナメント、お菓子などがそろう。店舗は来店予約制。",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ],
+   "img": "https://prcdn.freetls.fastly.net/release_image/2021/802/2021-802-32dca0ef1f81d7a5da229496820b876e-3900x2048.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+  },
+  {
+   "cat": "store",
+   "release": "2026-11-03",
+   "price": "ぬいぐるみキーチェーン各2,800円／ガラスツリー4,600円／リース6,600円／スノードーム9,000円",
+   "where": "ディズニーストア店舗（11月6日〜）／フラッグシップ東京・東京ディズニーリゾート店・公式オンライン（11月3日〜先行）",
+   "url": "https://prtimes.jp/main/html/rd/p/000000802.000002021.html",
+   "src": "PR TIMES（ディズニーストア）",
+   "addedAt": "2026-10-24",
+   "id": "s-frozen-xmas-2026",
+   "grp": "DISNEY CHRISTMAS 2026",
+   "title": "FROZEN CHRISTMAS 2026（『アナと雪の女王／家族の思い出』）",
+   "desc": "短編『アナと雪の女王／家族の思い出』がテーマのホリデーアイテム。ガラスツリーやリース、スノードーム、サー・ヨルゲンビョルゲンなどのぬいぐるみキーチェーン。",
+   "chars": [
+    "アナと雪の女王"
+   ],
+   "img": "https://prcdn.freetls.fastly.net/release_image/2021/802/2021-802-32dca0ef1f81d7a5da229496820b876e-3900x2048.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+  },
+  {
    "id": "c-sega-prize-2026-11",
    "cat": "collab",
    "grp": "プライズ（ゲームセンター景品）",
@@ -1291,6 +1313,22 @@
    "chars": [
     "ミッキー＆フレンズ"
    ]
+  },
+  {
+   "id": "c-sparklink-agf2026",
+   "cat": "collab",
+   "grp": "ゲーム関連グッズ",
+   "title": "『ディズニー スパークリンク・スターズ』AGF2026出展グッズ",
+   "release": "2026-11-07",
+   "price": "—",
+   "where": "AGF2026会場",
+   "desc": "11月4日配信開始のスマホゲーム『ディズニー スパークリンク・スターズ』が11月7日開幕のAGF2026に出展し、会場限定アイテムを含むグッズを販売します。",
+   "chars": [
+    "ディズニー スパークリンク・スターズ"
+   ],
+   "url": "https://www.4gamer.net/games/008/G100854/20261022029/",
+   "src": "4Gamer.net",
+   "addedAt": "2026-11-01"
   },
   {
    "id": "p-xmas-2026",
@@ -1376,6 +1414,26 @@
    ]
   },
   {
+   "id": "p-eto-2027",
+   "cat": "park",
+   "grp": "お正月2027",
+   "title": "干支（ひつじ）ぬいぐるみ・ぬいぐるみバッジ 2027",
+   "release": "2026-11-19",
+   "price": "干支ぬいぐるみ各3,400円／ぬいぐるみバッジ各2,400円",
+   "where": "東京ディズニーリゾート（両パーク）",
+   "desc": "2027年の干支・未（ひつじ）をモチーフにした9キャラクターのぬいぐるみとバッジ。ぬいぐるみには小さな指人形が付き、スティッチとベイマックスが今回初めて仲間入り。",
+   "chars": [
+    "ミッキー＆フレンズ",
+    "くまのプーさん",
+    "スティッチ",
+    "ベイマックス"
+   ],
+   "url": "https://castel.jp/p/10702",
+   "img": "https://c02.castel.jp/800x/0/728308993-j170711.jpg?mod=20261026181227",
+   "src": "キャステル",
+   "addedAt": "2026-11-02"
+  },
+  {
    "id": "p-tds25-swarovski",
    "cat": "park",
    "grp": "東京ディズニーシー25周年",
@@ -1388,6 +1446,23 @@
    "src": "キャステル",
    "addedAt": "2026-10-11-initial",
    "img": "https://c04.castel.jp/800x/0/309200271-p170283.jpg?mod=20261008170818"
+  },
+  {
+   "id": "c-bandaispirits-genie-magicalmoment",
+   "cat": "collab",
+   "grp": "プライズ（ゲームセンター景品）",
+   "title": "バンダイスピリッツ ディズニーキャラクター Magical Moment〜アラジン ジーニー〜",
+   "release": "2026-11-25",
+   "releaseLabel": "11月25日より順次",
+   "price": "—",
+   "where": "ゲームセンター（バンプレストのプライズ）",
+   "desc": "『アラジン』のジーニーを立体化したプライズフィギュア。11月25日から順次入荷予定。",
+   "chars": [
+    "アラジン"
+   ],
+   "url": "https://premium.gamepedia.jp/hobby/prize/s-01J7DKHA6WRPRTVJK2VQABZHZ6",
+   "src": "キャラホビ",
+   "addedAt": "2026-11-02"
   },
   {
    "id": "p-retro-stationery-2026",
@@ -1407,6 +1482,23 @@
    ]
   },
   {
+   "id": "c-happykuji-zootopia-nick-1128",
+   "cat": "collab",
+   "grp": "コンビニ・くじ",
+   "title": "Happyくじ『ズートピア』ニックコレクション",
+   "release": "2026-11-28",
+   "price": "1回880円",
+   "where": "セブン-イレブン、イトーヨーカドー、ゆめタウン",
+   "desc": "11月29日「いいニックの日」にちなんだニック中心のくじ。作中衣装を描き起こしたアートのフィギュア、ぬいぐるみチャーム、トートバッグなど全9等級＋Last賞。",
+   "chars": [
+    "ズートピア"
+   ],
+   "url": "https://ure.pia.co.jp/articles/-/3535112",
+   "img": "https://urepia.ismcdn.jp/mwimgs/b/f/-/img_bf45d9f228be34e9c7a7179e5686dfed87660.jpg",
+   "src": "ウレぴあ総研",
+   "addedAt": "2026-10-31"
+  },
+  {
    "id": "p-newyear-2027",
    "cat": "park",
    "grp": "お正月2027",
@@ -1414,7 +1506,7 @@
    "release": "2026-12-01",
    "price": "ぬいぐるみチャーム各1,400円（セット12,600円）／フェイスタオル2,000円／フィギュア1,600円／今治タオルセット3,400円",
    "where": "東京ディズニーリゾート（両パーク）",
-   "desc": "和服姿のミッキーやだるま風のキャラクターをあしらった新年のグッズ。干支にちなんだ「こひつじのダニー」のぬいぐるみ（3,400円）などは先行して11/19に発売。",
+   "desc": "和服姿のミッキーやだるま風のキャラクター、干支にちなんだ「こひつじのダニー」のチャームなどをあしらった新年のグッズ。干支ぬいぐるみ・ぬいぐるみバッジは先行して11/19に発売。",
    "chars": [
     "ミッキー＆フレンズ"
    ],
@@ -1489,39 +1581,6 @@
    "chars": [
     "くまのプーさん"
    ]
-  },
-  {
-   "id": "c-happykuji-zootopia-nick-1128",
-   "cat": "collab",
-   "grp": "コンビニ・くじ",
-   "title": "Happyくじ『ズートピア』ニックコレクション",
-   "release": "2026-11-28",
-   "price": "1回880円",
-   "where": "セブン-イレブン、イトーヨーカドー、ゆめタウン",
-   "desc": "11月29日「いいニックの日」にちなんだニック中心のくじ。作中衣装を描き起こしたアートのフィギュア、ぬいぐるみチャーム、トートバッグなど全9等級＋Last賞。",
-   "chars": [
-    "ズートピア"
-   ],
-   "url": "https://ure.pia.co.jp/articles/-/3535112",
-   "img": "https://urepia.ismcdn.jp/mwimgs/b/f/-/img_bf45d9f228be34e9c7a7179e5686dfed87660.jpg",
-   "src": "ウレぴあ総研",
-   "addedAt": "2026-10-31"
-  },
-  {
-   "id": "c-sparklink-agf2026",
-   "cat": "collab",
-   "grp": "ゲーム関連グッズ",
-   "title": "『ディズニー スパークリンク・スターズ』AGF2026出展グッズ",
-   "release": "2026-11-07",
-   "price": "—",
-   "where": "AGF2026会場",
-   "desc": "11月4日配信開始のスマホゲーム『ディズニー スパークリンク・スターズ』が11月7日開幕のAGF2026に出展し、会場限定アイテムを含むグッズを販売します。",
-   "chars": [
-    "ディズニー スパークリンク・スターズ"
-   ],
-   "url": "https://www.4gamer.net/games/008/G100854/20261022029/",
-   "src": "4Gamer.net",
-   "addedAt": "2026-11-01"
   }
  ]
 }
