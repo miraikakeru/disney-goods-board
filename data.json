@@ -1,15 +1,22 @@
 {
- "updatedAt": "2026-11-03T04:47:00+09:00",
+ "updatedAt": "2026-11-04T04:55:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-11-03",
-  "added": [],
-  "changed": [],
-  "summary": "新しいグッズなし（公式・ニュースサイトの多くが取得できず）。発売から2か月を過ぎた1件（p-villains）を削除"
+  "date": "2026-11-04",
+  "added": [
+   "p-duffy-winter-sweets",
+   "c-cando-zootopia",
+   "c-ichibankuji-sparklink",
+   "c-ichibankuji-twst-anime"
+  ],
+  "changed": [
+   "c-ichibankuji-monsters"
+  ],
+  "summary": "ダッフィー冬のお菓子、キャンドゥ『ズートピア』、2027年の一番くじ2件を追加。一番くじ『モンスターズ・インク』の価格（750円）を確定"
  },
  "items": [
   {
@@ -624,7 +631,7 @@
    "grp": "くじ・コンビニ",
    "title": "一番くじ『モンスターズ・インク』",
    "release": "2026-10-17",
-   "price": "—",
+   "price": "1回750円",
    "where": "ファミリーマート、一番くじ公式ショップほか（オンラインは11月9日17時〜）",
    "desc": "サリー・マイク・ブーがドア倉庫に隠れる場面を立体化したA賞フィギュアを中心に、エネルギータンク型コインバンクやモニター掛けぬいぐるみなどがそろう一番くじ。",
    "url": "https://www.cinemacafe.net/article/2026/10/16/113361.html",
@@ -1206,6 +1213,23 @@
    "addedAt": "2026-10-27"
   },
   {
+   "id": "p-duffy-winter-sweets",
+   "cat": "park",
+   "grp": "ダッフィー＆フレンズ",
+   "title": "ダッフィー＆フレンズ 冬の缶入りお菓子（パウンドケーキ・チョコレート・キャンディー）",
+   "release": "2026-11-02",
+   "price": "パウンドケーキ1,700円／チョコレート1,500円／キャンディー800円",
+   "where": "シー：マクダックス・デパートメントストア",
+   "desc": "ウィンタープログラムに合わせたお菓子3品。雪だるまダッフィーの「アワ・リトル・スノーフレンズ」デザインの青りんご風味キャンディーなど、缶入りでお土産向き。",
+   "chars": [
+    "ダッフィー＆フレンズ"
+   ],
+   "url": "https://ure.pia.co.jp/articles/-/3523862",
+   "img": "https://urepia.ismcdn.jp/mwimgs/0/d/-/img_0d81f49f24a9d0c05361692fbcfbae6980181.jpg",
+   "src": "ウレぴあ総研",
+   "addedAt": "2026-11-04"
+  },
+  {
    "cat": "store",
    "release": "2026-11-03",
    "price": "ぬいぐるみ各5,600円／ぬいぐるみキーチェーン各3,300円／アドベントカレンダー5,700円／スノードーム8,000円",
@@ -1238,6 +1262,24 @@
     "アナと雪の女王"
    ],
    "img": "https://prcdn.freetls.fastly.net/release_image/2021/802/2021-802-32dca0ef1f81d7a5da229496820b876e-3900x2048.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+  },
+  {
+   "id": "c-cando-zootopia",
+   "cat": "collab",
+   "grp": "雑貨チェーン",
+   "title": "キャンドゥ『ズートピア』デザインシリーズ",
+   "release": "2026-11-05",
+   "releaseLabel": "11月5日から順次",
+   "price": "メモ帳110円／ファーキーホルダー220円／エコバッグ550円",
+   "where": "キャンドゥ（一部店舗除く）、Can★Doネットショップ",
+   "desc": "ジュディやニック、フラッシュ、フィニックなどを描いた全50品番の100円ショップ向けシリーズ。ブラインド仕様の巾着やメモ帳、刺繍ワッペンなどがそろう。",
+   "chars": [
+    "ズートピア"
+   ],
+   "url": "https://premium.gamepedia.jp/hobby/archives/289475",
+   "img": "https://tfi.gamepedia.jp/image/w=1200,h=630,fit=pad,f=webp/media.gamepedia.jp/premium/wp-content/uploads/sites/5/2026/11/03120451/news_image_001-18.jpg",
+   "src": "キャラホビ",
+   "addedAt": "2026-11-04"
   },
   {
    "id": "c-sega-prize-2026-11",
@@ -1523,6 +1565,40 @@
    "chars": [
     "トイ・ストーリー"
    ]
+  },
+  {
+   "id": "c-ichibankuji-sparklink",
+   "cat": "collab",
+   "grp": "くじ・コンビニ",
+   "title": "一番くじ『ディズニー スパークリンク・スターズ』",
+   "release": "2027-02-01",
+   "releaseLabel": "2027年2月予定",
+   "price": "—",
+   "where": "一番くじ取扱店",
+   "desc": "スマホゲーム『ディズニー スパークリンク・スターズ』をテーマにした一番くじ。詳細は今後公開予定。",
+   "chars": [
+    "ディズニー スパークリンク・スターズ"
+   ],
+   "url": "https://1kuji.com/products/disney_sparklink-stars",
+   "src": "一番くじ倶楽部",
+   "addedAt": "2026-11-04"
+  },
+  {
+   "id": "c-ichibankuji-twst-anime",
+   "cat": "collab",
+   "grp": "くじ・コンビニ",
+   "title": "一番くじ『ディズニー ツイステッドワンダーランド ザ アニメーション』",
+   "release": "2027-03-01",
+   "releaseLabel": "2027年3月予定",
+   "price": "—",
+   "where": "一番くじ取扱店",
+   "desc": "アニメ版『ツイステッドワンダーランド』の一番くじ。賞品や価格の詳細は今後公開予定。",
+   "chars": [
+    "ツイステッドワンダーランド"
+   ],
+   "url": "https://1kuji.com/products/disney_tw9",
+   "src": "一番くじ倶楽部",
+   "addedAt": "2026-11-04"
   },
   {
    "id": "c-pooh100-kawaisouni",
