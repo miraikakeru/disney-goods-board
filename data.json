@@ -1,22 +1,18 @@
 {
- "updatedAt": "2026-11-04T04:55:00+09:00",
+ "updatedAt": "2026-11-05T04:53:12+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "added": [
-   "p-duffy-winter-sweets",
-   "c-cando-zootopia",
-   "c-ichibankuji-sparklink",
-   "c-ichibankuji-twst-anime"
+   "p-xmas-sweets-2026",
+   "s-gift-of-story-osaka"
   ],
-  "changed": [
-   "c-ichibankuji-monsters"
-  ],
-  "summary": "ダッフィー冬のお菓子、キャンドゥ『ズートピア』、2027年の一番くじ2件を追加。一番くじ『モンスターズ・インク』の価格（750円）を確定"
+  "changed": [],
+  "summary": "パークのクリスマス限定お菓子（リルリンリン）と、大阪「Disney Gift of Story」のポップアップストアを追加"
  },
  "items": [
   {
@@ -1264,6 +1260,27 @@
    "img": "https://prcdn.freetls.fastly.net/release_image/2021/802/2021-802-32dca0ef1f81d7a5da229496820b876e-3900x2048.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
   },
   {
+   "id": "s-gift-of-story-osaka",
+   "cat": "store",
+   "grp": "ポップアップストア",
+   "title": "Disney Gift of Story 期間限定POP UP STORE（大阪）",
+   "release": "2026-11-04",
+   "until": "2026-12-25",
+   "price": "—",
+   "where": "グランフロント大阪・グラングリーン大阪",
+   "desc": "ディズニーの物語をテーマにした大阪の特別企画。フォトスポットやスタンプラリーとあわせて期間限定のポップアップストアが出店します。",
+   "chars": [
+    "ミッキー＆フレンズ",
+    "くまのプーさん",
+    "トイ・ストーリー",
+    "アナと雪の女王"
+   ],
+   "url": "https://www.disney.co.jp/fc/news/2026/0930",
+   "img": "https://lumiere-a.akamaihd.net/v1/images/260930_fc_news_07c8427e.jpeg?region=262%2C0%2C677%2C677",
+   "src": "ディズニー公式",
+   "addedAt": "2026-11-05"
+  },
+  {
    "id": "c-cando-zootopia",
    "cat": "collab",
    "grp": "雑貨チェーン",
@@ -1382,6 +1399,24 @@
    "addedAt": "2026-10-11-initial",
    "until": "2026-12-25",
    "img": "https://c04.castel.jp/800x/0/1319362295-p170255.jpg?mod=20261007180753"
+  },
+  {
+   "id": "p-xmas-sweets-2026",
+   "cat": "park",
+   "grp": "ディズニー・クリスマス2026",
+   "title": "ディズニー・クリスマス スペシャルお菓子（リルリンリン）",
+   "release": "2026-11-10",
+   "until": "2026-12-25",
+   "price": "マシュマロ2,600円／アソーテッド・スウィーツ2,500円／クリームフィルド・ビスケット1,700円／グミ1,000円",
+   "where": "ランド：ワールドバザール・コンフェクショナリー、シー：ヴァレンティーナズ・スウィート",
+   "desc": "リルリンリンをデザインしたクリスマス限定のお菓子。ケースやバッグに入ったタイプもあり、11月10日から先行発売。",
+   "chars": [
+    "リルリンリン"
+   ],
+   "url": "https://ure.pia.co.jp/articles/-/3523851",
+   "img": "https://urepia.ismcdn.jp/mwimgs/5/5/-/img_55d10dce1ec1e5ee88858420a922c62827229.jpg",
+   "src": "ウレぴあ総研",
+   "addedAt": "2026-11-05"
   },
   {
    "id": "c-gustafwestman-mickey",
