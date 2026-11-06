@@ -1,20 +1,25 @@
 {
- "updatedAt": "2026-11-06T04:56:04+09:00",
+ "updatedAt": "2026-11-07T04:58:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "added": [
-   "c-47-snowwhite-cap",
-   "c-bonpoint-marie",
-   "c-illusie300-lunch",
-   "c-sega-prize-2026-12"
+   "c-gashapon-holiday-ornament-charm",
+   "c-gashapon-rememberme-swing",
+   "c-gashapon-torso-miniature",
+   "c-gashapon-pixar-shibori-cookie",
+   "c-gashapon-nakayoshi-pair-swing3",
+   "c-gashapon-snowman-mejirushi"
   ],
-  "changed": [],
-  "summary": "'47の白雪姫キャップ、ボンポワンのマリーコレクション、illusie300のランチ雑貨、セガ12月のディズニープライズを追加"
+  "changed": [
+   "c-gashapon-crystal-mejirushi",
+   "c-tokyobanana-zootopia-2026"
+  ],
+  "summary": "ガシャポンのディズニー新作6種（11月第3〜4週）を追加し、クリスタルめじるしの発売週と東京ばな奈『ズートピア』の価格・販売場所を更新"
  },
  "items": [
   {
@@ -1140,26 +1145,6 @@
    "addedAt": "2026-10-30"
   },
   {
-   "id": "c-gashapon-crystal-mejirushi",
-   "cat": "collab",
-   "grp": "カプセルトイ",
-   "title": "ガシャポン「ディズニーキャラクター」クリスタルめじるしアクセサリー",
-   "release": "2026-11-01",
-   "releaseLabel": "2026年11月予定",
-   "price": "1回300円（全5種）",
-   "where": "ガシャポン取扱店",
-   "desc": "ダイヤカット風のクリスタル調ボディで座りポーズのキャラクターを再現したカプセルトイ。カラビナやリングパーツ付きで持ち物の目印に使える。",
-   "chars": [
-    "くまのプーさん",
-    "スティッチ",
-    "ダンボ"
-   ],
-   "url": "https://www.inside-games.jp/article/2026/11/01/190163.html",
-   "img": "https://www.inside-games.jp/imgs/ogp_f/1791635.jpg",
-   "src": "インサイド",
-   "addedAt": "2026-11-02"
-  },
-  {
    "id": "c-yolu-peterpan",
    "cat": "collab",
    "grp": "コスメ・ヘアケア",
@@ -1379,15 +1364,16 @@
    "grp": "お菓子",
    "title": "東京ばな奈『ズートピア』ショコラサンド「見ぃつけたっ」＆ニックのグッズ",
    "release": "2026-11-06",
-   "price": "—",
-   "where": "東京駅で先行発売（東京ばな奈）",
+   "price": "ショコラサンド4枚入1,250円／10枚入1,550円／ブランケット2,850円／ポーチ2,450円",
+   "where": "11月6日からJR東京駅店で先行、11月11日から東京駅・羽田空港などの東京ばな奈店舗、公式通販",
    "desc": "『ズートピア』公開10周年を記念した限定デザインのショコラサンドと、タキシード姿のニックをあしらったグッズ7種。11月6日から東京駅で先行して販売する。",
    "chars": [
     "ズートピア"
    ],
-   "url": "https://nijimen.kusuguru.co.jp/topics/645263",
-   "src": "にじめん",
-   "addedAt": "2026-10-29"
+   "url": "https://www.cinemacafe.net/article/2026/11/05/113861.html",
+   "src": "シネマカフェ",
+   "addedAt": "2026-10-29",
+   "img": "https://www.cinemacafe.net/imgs/ogp_f/842304.jpg"
   },
   {
    "id": "c-happykuji-ornament2026",
@@ -1490,6 +1476,103 @@
    "addedAt": "2026-10-29"
   },
   {
+   "id": "c-gashapon-rememberme-swing",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "ガシャポン『リメンバー・ミー』スイングマスコット",
+   "release": "2026-11-16",
+   "releaseLabel": "11月第3週",
+   "price": "1回400円（全4種）",
+   "where": "ガシャポン設置店",
+   "desc": "ヘクター、ミゲル、デラクルス、ダンテの4種がそろうスイングマスコット。",
+   "url": "https://gashapon.jp/products/detail.html?jan_code=4582770068269000",
+   "img": "https://bandai-a.akamaihd.net/bc/img/model/xl/1000259553_1.jpg",
+   "src": "ガシャポン公式",
+   "addedAt": "2026-11-07",
+   "chars": [
+    "リメンバー・ミー"
+   ]
+  },
+  {
+   "id": "c-gashapon-torso-miniature",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "ガシャポン capsuleトルソー「ディズニーキャラクター」ミニチュア＆パッケージコレクション",
+   "release": "2026-11-16",
+   "releaseLabel": "11月第3週",
+   "price": "1回500円（全4種）",
+   "where": "ガシャポン設置店",
+   "desc": "シンデレラ、ベル、アナ、エルサのドレスをトルソーで再現したミニチュアに、専用の小さなパッケージが付く。",
+   "url": "https://gashapon.jp/products/detail.html?jan_code=4582770054651000",
+   "img": "https://bandai-a.akamaihd.net/bc/img/model/xl/1000260518_1.jpg",
+   "src": "ガシャポン公式",
+   "addedAt": "2026-11-07",
+   "chars": [
+    "プリンセス",
+    "アナと雪の女王"
+   ]
+  },
+  {
+   "id": "c-gashapon-pixar-shibori-cookie",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "ガシャポン「ピクサーキャラクター」手作りおやつチャーム #しぼりクッキー",
+   "release": "2026-11-16",
+   "releaseLabel": "11月第3週",
+   "price": "1回300円（全6種）",
+   "where": "ガシャポン設置店",
+   "desc": "サリー、マイク、エイリアン、ロッツォ、メイ、ピクサー・ボールを手作りのしぼりクッキー風にしたチャーム。",
+   "url": "https://gashapon.jp/products/detail.html?jan_code=4582770026931000",
+   "img": "https://bandai-a.akamaihd.net/bc/img/model/xl/1000259570_1.jpg",
+   "src": "ガシャポン公式",
+   "addedAt": "2026-11-07",
+   "chars": [
+    "モンスターズ・インク",
+    "トイ・ストーリー",
+    "私ときどきレッサーパンダ"
+   ]
+  },
+  {
+   "id": "c-gashapon-nakayoshi-pair-swing3",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "ガシャポン「ディズニーキャラクター」なかよしペアスイング3",
+   "release": "2026-11-16",
+   "releaseLabel": "11月第3週",
+   "price": "1回400円（全4種）",
+   "where": "ガシャポン設置店",
+   "desc": "2つ並べると1つの場面になるペアのスイングマスコット。ニック＆ジュディ、チップ＆デールが登場。",
+   "url": "https://gashapon.jp/products/detail.html?jan_code=4570118184450000",
+   "img": "https://bandai-a.akamaihd.net/bc/img/model/xl/1000259579_1.jpg",
+   "src": "ガシャポン公式",
+   "addedAt": "2026-11-07",
+   "chars": [
+    "ズートピア",
+    "ミッキー＆フレンズ"
+   ]
+  },
+  {
+   "id": "c-gashapon-snowman-mejirushi",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "ガシャポン「ディズニーキャラクター」雪だるまふわふわめじるしアクセサリー",
+   "release": "2026-11-16",
+   "releaseLabel": "11月第3週",
+   "price": "1回300円（全5種）",
+   "where": "ガシャポン設置店",
+   "desc": "プーさん、ベイマックス、マリー、ジュディ、ニックを雪だるま姿にしたふわふわ仕上げの目印アクセサリー。",
+   "url": "https://gashapon.jp/products/detail.html?jan_code=4582770068313000",
+   "img": "https://bandai-a.akamaihd.net/bc/img/model/xl/1000259551_1.jpg",
+   "src": "ガシャポン公式",
+   "addedAt": "2026-11-07",
+   "chars": [
+    "くまのプーさん",
+    "ベイマックス",
+    "ディズニーの猫たち",
+    "ズートピア"
+   ]
+  },
+  {
    "id": "c-jillstuart-cinderella",
    "cat": "collab",
    "grp": "コスメ",
@@ -1542,6 +1625,46 @@
    "img": "https://c02.castel.jp/800x/0/728308993-j170711.jpg?mod=20261026181227",
    "src": "キャステル",
    "addedAt": "2026-11-02"
+  },
+  {
+   "id": "c-gashapon-crystal-mejirushi",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "ガシャポン「ディズニーキャラクター」クリスタルめじるしアクセサリー",
+   "release": "2026-11-23",
+   "releaseLabel": "11月第4週",
+   "price": "1回300円（全5種）",
+   "where": "ガシャポン取扱店",
+   "desc": "ダイヤカット風のクリスタル調ボディで座りポーズのキャラクターを再現したカプセルトイ。カラビナやリングパーツ付きで持ち物の目印に使える。",
+   "chars": [
+    "くまのプーさん",
+    "スティッチ",
+    "ダンボ"
+   ],
+   "url": "https://www.inside-games.jp/article/2026/11/01/190163.html",
+   "img": "https://www.inside-games.jp/imgs/ogp_f/1791635.jpg",
+   "src": "インサイド",
+   "addedAt": "2026-11-02"
+  },
+  {
+   "id": "c-gashapon-holiday-ornament-charm",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "ガシャポン「ディズニーキャラクター」Holidayオーナメントチャーム",
+   "release": "2026-11-23",
+   "releaseLabel": "11月第4週",
+   "price": "1回400円（全4種）",
+   "where": "ガシャポン設置店",
+   "desc": "ツリーに飾るオーナメントにもバッグチャームにもなるクリスマス仕様のカプセルトイ。ミッキー、ミニー、プーさん、スティッチの4種。",
+   "url": "https://gashapon.jp/products/detail.html?jan_code=4582770068276000",
+   "img": "https://bandai-a.akamaihd.net/bc/img/model/xl/1000259552_1.jpg",
+   "src": "ガシャポン公式",
+   "addedAt": "2026-11-07",
+   "chars": [
+    "ミッキー＆フレンズ",
+    "くまのプーさん",
+    "スティッチ"
+   ]
   },
   {
    "id": "p-tds25-swarovski",
