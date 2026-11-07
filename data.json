@@ -1,25 +1,21 @@
 {
- "updatedAt": "2026-11-07T04:58:00+09:00",
+ "updatedAt": "2026-11-08T04:55:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "added": [
-   "c-gashapon-holiday-ornament-charm",
-   "c-gashapon-rememberme-swing",
-   "c-gashapon-torso-miniature",
-   "c-gashapon-pixar-shibori-cookie",
-   "c-gashapon-nakayoshi-pair-swing3",
-   "c-gashapon-snowman-mejirushi"
+   "c-avail-mickey-minnie-1114"
   ],
   "changed": [
-   "c-gashapon-crystal-mejirushi",
-   "c-tokyobanana-zootopia-2026"
+   "s-happy-birthday-mickey-2026",
+   "c-ichibankuji-rememberme",
+   "c-happykuji-ornament2026"
   ],
-  "summary": "ガシャポンのディズニー新作6種（11月第3〜4週）を追加し、クリスタルめじるしの発売週と東京ばな奈『ズートピア』の価格・販売場所を更新"
+  "summary": "アベイルのミッキー＆ミニーグッズ（11/14）を追加し、ディズニーストア「HAPPY BIRTHDAY MICKEY」の発売日（11/10先行・11/13）と価格、一番くじ『リメンバー・ミー』とクリスマスオーナメントくじの価格を確定"
  },
  "items": [
   {
@@ -1008,15 +1004,16 @@
    "grp": "コンビニ・くじ",
    "title": "一番くじ『リメンバー・ミー』Colorful Memories",
    "release": "2026-10-31",
-   "price": "—",
-   "where": "一番くじ取扱店",
-   "desc": "『リメンバー・ミー』の一番くじ。店頭で10月31日から発売予定。",
-   "url": "https://1kuji.com/characters/150",
-   "src": "一番くじ倶楽部",
+   "price": "1回781円",
+   "where": "セブン-イレブン、イトーヨーカドー、ゆめタウンなど（数量限定）",
+   "desc": "『リメンバー・ミー』の一番くじ。A賞はミゲルとヘクターのシーンフィギュアで、ブランケットやポーチなども。10月31日10時から順次発売。",
+   "url": "https://www.inside-games.jp/article/2026/10/30/190069.html",
+   "src": "インサイド",
    "addedAt": "2026-10-25",
    "chars": [
     "リメンバー・ミー"
-   ]
+   ],
+   "img": "https://www.inside-games.jp/imgs/ogp_f/1781175.webp"
   },
   {
    "id": "c-donki-disney-winter-2026",
@@ -1093,12 +1090,11 @@
   },
   {
    "cat": "store",
-   "release": "2026-11-01",
-   "releaseLabel": "2026年11月予定",
-   "price": "—",
-   "where": "ディズニーストア",
-   "url": "https://dpost.jp/2026/10/23/wp-142718/",
-   "src": "Dpost（ディズニーストア11月発売予定リスト）",
+   "release": "2026-11-10",
+   "price": "ぬいぐるみ4,400円／スタンドミラー5,900円／ミニタオル2,200円／ショッピングバッグ1,100円",
+   "where": "ディズニーストア店舗（11月13日〜）／フラッグシップ東京・東京ディズニーリゾート店・公式オンライン（11月10日〜先行）",
+   "url": "https://prtimes.jp/main/html/rd/p/000000803.000002021.html",
+   "src": "PR TIMES（ウォルト・ディズニー・ジャパン）",
    "addedAt": "2026-10-24",
    "id": "s-happy-birthday-mickey-2026",
    "grp": "ミッキーマウス誕生日",
@@ -1106,7 +1102,8 @@
    "desc": "11月18日のミッキーの誕生日に向けたシリーズ。フォーマル衣装のミッキーのぬいぐるみ、キーホルダー、フィギュア、バッグなどで、チップ＆デールもおそろいの衣装で登場。",
    "chars": [
     "ミッキー＆フレンズ"
-   ]
+   ],
+   "img": "https://prcdn.freetls.fastly.net/release_image/2021/803/2021-803-413147b3f65bf3a1425dbf084ea7147f-3650x1970.jpg"
   },
   {
    "cat": "store",
@@ -1381,7 +1378,7 @@
    "grp": "コンビニ・くじ",
    "title": "Happyくじ『DISNEY クリスマスオーナメントくじ2026』",
    "release": "2026-11-07",
-   "price": "—",
+   "price": "1回880円",
    "where": "ファミリーマート",
    "desc": "赤い衣装のミッキーたちのフィギュアオーナメントやアクリルオーナメントが当たるくじ。Last賞は約65cmのミッキーぬいぐるみ。",
    "url": "https://www.cinemacafe.net/article/2026/10/07/113156.html",
@@ -1868,6 +1865,23 @@
    "chars": [
     "くまのプーさん"
    ]
+  },
+  {
+   "id": "c-avail-mickey-minnie-1114",
+   "cat": "collab",
+   "grp": "アパレル・雑貨チェーン",
+   "title": "アベイル ミッキー＆ミニー グッズ（顔型ショルダーバッグほか）",
+   "release": "2026-11-14",
+   "price": "顔型ダイカットショルダーバッグ2,750円／回転式コレクションケース2,750円／ルームシューズ1,650円",
+   "where": "全国のアベイル（西新発田店・荒尾店を除く）、アベイルオンラインストア（一部商品）",
+   "desc": "ミッキーとミニーの顔の形をしたショルダーバッグや取っ手付き収納ボックス、ティッシュケース、ルームシューズなど。雑貨は1人1点までの購入制限あり。",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ],
+   "url": "https://nijimen.kusuguru.co.jp/topics/650497",
+   "img": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/11/af92265562aa407696a1c8251a5456a4.jpg",
+   "src": "にじめん",
+   "addedAt": "2026-11-08"
   }
  ]
 }
