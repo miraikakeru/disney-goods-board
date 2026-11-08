@@ -1,21 +1,19 @@
 {
- "updatedAt": "2026-11-08T04:55:00+09:00",
+ "updatedAt": "2026-11-09T04:55:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "added": [
-   "c-avail-mickey-minnie-1114"
+   "c-shimamura-disney-zakka-1107",
+   "c-shimamura-happybag-1111",
+   "c-harvestmarket-xmas-2026"
   ],
-  "changed": [
-   "s-happy-birthday-mickey-2026",
-   "c-ichibankuji-rememberme",
-   "c-happykuji-ornament2026"
-  ],
-  "summary": "アベイルのミッキー＆ミニーグッズ（11/14）を追加し、ディズニーストア「HAPPY BIRTHDAY MICKEY」の発売日（11/10先行・11/13）と価格、一番くじ『リメンバー・ミー』とクリスマスオーナメントくじの価格を確定"
+  "changed": [],
+  "summary": "しまむらのディズニー雑貨（11/7）とハッピーバッグ3点セット（11/11）、Disney HARVEST MARKETのクリスマス限定チョコ缶（11/11）を追加"
  },
  "items": [
   {
@@ -1090,23 +1088,6 @@
   },
   {
    "cat": "store",
-   "release": "2026-11-10",
-   "price": "ぬいぐるみ4,400円／スタンドミラー5,900円／ミニタオル2,200円／ショッピングバッグ1,100円",
-   "where": "ディズニーストア店舗（11月13日〜）／フラッグシップ東京・東京ディズニーリゾート店・公式オンライン（11月10日〜先行）",
-   "url": "https://prtimes.jp/main/html/rd/p/000000803.000002021.html",
-   "src": "PR TIMES（ウォルト・ディズニー・ジャパン）",
-   "addedAt": "2026-10-24",
-   "id": "s-happy-birthday-mickey-2026",
-   "grp": "ミッキーマウス誕生日",
-   "title": "HAPPY BIRTHDAY MICKEY",
-   "desc": "11月18日のミッキーの誕生日に向けたシリーズ。フォーマル衣装のミッキーのぬいぐるみ、キーホルダー、フィギュア、バッグなどで、チップ＆デールもおそろいの衣装で登場。",
-   "chars": [
-    "ミッキー＆フレンズ"
-   ],
-   "img": "https://prcdn.freetls.fastly.net/release_image/2021/803/2021-803-413147b3f65bf3a1425dbf084ea7147f-3650x1970.jpg"
-  },
-  {
-   "cat": "store",
    "release": "2026-11-01",
    "releaseLabel": "2026年11月予定",
    "price": "—",
@@ -1406,6 +1387,40 @@
    "addedAt": "2026-11-01"
   },
   {
+   "id": "c-shimamura-disney-zakka-1107",
+   "cat": "collab",
+   "grp": "雑貨チェーン",
+   "title": "しまむら「ディズニー」雑貨（チップ＆デールほか）",
+   "release": "2026-11-07",
+   "price": "—",
+   "where": "全国のしまむら／しまむらパーク（オンライン、11月7日15時〜）",
+   "desc": "チップ＆デールなどディズニー作品のキャラクターを使ったカラフルな雑貨。チェックトートバッグ、クリアミニポーチ、ショッピングバッグ、フラットポーチの4アイテム。",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ],
+   "url": "https://www.inside-games.jp/article/2026/11/05/190408.html",
+   "img": "https://www.inside-games.jp/imgs/ogp_f/1803686.png",
+   "src": "インサイド",
+   "addedAt": "2026-11-09"
+  },
+  {
+   "cat": "store",
+   "release": "2026-11-10",
+   "price": "ぬいぐるみ4,400円／スタンドミラー5,900円／ミニタオル2,200円／ショッピングバッグ1,100円",
+   "where": "ディズニーストア店舗（11月13日〜）／フラッグシップ東京・東京ディズニーリゾート店・公式オンライン（11月10日〜先行）",
+   "url": "https://prtimes.jp/main/html/rd/p/000000803.000002021.html",
+   "src": "PR TIMES（ウォルト・ディズニー・ジャパン）",
+   "addedAt": "2026-10-24",
+   "id": "s-happy-birthday-mickey-2026",
+   "grp": "ミッキーマウス誕生日",
+   "title": "HAPPY BIRTHDAY MICKEY",
+   "desc": "11月18日のミッキーの誕生日に向けたシリーズ。フォーマル衣装のミッキーのぬいぐるみ、キーホルダー、フィギュア、バッグなどで、チップ＆デールもおそろいの衣装で登場。",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ],
+   "img": "https://prcdn.freetls.fastly.net/release_image/2021/803/2021-803-413147b3f65bf3a1425dbf084ea7147f-3650x1970.jpg"
+  },
+  {
    "id": "p-xmas-2026",
    "cat": "park",
    "grp": "ディズニー・クリスマス2026",
@@ -1455,6 +1470,60 @@
    "img": "https://urepia.ismcdn.jp/mwimgs/5/5/-/img_55d10dce1ec1e5ee88858420a922c62827229.jpg",
    "src": "ウレぴあ総研",
    "addedAt": "2026-11-05"
+  },
+  {
+   "id": "c-shimamura-happybag-1111",
+   "cat": "collab",
+   "grp": "アパレル",
+   "title": "しまむら「ディズニー」ハッピーバッグ3点セット（モンスターズ・インクほか）",
+   "release": "2026-11-11",
+   "price": "2,200円",
+   "where": "全国のしまむら／しまむらパーク（オンライン、11月11日15時〜）",
+   "desc": "キャラクターの顔を大きくデザインしたパーカーとパンツにエコバッグが付いたレディースの3点セット。『モンスターズ・インク』『レミーのおいしいレストラン』『くまのプーさん』の3作品。",
+   "chars": [
+    "モンスターズ・インク",
+    "レミーのおいしいレストラン",
+    "くまのプーさん"
+   ],
+   "url": "https://www.inside-games.jp/article/2026/11/05/190384.html",
+   "img": "https://www.inside-games.jp/imgs/ogp_f/1803504.jpg",
+   "src": "インサイド",
+   "addedAt": "2026-11-09"
+  },
+  {
+   "id": "c-harvestmarket-xmas-2026",
+   "cat": "collab",
+   "grp": "カフェ",
+   "title": "Disney HARVEST MARKET クリスマス限定アーモンドチョコレート缶",
+   "release": "2026-11-11",
+   "until": "2026-12-25",
+   "price": "各1,058円",
+   "where": "Disney HARVEST MARKET By CAFE COMPANY 渋谷ヒカリエ（11月11日〜）・横浜赤レンガ倉庫（11月12日〜）のギフトショップ",
+   "desc": "クリスマス限定パッケージのアーモンドチョコレート缶で、「ミッキー＆フレンズ」「ミッキー＆ミニー」の2デザイン。期間中はクリスマスのアフタヌーンティーなど限定メニューも。",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ],
+   "url": "https://bestcalendar.jp/press/163529",
+   "img": "https://cdn.bestcalendar.jp/press-release-images/163529/1-large.webp",
+   "src": "ベストカレンダー（PR TIMES）",
+   "addedAt": "2026-11-09"
+  },
+  {
+   "id": "c-avail-mickey-minnie-1114",
+   "cat": "collab",
+   "grp": "アパレル・雑貨チェーン",
+   "title": "アベイル ミッキー＆ミニー グッズ（顔型ショルダーバッグほか）",
+   "release": "2026-11-14",
+   "price": "顔型ダイカットショルダーバッグ2,750円／回転式コレクションケース2,750円／ルームシューズ1,650円",
+   "where": "全国のアベイル（西新発田店・荒尾店を除く）、アベイルオンラインストア（一部商品）",
+   "desc": "ミッキーとミニーの顔の形をしたショルダーバッグや取っ手付き収納ボックス、ティッシュケース、ルームシューズなど。雑貨は1人1点までの購入制限あり。",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ],
+   "url": "https://nijimen.kusuguru.co.jp/topics/650497",
+   "img": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/11/af92265562aa407696a1c8251a5456a4.jpg",
+   "src": "にじめん",
+   "addedAt": "2026-11-08"
   },
   {
    "id": "c-gustafwestman-mickey",
@@ -1865,23 +1934,6 @@
    "chars": [
     "くまのプーさん"
    ]
-  },
-  {
-   "id": "c-avail-mickey-minnie-1114",
-   "cat": "collab",
-   "grp": "アパレル・雑貨チェーン",
-   "title": "アベイル ミッキー＆ミニー グッズ（顔型ショルダーバッグほか）",
-   "release": "2026-11-14",
-   "price": "顔型ダイカットショルダーバッグ2,750円／回転式コレクションケース2,750円／ルームシューズ1,650円",
-   "where": "全国のアベイル（西新発田店・荒尾店を除く）、アベイルオンラインストア（一部商品）",
-   "desc": "ミッキーとミニーの顔の形をしたショルダーバッグや取っ手付き収納ボックス、ティッシュケース、ルームシューズなど。雑貨は1人1点までの購入制限あり。",
-   "chars": [
-    "ミッキー＆フレンズ"
-   ],
-   "url": "https://nijimen.kusuguru.co.jp/topics/650497",
-   "img": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/11/af92265562aa407696a1c8251a5456a4.jpg",
-   "src": "にじめん",
-   "addedAt": "2026-11-08"
   }
  ]
 }
