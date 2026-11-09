@@ -1,19 +1,21 @@
 {
- "updatedAt": "2026-11-09T04:55:00+09:00",
+ "updatedAt": "2026-11-10T04:54:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "added": [
-   "c-shimamura-disney-zakka-1107",
-   "c-shimamura-happybag-1111",
-   "c-harvestmarket-xmas-2026"
+   "c-shimamura-hokaron-socks-1111",
+   "c-shimamura-room-leggings-1111",
+   "c-shimamura-happybag6-1111",
+   "c-papabubble-stitch-1112",
+   "c-animate-sparklink-1128"
   ],
   "changed": [],
-  "summary": "しまむらのディズニー雑貨（11/7）とハッピーバッグ3点セット（11/11）、Disney HARVEST MARKETのクリスマス限定チョコ缶（11/11）を追加"
+  "summary": "しまむらのディズニー3商品（11/11）、パパブブレのスティッチキャンディ復刻（11/12）、アニメイトのスパークリンク・スターズ新商品（11/28）を追加"
  },
  "items": [
   {
@@ -1509,6 +1511,83 @@
    "addedAt": "2026-11-09"
   },
   {
+   "id": "c-shimamura-hokaron-socks-1111",
+   "cat": "collab",
+   "grp": "アパレル",
+   "title": "しまむら「ホカロン」×「ディズニー」ソックスハッピーバッグ",
+   "release": "2026-11-11",
+   "price": "1,100円",
+   "where": "全国のしまむら／しまむらパーク（オンライン、11月11日15時〜。一部オンライン限定）",
+   "desc": "裏起毛ソックス5足（または裏起毛3足＋ボア2足）にポーチが付いたレディースのハッピーバッグ。ミニー、ミッキー、ベイマックス、トイ・ストーリー、ズートピア2、プーさんなど全9種。",
+   "chars": [
+    "ミッキー＆フレンズ",
+    "ベイマックス",
+    "トイ・ストーリー",
+    "ズートピア",
+    "くまのプーさん"
+   ],
+   "url": "https://nijimen.kusuguru.co.jp/topics/652332",
+   "img": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/11/4b0817de8a0f4cb8a80986b8e02afe56.jpg",
+   "src": "にじめん",
+   "addedAt": "2026-11-10"
+  },
+  {
+   "id": "c-shimamura-room-leggings-1111",
+   "cat": "collab",
+   "grp": "アパレル",
+   "title": "しまむら ディズニー ボアフリース総柄ルームレギンス",
+   "release": "2026-11-11",
+   "price": "550円",
+   "where": "全国のしまむら／しまむらパーク（オンライン、11月11日15時〜）",
+   "desc": "ベイマックス、『トイ・ストーリー5』、ジャック、ミッキーの柄を全面にプリントしたレディースのボアフリースレギンス。全5柄。",
+   "chars": [
+    "ベイマックス",
+    "トイ・ストーリー",
+    "ナイトメアー・ビフォア・クリスマス",
+    "ミッキー＆フレンズ"
+   ],
+   "url": "https://www.inside-games.jp/article/2026/11/09/190592.html",
+   "img": "https://s.eximg.jp/exnews/feed/Nijimen/f0/Nijimen_0000000000652095/Nijimen_0000000000652095_1.jpg",
+   "src": "インサイド",
+   "addedAt": "2026-11-10"
+  },
+  {
+   "id": "c-shimamura-happybag6-1111",
+   "cat": "collab",
+   "grp": "アパレル",
+   "title": "しまむら「ディズニー」ハッピーバッグ6点セット（トイ・ストーリーほか）",
+   "release": "2026-11-11",
+   "price": "3,300円",
+   "where": "全国のしまむら／しまむらパーク（オンライン、11月11日15時〜）",
+   "desc": "プルオーバー、Tシャツ、パンツ、ポーチ、買い物かご、ショッピングバッグの6点が入ったレディースのセット。『トイ・ストーリー5』『トイ・ストーリー』、プーさん、ベイマックスなど全5種。",
+   "chars": [
+    "トイ・ストーリー",
+    "くまのプーさん",
+    "ベイマックス"
+   ],
+   "url": "https://www.inside-games.jp/article/2026/11/09/190615.html",
+   "img": "https://www.inside-games.jp/imgs/ogp_f/1804939.jpg",
+   "src": "インサイド",
+   "addedAt": "2026-11-10"
+  },
+  {
+   "id": "c-papabubble-stitch-1112",
+   "cat": "collab",
+   "grp": "食品・スイーツ",
+   "title": "パパブブレ『リロ＆スティッチ』キャンディ（復刻）",
+   "release": "2026-11-12",
+   "price": "各880円（40g）",
+   "where": "パパブブレ対象店舗・公式オンラインストア",
+   "desc": "スティッチとスクランプの柄が入ったキャンディミックスが復刻。「アロハキャンディミックス」と「スティッチキャンディミックス」の2種類。",
+   "chars": [
+    "スティッチ"
+   ],
+   "url": "https://nijimen.kusuguru.co.jp/topics/652278",
+   "img": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/11/f9a11e17d5b44a3f95df7e7b0c10ba3a.jpg",
+   "src": "にじめん",
+   "addedAt": "2026-11-10"
+  },
+  {
    "id": "c-avail-mickey-minnie-1114",
    "cat": "collab",
    "grp": "アパレル・雑貨チェーン",
@@ -1796,6 +1875,24 @@
    "img": "https://urepia.ismcdn.jp/mwimgs/b/f/-/img_bf45d9f228be34e9c7a7179e5686dfed87660.jpg",
    "src": "ウレぴあ総研",
    "addedAt": "2026-10-31"
+  },
+  {
+   "id": "c-animate-sparklink-1128",
+   "cat": "collab",
+   "grp": "ゲーム関連グッズ",
+   "title": "『ディズニー スパークリンク・スターズ』アニメイト新商品・フェア",
+   "release": "2026-11-28",
+   "until": "2026-12-13",
+   "price": "2連アクリルキーホルダー各1,320円／トレーディングクリア色紙1パック660円",
+   "where": "全国のアニメイト（POP UP STOREはアニメイト池袋本店・札幌）",
+   "desc": "スマホゲーム『ディズニー スパークリンク・スターズ』のアクリルキーホルダーやトレーディング商品がアニメイトで発売。期間中は購入特典がもらえるフェアも行われます。",
+   "chars": [
+    "ディズニー スパークリンク・スターズ"
+   ],
+   "url": "https://prtimes.jp/main/html/rd/p/000009193.000016756.html",
+   "img": "https://prcdn.freetls.fastly.net/release_image/16756/9193/16756-9193-38902c12653045586ce1c2c0f15fb9a4-750x420.jpg",
+   "src": "PR TIMES（アニメイトホールディングス）",
+   "addedAt": "2026-11-10"
   },
   {
    "id": "p-newyear-2027",
