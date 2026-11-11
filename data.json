@@ -1,15 +1,23 @@
 {
- "updatedAt": "2026-11-11T04:54:00+09:00",
+ "updatedAt": "2026-11-12T04:59:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-11-11",
-  "added": [],
+  "date": "2026-11-12",
+  "added": [
+   "c-americanholic-mickey-1113",
+   "c-avail-toystory-1114",
+   "c-avail-knapsack-1114",
+   "c-skinnydip-sidekickers",
+   "c-capsule-toystory-charmy-1116",
+   "c-capsule-nakanaimon3-1116",
+   "c-capsule-princess-costume-mejirushi"
+  ],
   "changed": [],
-  "summary": "新しいグッズ・変更なし（パーク販売予定グッズはすべて既存項目に該当、更新日時のみ更新）"
+  "summary": "コラボ7件追加（AMERICAN HOLIC、アベイルのトイ・ストーリー／ナップサック、SKINNYDIP LONDON、カプセルトイ3件）"
  },
  "items": [
   {
@@ -1582,6 +1590,23 @@
    "addedAt": "2026-11-10"
   },
   {
+   "id": "c-americanholic-mickey-1113",
+   "cat": "collab",
+   "grp": "アパレル",
+   "title": "AMERICAN HOLIC「ミッキー＆フレンズ」コレクション（全11型）",
+   "release": "2026-11-13",
+   "price": "ニットプルオーバー6,990円／プリントスウェット6,990円／ジャガードミトン3,990円／4Pブローチ3,990円",
+   "where": "AMERICAN HOLIC全国店舗、STRIPE CLUB、ZOZOTOWN（11月13日から順次）",
+   "desc": "ミッキーやミニー、プルートをあしらったニットやスウェット、ファー小物など冬向けの11型。オンラインは13日10時から。",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ],
+   "url": "https://www.cinemacafe.net/article/2026/11/10/113992.html",
+   "img": "https://www.cinemacafe.net/imgs/ogp_f/845694.jpg",
+   "src": "シネマカフェ",
+   "addedAt": "2026-11-12"
+  },
+  {
    "id": "c-avail-mickey-minnie-1114",
    "cat": "collab",
    "grp": "アパレル・雑貨チェーン",
@@ -1597,6 +1622,43 @@
    "img": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/11/af92265562aa407696a1c8251a5456a4.jpg",
    "src": "にじめん",
    "addedAt": "2026-11-08"
+  },
+  {
+   "id": "c-avail-toystory-1114",
+   "cat": "collab",
+   "grp": "アパレル・雑貨チェーン",
+   "title": "アベイル『トイ・ストーリー』『トイ・ストーリー5』デザイングッズ",
+   "release": "2026-11-14",
+   "price": "折りたたみトラベルバッグ4,400円／ポーチ付ネックストラップ3,300円／バンダナチャーム1,980円／ステッカーセット990円",
+   "where": "アベイル一部店舗（西新発田店・荒尾店を除く）、アベイル公式オンラインストア（14日12時〜）",
+   "desc": "トラベルバッグやマルチケース、バッグチャームなどの小物。『トイ・ストーリー5』デザインも含む。1人各品名1点まで。",
+   "chars": [
+    "トイ・ストーリー"
+   ],
+   "url": "https://nijimen.kusuguru.co.jp/topics/653377",
+   "img": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/11/34948ebae0b24fc3aa30fe83ff7de463.jpg",
+   "src": "にじめん",
+   "addedAt": "2026-11-12"
+  },
+  {
+   "id": "c-avail-knapsack-1114",
+   "cat": "collab",
+   "grp": "アパレル・雑貨チェーン",
+   "title": "アベイル ディズニーキャラクター ナップサック（全7柄）",
+   "release": "2026-11-14",
+   "price": "各2,750円",
+   "where": "アベイル一部店舗（西新発田店・荒尾店を除く）、アベイル公式オンラインストア（14日12時〜）",
+   "desc": "ミッキー、ミニー、プー、ジャック、エイリアン、ハム、ロッツォの7柄のナップサック。1人各品名1点まで。",
+   "chars": [
+    "ミッキー＆フレンズ",
+    "くまのプーさん",
+    "ナイトメアー・ビフォア・クリスマス",
+    "トイ・ストーリー"
+   ],
+   "url": "https://nijimen.kusuguru.co.jp/topics/653928",
+   "img": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/11/e64e1822a95349bd84fd84519c81097f.jpg",
+   "src": "にじめん",
+   "addedAt": "2026-11-12"
   },
   {
    "id": "c-gustafwestman-mickey",
@@ -1712,6 +1774,58 @@
    ]
   },
   {
+   "id": "c-capsule-toystory-charmy-1116",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "カプセルトイ『トイ・ストーリー』Charmy Roomettes",
+   "release": "2026-11-16",
+   "releaseLabel": "11月16日週",
+   "price": "1回400円（全4種）",
+   "where": "カプセルトイ販売店",
+   "desc": "『トイ・ストーリー』のキャラクターを題材にしたカプセルトイ。",
+   "chars": [
+    "トイ・ストーリー"
+   ],
+   "url": "https://gacha-now.net/brand/disney",
+   "src": "ガチャなう",
+   "addedAt": "2026-11-12"
+  },
+  {
+   "id": "c-capsule-nakanaimon3-1116",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "カプセルトイ「ディズニーキャラクター」なかないモン そのさん",
+   "release": "2026-11-16",
+   "releaseLabel": "11月16日週",
+   "price": "1回400円（全4種）",
+   "where": "カプセルトイ販売店",
+   "desc": "ディズニーキャラクターの「なかないモン」シリーズ第3弾。",
+   "url": "https://gacha-now.net/brand/disney",
+   "src": "ガチャなう",
+   "addedAt": "2026-11-12"
+  },
+  {
+   "id": "c-skinnydip-sidekickers",
+   "cat": "collab",
+   "grp": "雑貨・スマホアクセサリー",
+   "title": "SKINNYDIP LONDON「サイドキッカーズコレクション」（プリンセス／ヴィランズの名脇役）",
+   "release": "2026-11-18",
+   "until": "2026-11-29",
+   "price": "iPhoneケース4,950円／リストビーズチャーム3,300円／イヤホンケース3,300円／マルチポーチ2,970円",
+   "where": "ジェイアール名古屋タカシマヤ「Disney THE MARKET 2026」で先行販売（11/18〜11/29）。一般販売は後日発表",
+   "desc": "アブーやセバスチャン、イアーゴ、フロットサム＆ジェットサムなど脇役キャラクターが主役のスマホケースや小物。",
+   "chars": [
+    "アラジン",
+    "リトル・マーメイド",
+    "プリンセス",
+    "ヴィランズ"
+   ],
+   "url": "https://prtimes.jp/main/html/rd/p/000000040.000155886.html",
+   "img": "https://prcdn.freetls.fastly.net/release_image/155886/40/155886-40-056b1179616eafda69ad5897cc35bffe-2949x2212.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+   "src": "PR TIMES",
+   "addedAt": "2026-11-12"
+  },
+  {
    "id": "c-jillstuart-cinderella",
    "cat": "collab",
    "grp": "コスメ",
@@ -1804,6 +1918,23 @@
     "くまのプーさん",
     "スティッチ"
    ]
+  },
+  {
+   "id": "c-capsule-princess-costume-mejirushi",
+   "cat": "collab",
+   "grp": "カプセルトイ",
+   "title": "カプセルトイ「Disney Princess」コスチュームめじるしアクセサリー",
+   "release": "2026-11-23",
+   "releaseLabel": "11月第4週",
+   "price": "1回300円（全5種）",
+   "where": "カプセルトイ販売店",
+   "desc": "プリンセスのコスチュームをモチーフにしためじるしアクセサリー。",
+   "chars": [
+    "プリンセス"
+   ],
+   "url": "https://gacha-now.net/brand/disney",
+   "src": "ガチャなう",
+   "addedAt": "2026-11-12"
   },
   {
    "id": "p-tds25-swarovski",
