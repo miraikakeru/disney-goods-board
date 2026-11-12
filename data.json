@@ -1,23 +1,20 @@
 {
- "updatedAt": "2026-11-12T04:59:00+09:00",
+ "updatedAt": "2026-11-13T04:58:40+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "added": [
-   "c-americanholic-mickey-1113",
-   "c-avail-toystory-1114",
-   "c-avail-knapsack-1114",
-   "c-skinnydip-sidekickers",
-   "c-capsule-toystory-charmy-1116",
-   "c-capsule-nakanaimon3-1116",
-   "c-capsule-princess-costume-mejirushi"
+   "p-frozen-fs-doll-1119",
+   "p-tds25-imagining-2",
+   "p-lillinglin-capsule-1110",
+   "c-furyu-prize-2026-11"
   ],
   "changed": [],
-  "summary": "コラボ7件追加（AMERICAN HOLIC、アベイルのトイ・ストーリー／ナップサック、SKINNYDIP LONDON、カプセルトイ3件）"
+  "summary": "パーク3件（アナとエルサ人形グッズ、イマジニング・ザ・マジック第2弾、リルリンリンのカプセルトイ）とコラボ1件（フリューのプライズ）を追加"
  },
  "items": [
   {
@@ -1476,6 +1473,21 @@
    "addedAt": "2026-11-05"
   },
   {
+   "id": "p-lillinglin-capsule-1110",
+   "cat": "park",
+   "grp": "ディズニー・クリスマス2026",
+   "title": "リルリンリン カプセルトイ2026（全4種）",
+   "release": "2026-11-10",
+   "until": "2026-12-25",
+   "price": "1回500円",
+   "where": "ランド：アドベンチャーランド・バザール、トレジャーコメットほか／シー：マーメイドトレジャー、タワー・オブ・テラー・メモラビリア",
+   "desc": "クリスマスの妖精リルリンリンのカプセルトイ。袋を抱えた姿やマグカップに入った姿など4種で、当面は購入にスタンバイパスが必要。",
+   "url": "https://castel.jp/p/10710",
+   "img": "https://c02.castel.jp/800x/0/1638876361-p170869.jpg?mod=20261111155700",
+   "src": "キャステル",
+   "addedAt": "2026-11-13"
+  },
+  {
    "id": "c-shimamura-happybag-1111",
    "cat": "collab",
    "grp": "アパレル",
@@ -1805,6 +1817,25 @@
    "addedAt": "2026-11-12"
   },
   {
+   "id": "c-furyu-prize-2026-11",
+   "cat": "collab",
+   "grp": "プライズ（ゲームセンター景品）",
+   "title": "フリュー ディズニープライズ 11月登場分（トイ・ストーリー重ねてごろんぬいぐるみほか）",
+   "release": "2026-11-16",
+   "releaseLabel": "11月第3〜4週",
+   "price": "—",
+   "where": "ゲームセンター・オンラインクレーン（フリューのプライズ）",
+   "desc": "トイ・ストーリーの重ねてごろんぬいぐるみやトイ・パッケージ型バッグ、モンスターズ・インクのCOROCO BIGぬいぐるみ、ベイマックスのソープディスペンサーなどが11月第3〜4週に投入予定。",
+   "chars": [
+    "トイ・ストーリー",
+    "モンスターズ・インク",
+    "ベイマックス"
+   ],
+   "url": "https://premium.gamepedia.jp/hobby/prize/s-01J7DKHA6WRPRTVJK2VQABZHZ6",
+   "src": "キャラホビ",
+   "addedAt": "2026-11-13"
+  },
+  {
    "id": "c-skinnydip-sidekickers",
    "cat": "collab",
    "grp": "雑貨・スマホアクセサリー",
@@ -1878,6 +1909,23 @@
    "img": "https://c02.castel.jp/800x/0/728308993-j170711.jpg?mod=20261026181227",
    "src": "キャステル",
    "addedAt": "2026-11-02"
+  },
+  {
+   "id": "p-frozen-fs-doll-1119",
+   "cat": "park",
+   "grp": "ファンタジースプリングス",
+   "title": "アナとエルサの人形デザインのヘアゴム・トートバッグ",
+   "release": "2026-11-19",
+   "price": "ヘアゴム1,400円／トートバッグ3,400円",
+   "where": "シー：ファンタジースプリングス・ギフト",
+   "desc": "幼いころのアナとエルサが遊んでいた人形をモチーフにしたグッズ。トートはニット風の素材で両面に人形を描いている。",
+   "chars": [
+    "アナと雪の女王"
+   ],
+   "url": "https://www.tokyodisneyresort.jp/goods/134002667/",
+   "img": "https://media1.tokyodisneyresort.jp/images/adventure/goods/6ac486dbdb6e3_1.jpg?mod=20261021160144",
+   "src": "東京ディズニーリゾート公式",
+   "addedAt": "2026-11-13"
   },
   {
    "id": "c-gashapon-crystal-mejirushi",
@@ -2035,6 +2083,25 @@
    "img": "https://travel.watch.impress.co.jp/img/trw/list/2151/287/001.jpg",
    "src": "トラベル Watch",
    "addedAt": "2026-10-27"
+  },
+  {
+   "id": "p-tds25-imagining-2",
+   "cat": "park",
+   "grp": "東京ディズニーシー25周年",
+   "title": "イマジニング・ザ・マジック グッズ第2弾（写真集・アートパネルほか）",
+   "release": "2026-12-03",
+   "deadline": "2027-01-12",
+   "deadlineNote": "アートパネル予約締切",
+   "price": "カメラストラップ2,800円／マグカップ2,200円／写真集6,600円／アートパネル20,000円（予約）",
+   "where": "ランド：ギャグファクトリー/ファイブ・アンド・ダイム、シー：エンポーリオ",
+   "desc": "写真家・浅田政志さんの25周年フォトプロジェクトのグッズ第2弾。カメラストラップなど写真まわりの小物が多く、アートパネルはアプリで12/3〜1/12に予約を受け付ける。",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ],
+   "url": "https://travel.watch.impress.co.jp/docs/news/2152551.html",
+   "img": "https://travel.watch.impress.co.jp/img/trw/list/2152/551/001.jpg",
+   "src": "トラベル Watch",
+   "addedAt": "2026-11-13"
   },
   {
    "id": "c-sega-prize-2026-12",
