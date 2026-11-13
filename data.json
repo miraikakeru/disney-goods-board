@@ -1,20 +1,22 @@
 {
- "updatedAt": "2026-11-13T04:58:40+09:00",
+ "updatedAt": "2026-11-14T04:58:00+09:00",
  "notes": {
   "park": "東京ディズニーランド・シーのパーク内で売られるグッズ。多くは公式アプリのオンライン販売にも対応（入園日当日のみなど条件あり）。",
   "store": "ディズニーストア（店舗・公式オンライン）とディズニーフラッグシップ東京のグッズ。発売日当日の来店は予約制になることがあります。",
   "collab": "他ブランド・企業とのコラボやライセンス商品。販売場所は各ブランドの店舗やサイトです。"
  },
  "lastRun": {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "added": [
-   "p-frozen-fs-doll-1119",
-   "p-tds25-imagining-2",
-   "p-lillinglin-capsule-1110",
-   "c-furyu-prize-2026-11"
+   "s-lucky-2027",
+   "s-flagship-5th-1205",
+   "c-shimamura-alice-1117",
+   "c-birthday-momoko-princess-1114"
   ],
-  "changed": [],
-  "summary": "パーク3件（アナとエルサ人形グッズ、イマジニング・ザ・マジック第2弾、リルリンリンのカプセルトイ）とコラボ1件（フリューのプライズ）を追加"
+  "changed": [
+   "s-white-winter-2026"
+  ],
+  "summary": "公式ストア2件（2027年福袋、フラッグシップ東京5周年）とコラボ2件（しまむらアリス、バースデイ×MOMOKOプリンセス）を追加。WHITE WINTER 2026の発売日を11/17（店舗11/20）に確定"
  },
  "items": [
   {
@@ -1088,25 +1090,6 @@
    ]
   },
   {
-   "cat": "store",
-   "release": "2026-11-01",
-   "releaseLabel": "2026年11月予定",
-   "price": "—",
-   "where": "ディズニーストア（一部アイテムは限定店舗）",
-   "url": "https://dpost.jp/2026/10/23/wp-142718/",
-   "src": "Dpost（ディズニーストア11月発売予定リスト）",
-   "addedAt": "2026-10-24",
-   "id": "s-white-winter-2026",
-   "grp": "WHITE WINTER 2026",
-   "title": "WHITE WINTER 2026",
-   "desc": "プーさんのぬいぐるみを中心に、モバイルポシェット、湯たんぽ、セーター、トートなど冬向けアイテム。ピグレットやイーヨー、ミッキー、スティッチのぬいぐるみキーホルダーも。",
-   "chars": [
-    "くまのプーさん",
-    "ミッキー＆フレンズ",
-    "スティッチ"
-   ]
-  },
-  {
    "id": "c-maisondefleur-mickey-friends-1101",
    "cat": "collab",
    "grp": "バッグ・ファッション雑貨",
@@ -1673,6 +1656,23 @@
    "addedAt": "2026-11-12"
   },
   {
+   "id": "c-birthday-momoko-princess-1114",
+   "cat": "collab",
+   "grp": "生活雑貨",
+   "title": "バースデイ×MOMOKO ディズニープリンセス ランチグッズ（全10種）",
+   "release": "2026-11-14",
+   "price": "ランチボックス1,419円／タンブラー869円／ランチ巾着539円",
+   "where": "バースデイ（一部店舗を除く）、バースデイ公式オンライン（店舗受け取り）",
+   "desc": "MOMOKOがデザインしたプリンセスとなかまたちの柄のランチボックスやカトラリー、食器など。ラプンツェル、ベル、ジャスミン、アリエル、白雪姫、モアナが登場。",
+   "chars": [
+    "プリンセス"
+   ],
+   "url": "https://nijimen.kusuguru.co.jp/topics/656702",
+   "img": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/11/d175668b0c5247da8bac6b4ded48113c.png",
+   "src": "にじめん",
+   "addedAt": "2026-11-14"
+  },
+  {
    "id": "c-gustafwestman-mickey",
    "cat": "collab",
    "grp": "インテリア・雑貨",
@@ -1834,6 +1834,43 @@
    "url": "https://premium.gamepedia.jp/hobby/prize/s-01J7DKHA6WRPRTVJK2VQABZHZ6",
    "src": "キャラホビ",
    "addedAt": "2026-11-13"
+  },
+  {
+   "cat": "store",
+   "release": "2026-11-17",
+   "price": "ぬいぐるみ（ミッキー／ミニー）各5,800円／セーター11,000円／手袋4,500円／ぬいぐるみ付きブランケット5,500円",
+   "where": "ディズニーフラッグシップ東京・東京ディズニーリゾート店・公式オンラインで11月17日先行、ディズニーストア店舗は11月20日から順次",
+   "url": "https://prtimes.jp/main/html/rd/p/000000805.000002021.html",
+   "src": "ディズニーストア公式（PR TIMES）",
+   "addedAt": "2026-10-24",
+   "id": "s-white-winter-2026",
+   "grp": "WHITE WINTER 2026",
+   "title": "WHITE WINTER 2026",
+   "desc": "くまのぬいぐるみを抱いた白いプーさんを中心に、ふわふわの冬の装いのミッキー、ミニー、スティッチのぬいぐるみやセーター、手袋、ブランケットなど。発売日の一部店舗は来店予約制。",
+   "chars": [
+    "くまのプーさん",
+    "ミッキー＆フレンズ",
+    "スティッチ"
+   ],
+   "img": "https://prcdn.freetls.fastly.net/release_image/2021/805/2021-805-7c017bce4633ca223d188c7ad15cba90-3900x2421.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+  },
+  {
+   "id": "c-shimamura-alice-1117",
+   "cat": "collab",
+   "grp": "アパレル・雑貨チェーン",
+   "title": "しまむら『ふしぎの国のアリス』トート・ポーチ・チャーム",
+   "release": "2026-11-17",
+   "price": "トートバッグ2,739円／ショッピングバッグ2,189円／チャーム1,419円",
+   "where": "しまむらパーク（オンライン、15時から）",
+   "desc": "アリスやチェシャ猫、白うさぎなどを描いたバッグやポーチ、チャーム。同日にダンボ柄などのトートバッグも登場。",
+   "chars": [
+    "ふしぎの国のアリス",
+    "ダンボ"
+   ],
+   "url": "https://nijimen.kusuguru.co.jp/topics/656479",
+   "img": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/11/d8a30565abce4c1aa5552a0374283489.png",
+   "src": "にじめん",
+   "addedAt": "2026-11-14"
   },
   {
    "id": "c-skinnydip-sidekickers",
@@ -2124,6 +2161,23 @@
    "addedAt": "2026-11-06"
   },
   {
+   "id": "s-flagship-5th-1205",
+   "cat": "store",
+   "grp": "ディズニーフラッグシップ東京",
+   "title": "ディズニーフラッグシップ東京 5周年記念グッズ",
+   "release": "2026-12-05",
+   "price": "—",
+   "where": "ディズニーフラッグシップ東京（12月4日にメンバー先行販売・来店予約制）",
+   "desc": "星をテーマにした衣装のミッキーたちをデザインしたぬいぐるみ、ぬいぐるみキーチェーン、エコバッグなど。5周年に合わせたキャンペーンも実施。",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ],
+   "url": "https://www.disney.co.jp/store/news/information/if20261104_101",
+   "img": "https://lumiere-a.akamaihd.net/v1/images/flagshiptokyo_5th_1200677_1911739a.jpeg?region=262%2C0%2C677%2C677",
+   "src": "ディズニーストア公式",
+   "addedAt": "2026-11-14"
+  },
+  {
    "id": "c-disney-poster-collection-book",
    "cat": "collab",
    "grp": "書籍",
@@ -2153,6 +2207,23 @@
    "chars": [
     "トイ・ストーリー"
    ]
+  },
+  {
+   "id": "s-lucky-2027",
+   "cat": "store",
+   "grp": "福袋",
+   "title": "ディズニーストア 2027年 ラッキーバッグ／ラッキーボックス",
+   "release": "2027-01-01",
+   "price": "ラッキーバッグ4,000円／ラッキーボックス10,000円",
+   "where": "ディズニーストア.jp（予約）、ディズニーストア店舗（ラッキーバッグを1月1日から順次）",
+   "desc": "干支デザインの限定ぬいぐるみとステンレスボトルなどが入った新年の福袋。オンラインでは11月17日にプレミアムメンバー先行予約、12月4日に一般予約（バッグのみ）が始まり、予約分は12月27日お届け予定。",
+   "chars": [
+    "ミッキー＆フレンズ"
+   ],
+   "url": "https://www.disney.co.jp/store/news/new/if202611_04",
+   "img": "https://lumiere-a.akamaihd.net/v1/images/lucky-bag_261117_1200_677_news_a_dc13857c.jpeg?region=262%2C0%2C677%2C677",
+   "src": "ディズニーストア公式",
+   "addedAt": "2026-11-14"
   },
   {
    "id": "c-ichibankuji-sparklink",
